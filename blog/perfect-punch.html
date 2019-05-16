@@ -1,0 +1,176 @@
+<html lang="en">
+    <head>
+        <meta property="og:url" content="https://levelredboxing.com/blog/portion-control.html" />
+        <meta property="og:type" content="Throwing the Perfect Punch | Level Red Boxing" />
+        <meta property="og:description" content="Boxing is all about strategy, repetition, and a strong mentality. But to be a great boxer, you must first master throwing the perfect punch." />
+        <meta property="og:image" content="https://levelredboxing.com/resources/css/img/blogpics/set8/supermove.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta property="og:image" content="http://www.levelredboxing.com/blog/rSmall.png" /> -->
+        <!-- <meta property="og:image:width" content="200" /> -->
+<!-- <meta property="og:image:height" content="200" /> -->
+<!-- <meta property="og:image:alt" content="Level Red Boxing" /> -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="../resources/js/jquery.waypoints.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/stylenov18.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/newstyle.min.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900,900i" rel="stylesheet">
+        <title>Throwing the Perfect Punch | Level Red Boxing</title>
+    </head>
+    <body style="background-color: transparent !important">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<nav class="navbar navbar-inverse deskNav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html"><img src="../resources/css/img/brand2.png"></a>
+<!--            <a class="mobFran">Own a Franchise</a>-->
+        </div>
+    <!--
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+        </ul>
+    -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../locations.html">Locations</a></li>
+          <li><a href="../thelevels.html">Levels</a></li>
+            
+            <li><a id="about" style="cursor:pointer;" onclick="toggleAbout()">About</a></li>
+            <li><a href="../blog.html">Community</a></li>
+            <li><a href="../locations.html">Contact</a></li>
+        </ul>
+        <a href="http://www.levelredboxing.com/franchise.html" id="franBTN">Own a Franchise</a>
+        <a onclick="toggleNav()" class="hamburger"><i class="fas fa-bars"></i></a>
+          <a class="phone" href="../locations.html"><i class="fas fa-phone"></i></a>
+      </div>
+</nav>
+    <div id="aboutDesk">
+        <a href="../theworkout.html" class="aboutLink">The Workout</a>
+        <a href="../sixpunches.html" class="aboutLink">Learn the Moves</a>
+        <a href="../http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
+    </div>
+    <a href="../locations.html" class="findYourStudio">Find Your Studio <i class="fas fa-play" style="color:rgb(254,0,0)!important;"></i></a>
+    <div id="mobileNav" class="mobileNav">
+<!--        <a><img src="resources/css/img/brand2.png"></a>-->
+        <a onclick="toggleNav()" class="hamburgerX">X</a>
+        <a class="phone" href="../locations.html"><i class="fas fa-phone"></i></a>
+        <div class="mobileWrap">
+            <a href="../locations.html">Locations</a>
+            <a href="../theworkout.html">The Workout</a>
+            
+            <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="../thelevels.html">The Levels</a><a href="../sixpunches.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
+            <div id="../aboutMob"></div>
+            <a href="../blog.html">Community</a>
+            <a href="../locations.html">Contact</a>
+            <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
+        </div>
+    </div>
+        
+<!--
+        <div class="blogHead6 mainHead">
+            <div class="container">
+
+            </div>
+        </div>
+-->
+        <div class="container blogPicPad">
+            <div class="row blogPicPad">
+                <div class="col-sm-12 blogPicPad">
+                <img style="width:100%;-webkit-filter: brightness(130%); " src="../resources/css/img/blogpics/set8/supermove.jpg">
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" style="padding: 0px;padding-left: 15px;">
+                    <h1 id="articleTitle" style="color: rgb(254,0,0) !important">Throwing the Perfect Punch</h1>
+                    <p>Boxing is all about strategy, repetition, and a strong mentality. But to be a great boxer, you must first master throwing the perfect punch. If you are a visual or hands-on learner, I would best recommend coming to a boxing session at Level Red Boxing as opposed to reading it here. However, for you book worms interested, here are a few steps towards getting that perfect punch:</p>
+                    <ul class="listUL" style="margin-left:30px;">
+                        <li style="font-weight: 600"><p style="display: inline;font-weight: 300"> First set up your stance- Put your dominant foot behind you (whichever hand you write with — that foot) and spread your feet shoulder-distance apart, as if they are on different sides of a train track.</p></li>
+                        <p style="margin-left:25px;margin-top:5px;"> Ensure that your toes are facing your opponent and that your knees are bent to give you optimum stability.</p>
+                      <li style="font-weight: 600"><p style="display: inline;font-weight: 300"> Make sure your fists in your gloves are properly made- Starting with a flat hand, roll your fingers toward your palm like you're holding a hammer, then fold your thumb over the outside. Be sure to avoid placing your thumb sandwiched between your finger and palm. Throwing a punch set up like that could lead to a broken hand or even a dislocated thumb.</p></li>
+                      <li style="font-weight: 600"><p style="display: inline;font-weight: 300">Twisting and thrusting - Start the twist at your dominant foot, turn the heel and your body, and extend your punch. When you're extended, your pinky knuckle should be higher than your first two. This makes your shoulder rotate which covers your chin for good defense.</p></li>
+                        <li style="font-weight: 600"><p style="display: inline;font-weight: 300"> Breathe- Keep your base solid so you don't throw all your weight into the punch and go tumbling forward. Be sure to exhale with each punch, making it a more fluid motion.</p></li>
+                        <li style="font-weight: 600"><p style="display: inline;font-weight: 300"> Retracting your punch- After you extend your punch, pull the punch back into your starting position using your bicep and twisting your body back into the original position. </p></li>
+                        
+                    </ul>
+                    <p>If you have any questions or need some guidance on your boxing journey. Level Red Boxing offers a knowledgeable staff that are all ready and waiting to help you achieve your goals.   </p>
+                    <p>Curious to learn more about Level Red Boxing Classes? Stop by for a visit and learn that YOU ARE STRONG AT ANY LEVEL. </p>
+                    <div style="width:100%;text-align: center;margin-top:15px;margin-bottom:15px">
+                        <a href="../blog.html" class="btn btn-full js--scroll-to-plans buyBtn viewBTN" style="margin-bottom:10px;width:auto;font-size:16px;border-radius: 0px;padding:5px;padding-left:10px;padding-right: 10px;margin:0;">Back to Blog Page <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-md-4" style="text-align: center;">
+                    <a id="blogPromo" href="../locations.html" style="cursor: pointer;">
+                    <img src="../resources/css/img/newimg/buffpittpromo.jpg?v=2" style="width: 100%;margin-top:10px;">
+                    </a>
+                    
+                    
+
+               
+                    <div style="height:10px;"></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/levelredboxing" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/levelredboxing" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/levelredboxing">Level Red Boxing</a></blockquote></div>
+                    <div style="height:10px;"></div>
+                 
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/e0ff81dff87b5b6f9b7d97e7e1907c95.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+                </div>
+            </div>
+        </div>
+            <br>      
+
+    <div class="lrbFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../resources/css/img/brand2.png" style="width: 100%;padding-bottom: 10px;max-width: 400px;">
+                </div>
+                <div class="col-md-4 share">
+                    <span>Share how you are</span>
+                    <a style="color: white;" href="https://strongateverylevel.com"><span>#strongatevery<span style="color:rgb(254,0,0);">level</span></span></a>
+                    <div class="icons">
+                    <a href="https://www.instagram.com/levelredboxing/"><i class="fab fa-instagram" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                <a href="https://www.facebook.com/LevelRedBoxing/"><i class="fab fa-facebook-square" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                <a href="https://www.youtube.com/channel/UCEOWxaM5Fc_bKdCEVfdUMhg"><i class="fab fa-youtube" style="font-size: 30px!important;margin-top:10px;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 stores">
+                    <a href="https://itunes.apple.com/us/app/level-red-boxing/id1359276124?mt=8" style="margin-bottom: 10px;"><img src="../resources/css/img/app/apple.svg"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.fitmetrix.levelredboxing"><img src="../resources/css/img/app/google.png"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="../index.html" class="bottomlink botHome">Home</a>
+                    <a href="http://www.levelredboxing.com/franchise.html" class="bottomlink">Franchising</a>
+                    <a href="../press.html" class="bottomlink">Press</a>
+                </div>
+                 <span class="copy" >&copy; 2019 Level Red Boxing | <a href="http://levelredboxing.com/terms.html">Terms of Service</a></span>
+            </div>
+        </div>  
+    </div>
+
+    <script src="../resources/js/script.js"></script>
+    
+    </body>  
+    
+<script type="text/javascript">function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){$("#mobileNav").fadeToggle(200);}</script></html>

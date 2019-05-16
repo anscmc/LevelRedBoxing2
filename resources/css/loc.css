@@ -1,0 +1,1079 @@
+@font-face {
+	font-family: metropolis;
+    src:url('font/Metropolis-master/Metropolis-Black.otf')
+}
+@font-face {
+	font-family: metropolisMed;
+    src:url('font/Metropolis-master/Metropolis-Regular.otf')
+}
+@font-face {
+	font-family: metropolisIt;
+    src:url('font/Metropolis-master/Metropolis-BlackItalic.otf')
+}
+@font-face {
+	font-family: metropolisLt;
+    src:url('font/Metropolis-master/Metropolis-Light.otf')
+}
+h1{
+    font-family: metropolis;
+    text-align: center;
+}
+
+.lefty .redBTN{
+    margin:0px!important;
+    display: inline-block;
+    width: 300px!important;
+}
+.mapWrap{
+    width:100%;
+    display: inline-block;
+    height:auto;
+    overflow: hidden;
+    position: relative;
+    margin-top:0px;
+}
+.mapWrap>.locMap{
+    position: absolute;
+    z-index: 499;
+    left:-50px;
+    bottom:0px;
+    height:calc(100% + 50px);
+    width:calc(100% + 50px);
+    display: inline-block;
+}
+.mapCover{
+    display: inline-block;
+    position: absolute;
+    z-index:500;
+    left:0px;
+    top:0px;
+    height:100%;
+    width:100%;
+    background-color:transparent;
+}
+.locBox{
+
+    background-image: 
+    /* top, transparent red */
+    -webkit-gradient(
+      linear, 
+      left top, left bottom, 
+      from(rgba(255, 255, 255, 0.5)), 
+      to(rgba(255, 255, 255, 0.5))
+    ),
+    /* your image */
+    url(img/new18/header3.jpg);
+
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(255, 255, 255, 0.5), 
+      rgba(255, 255, 255, 0.5)
+    ),
+    /* your image */
+    url(img/new18/header3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top:30px;
+    padding-bottom:0px;
+    padding-left:50px;
+    margin-top:-8px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 199;
+
+}
+
+.locBox .lefty{
+    text-align: center;
+    padding-top:3vw!important;
+}
+.locBox .lefty>span{
+    font-family: metropolis;
+    color:black;
+    text-transform: uppercase;
+    display: block;
+    font-size: 40px;
+    line-height: 110%;
+    text-align: left;
+}
+.locBox .lefty>.redSpan{
+    color:rgb(254,0,0);
+    font-family: metropolisLt;
+    font-size: 28px;
+}
+.locBox .lefty>p{
+    font-size: 28px;
+    font-family:metropolisMed;
+    margin-bottom: 20px;
+    width:100%;
+    max-width: 690px;
+    text-align: left;
+}
+.locContainer{
+    margin-top:125px;
+}
+#locPromoIMG{
+    height:300px;
+    display: inline-block;
+    margin:30px;
+    -webkit-box-shadow: 0px 5px 25px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 25px 1px rgba(0,0,0,0.75);
+}
+.mapInfo{
+    display: inline-block;
+    padding:20px;
+    padding-right:10px;
+    margin:30px;
+    top:100px;
+    z-index: 501;
+    background-color:rgba(254,0,0,.7);
+    -webkit-box-shadow: 0px 5px 25px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 25px 1px rgba(0,0,0,0.75);
+}
+.mapInfo h1{
+    color:white;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin:0px;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    font-family: metropolis;
+}
+.mapInfo span{
+    color:white;
+    display: block;
+    font-size: 1em;
+    font-family: metropolisMed;
+    line-height: 110%;
+}
+.mapInfo a{
+    color:white;
+    display: block;
+    font-size: 2.5em;
+    font-family: metropolis;
+    line-height: 110%;
+    margin-bottom: 0px;
+    text-decoration: none!important;
+}
+.locLandTop{
+    background-image:url(img/new18/landing.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.locLandTop>span{
+    width: 100%;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+#spacers{
+    height: 50px;
+}
+.landBold{
+    font-family: metropolis;
+    font-size: 4vw;
+    line-height: 100%;
+}
+.landThin{
+    font-family: metropolisMed;
+    font-size:3.5vw;
+    line-height: 100%;
+}
+.boldSmall{
+    font-family: metropolis;
+    font-size: 2vw;
+}
+.smallThin{
+    font-family: metropolisMed;
+    font-size: 2vw;
+    line-height: 90%;
+}
+.locStrong{
+    font-family: metropolisMed;
+    letter-spacing: 5px;
+    font-size: 2.5vw;
+}
+#biggie{
+    font-size:3.25vw;
+    font-family: metropolis;
+    text-transform: uppercase;
+    line-height: 5vw;
+    padding:0;margin:0;
+}
+#smalls{
+    font-size:2.75vw;
+    font-family: metropolis;
+    text-transform: uppercase;
+    line-height: 5vw;
+    padding:0;margin:0;
+}
+.caryP>p{
+    font-family: metropolisMed;
+    font-size: 1.1vw;
+}
+.box{
+    padding:10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 5px 25px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 25px 1px rgba(0,0,0,0.75);
+}
+.phaseBox{
+    background-color:rgba(254,0,0,1);
+    padding:10px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+}
+.disabledBack{
+    background-color: darkgrey;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+.disabledText{
+    color:white!important;
+}
+.box>div{
+    display: inline-block;
+}
+.currentBox{
+    border:3px solid black;
+}
+.disabledBox{
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-top:25px;
+    
+}
+.phaseBox{
+    width:60%;vertical-align:top;
+}
+.phaseTitle{
+    color:white;
+    font-family: metropolis;
+    text-transform: uppercase;
+    font-size: 1.85vw;
+    font-style: italic;
+}
+.phaseP{
+    font-family: metropolisMed;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    display: inline-block;
+    width: auto;
+    margin:0;margin-left:5px;
+}
+.phasePrice{
+    color:white;
+    font-family: metropolisMed;
+    font-size: 4.5vw;
+    line-height: 80%;
+    vertical-align: top;
+    margin-top:.35vw;
+    margin-left:-1.5vw;
+}
+.phaseOR{
+    width:10%;height:7vw;
+    line-height: 8vw;
+    text-align: center;
+    font-family: metropolisMed;
+    color: rgb(254,0,0);
+    font-style: italic;
+    font-size: 1.5vw;
+    text-shadow: 0 0 5px rgba(0,0,0,.45);
+    vertical-align: top;
+}
+.phase3{
+    padding-top:1.5vw;
+}
+.classesTop{
+    font-family: metropolisMed;
+    font-size:2.5vw;
+    line-height: 100%;
+    text-shadow: 0 .1vw .4vw rgba(0,0,0,.45);
+    text-transform: uppercase;
+    color:rgb(254,0,0);
+    display: block;
+    font-style:italic;
+}
+.classesBot{
+    font-family: metropolis;
+    font-size:3.75vw;
+    line-height:100%;
+    text-shadow: 0 .1vw .4vw rgba(0,0,0,.45);
+    text-transform: uppercase;
+    color:rgb(254,0,0);
+    display: block;
+    font-style:italic;
+}
+.dis{
+    background-color: darkgrey!important;
+    border:1px solid darkgrey!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    cursor:text!important;
+    color:white!important;
+}
+.disText{
+    color:darkgrey!important;
+    text-shadow: none!important;
+}
+.disWhite{
+    color:white!important;
+}
+.phaseBTN{
+    color:white;
+    background-color:rgb(254,0,0);
+    float: right;
+    line-height:100%;
+    padding-top:7px;
+    width:35%;
+    text-align: center;
+    font-family: metropolis;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    display: inline-block;
+    -webkit-box-shadow: 0 0 5px 0px rgba(0,0,0,.75);
+    box-shadow: 0 0 5px 0px rgba(0,0,0,.75);
+    border:1px solid rgb(254,0,0);
+    text-decoration: none!important;
+    cursor: pointer;
+    -webkit-transition: ease all .3s;
+    transition: ease all .3s;
+}
+.phaseBTN2{
+    margin-left:2vw;
+}
+.phaseBTN:hover{
+    background-color: transparent;
+    color:rgb(254,0,0);
+}
+.phaseBTN{
+    color:white;
+    background-color:rgb(254,0,0);
+    float: right;
+    line-height:100%;
+    padding-top:7px;
+    width:11vw;
+    text-align: center;
+    font-family: metropolis;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    display: inline-block;
+    -webkit-box-shadow: 0 0 5px 0px rgba(0,0,0,.75);
+    box-shadow: 0 0 5px 0px rgba(0,0,0,.75);
+    border:1px solid rgb(254,0,0);
+    text-decoration: none!important;
+    cursor: pointer;
+    -webkit-transition: ease all .3s;
+    transition: ease all .3s;
+}
+.phaseBTN:hover{
+    background-color: transparent;
+    color:rgb(254,0,0);
+}
+.daysOut{
+    font-family: metropolisMed;
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-right:2vw;
+}
+.daysIn{
+    font-family: metropolis;
+}
+#tryfree input{
+    display: inline-block;
+    width:40%;
+    margin:5px;
+    height:40px;
+    line-height: 40px;
+    font-size: 25px;
+}
+.righty>.strongspan{
+        font-size:45px;
+    width:100%;
+    text-align: center;
+        padding-top:20px;
+    }
+.redBTNnew{
+    color:black;
+    font-family: metropolis;
+    font-size:60px;
+    line-height: 70px;
+    display: inline-block;
+    cursor:pointer;
+    -webkit-transition: ease all .3s;
+    transition: ease all .3s;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    padding: 0;
+}
+.redBTNnew:hover{
+    background-color: rgb(254,0,0);
+    color:white;
+}
+.redBTNnew:focus{
+    color:black;
+}
+.redBTNnew>span{
+    color:rgb(254,0,0);
+    font-size: 70px;
+    line-height: 70px;
+}
+.redtext{
+    color: rgb(254,0,0);
+    display: inline-block!important;
+    padding:0;
+    line-height: 80px;
+    vertical-align: top;
+    font-size: 35px!important;
+    margin:0;
+    width:auto!important;
+}
+#formtitle{
+    text-shadow:1px 1px 1px rgba(50,50,50,.75);
+}
+.locSubmit{
+    color:white;
+    background-color:rgb(254,0,0);
+    -webkit-transition: ease all .3s;
+    transition: ease all .3s;
+    border: 1px solid rgb(254,0,0);
+    width:200px;
+    font-size:20px;
+    line-height: 40px;
+    height:40px;
+    display: inline-block;
+    font-family: metropolis;
+}
+.locSubmit:hover{
+    background-color: white;
+    color:black;
+}
+.locForm>input{
+    max-width: 400px;
+    margin: 0 auto;
+}
+/*
+.locFormBox{
+    background-color:rgba(254,0,0,.7);
+    -webkit-box-shadow: 0px 5px 25px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 25px 1px rgba(0,0,0,0.75);
+}
+*/
+.locForm>span{
+    font-family: metropolis;
+}
+#scroller{
+    margin-bottom:80px;
+}
+.schedTop>img{
+    height: 4vw;
+    margin-left:1vw;
+    margin-top:-1vw!important;
+    display: inline-block!important;
+}
+.schedText{
+    display: inline-block;
+}
+.schedText>span{
+    display: inline-block!important;
+    text-transform: uppercase;
+    font-family: metropolis;
+    color:rgb(191,32,47);
+    font-style: italic;
+    font-size: 3vw;
+    margin:0vw;
+    line-height: 3vw;
+    margin-bottom: 0;
+    margin-left:0!important;
+}
+.schedTop>p{
+    display: block;
+    text-transform: uppercase;
+    font-family: metropolisMed;
+    color:rgb(191,32,47);
+    font-style: italic;
+    font-size: 2vw;
+    padding:0;
+    margin:0;
+    margin-top:-1vw;
+    line-height: 3vw;
+    margin-left:5vw!important;
+}
+.faqdiv h1{
+    text-align: left;
+    text-transform: uppercase;
+    font-size:4vw;
+    color: black;
+}
+.faq{ 
+    margin-top:0;
+    margin-bottom: 0vw;
+    margin-left:2vw;
+}
+.faqQ{
+    border-bottom:.25vw solid red;
+    color:black!important;
+    font-family: metropolis;
+    font-size:2.5vw;
+    line-height: 2.5vw;
+    cursor: pointer;
+    text-decoration: none!important;
+    width:85vw!important;
+    display: inline-block;
+    padding-bottom: .25vw;
+}
+.faqplus{
+    display: inline-block;
+    color: rgb(254,0,0)!important;
+    font-family: metropolisMed;
+    font-size:4vw;
+    line-height: 4vw;
+    cursor: pointer!important;
+    text-decoration: none!important;
+}
+.faqminus{
+    display: none;
+    color: rgb(254,0,0)!important;
+    font-family: metropolisMed;
+    font-size:4vw;
+    line-height: 4vw;
+    cursor: pointer!important;
+    text-decoration: none!important;
+}
+.faq>p{
+    font-family: metropolisMed;
+    font-size:2vw;
+    line-height: 4vw;
+    margin: 0;
+    padding: 0;
+    margin-left:2vw;
+    padding-top:1vw;
+}
+.faq1 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq1.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+.faq2 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq2.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+.faq3 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq3.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+.faq4 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq4.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+.faq5 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq5.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+.faq6 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq6.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+.faq7 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq7.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+.faq8 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq8.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+.faq9 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq9.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+.faq11 {
+  overflow:hidden;
+  -webkit-transition:max-height 1s ease-out;
+  transition:max-height 1s ease-out;  
+  height:auto;
+  max-height:500px; 
+}
+.faq11.collapsed {
+  max-height:0px;
+  border:none!important;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+@media (max-width:1699px){
+/*
+    .redBTNnew{
+        font-size: 50px;
+        line-height:60px;
+    }
+    .redtext{
+        font-size: 30px!important;
+    }
+*/
+    .locBox .lefty>span{
+        font-size:30px;
+    }
+    .locBox .lefty>p{
+        font-size:22px;
+    }
+    .righty>.strongspan{
+        font-size:50px;
+        padding-top:50px;
+    }
+    .righty>.changing{
+        font-size:140px;
+        line-height: 140px;
+    }
+    .righty>.changing>#app{
+        font-size:120px;
+    }
+    .righty>.try{
+        font-size:45px;
+        line-height: 45px;
+        margin-top:5px;
+    }
+    .righty>.try>span{
+        font-size:40px;
+    }
+}
+@media (max-width:1300px){
+    .mapInfo h1{
+        font-size: 1em;
+    }
+    .mapInfo span{
+        font-size: .75em;
+    }
+    .locBox .lefty>span{
+        font-size:24px;
+    }
+}
+@media (max-width:1199px){
+    .phaseP{
+        font-size: 1vw;
+    }
+    #biggie{
+        font-size: 3vw;
+    }
+    #smalls{
+        font-size: 2vw;
+    }
+    #playbtn{
+        font-size: 1.25vw;
+    }
+    .righty>.strongspan{
+        font-size:35px;
+        padding-top:60px;
+    }
+    .righty>.changing{
+        font-size:95px;
+        line-height: 95px;
+    }
+    .righty>.changing>#app{
+        font-size:80px;
+    }
+    .righty>.try{
+        font-size:40px;
+        line-height: 40px;
+        margin-top:5px;
+    }
+    .righty>.try>span{
+        font-size:40px;
+    }
+}
+@media (max-width:967px){
+    .caryP{
+        padding:0;
+    }   
+}
+@media (max-width:899px){
+    #biggie{
+        font-size:2.75vw;
+    }  
+    .phaseP{
+        font-size:.9vw;
+    }
+    .phaseTitle{
+        font-size:1.75vw;
+    }
+}
+@media (max-width:1024px){
+    .mapInfo a>h1{
+        font-size: 2.5vw;
+    }
+    .mapInfo span{
+        font-size: 2vw;
+    }
+    .mapInfo a{
+        font-size:2vw;
+    }
+}
+.redBTN{
+    font-size: 20px;
+}
+@media (max-width:991px){
+    .righty>.strongspan{
+        margin-top:10px!important;
+    }
+    .righty>.strongspan{
+        font-size:30px;
+        padding-top:60px;
+    }
+    .righty>.changing{
+        font-size:80px;
+        line-height: 90px;
+    }
+    .righty>.changing>#app{
+        font-size:60px;
+    }
+    .locBox{
+        padding-left:0px;
+    }
+    .locBox .lefty>span {
+    font-size: 20px;
+        margin-left:10px;
+}
+    .lefty>a{
+        margin-left:10px;
+    }
+    .locBox .lefty>p {
+        padding-left:10px;
+        font-size: 20px;
+    }
+    .locContainer{
+        margin-top:90px;
+    }
+    .mapInfo{
+        margin-bottom:50px!important;
+        margin-top:10px!important;
+    }
+}
+@media (max-width:767px){
+    .locForm{
+        border-top:1px solid rgba(0,0,0,.75);
+        margin-top:25px;
+    }
+    #scroller{
+        margin-bottom: 60px;
+    }
+    p.changing{
+        margin-top:0!important;
+    }
+    .mapInfo .locationH{
+        font-size: 8vw;
+        display: block;
+        width:100%;
+    }
+    .mapInfo span{
+        font-size: 6vw;
+    }
+    .mapInfo a{
+        font-size: 6vw;
+    }
+    .mapWrap{
+        height:auto;
+        position: relative;
+    }
+    .mapInfo{
+        top:60px;
+        margin-bottom: 0!important;
+    }
+    .locLandTop{
+        padding:5px!important;
+        padding-top:20px!important;
+        background-position:right;
+    }
+    #caryLogo{
+        height:50px!important;
+        padding-left:5px!important;
+    }
+    #spacers{
+        height: 30px;
+    }   
+    .landBold{
+        font-size: 6vw;
+        line-height: 100%;
+    }
+    .landThin{
+        font-size:5vw;
+        line-height: 100%;
+    }
+    .boldSmall{
+        font-size: 3.5vw;
+    }
+    .smallThin{
+        font-size: 3.5vw;
+        line-height: 90%;
+    }
+    .locStrong{
+        letter-spacing: 5px;
+        font-size: 4vw;
+    }
+    .phaseTitle{
+        font-size:3vw;
+    }
+    .phaseP{
+        font-size: 1.65vw;
+        line-height: 90%;
+        margin:0;
+        padding:0;
+        font-family: metropolis!important;
+    }
+    .caryP>p{
+        font-size: 3.5vw;
+        
+    }
+    #biggie{
+        font-size: 7vw;
+        text-align: center;
+        width:100%;
+        display: block;
+    }
+    #smalls{
+        font-size: 4.25vw;
+        text-align: center;
+        width:100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .caryvid{
+        padding:0px!important;
+    }
+    .daysOut{
+        font-size: 4vw;
+    }
+    .classesTop{
+        font-size:4vw;
+        margin-top:6.5vw;
+    }
+    .classesBot{
+        font-size:5.5vw;
+    }
+    #playbtn{
+        font-size: 3vw;
+    }
+    .phasePrice{
+        font-size: 7vw;
+    }
+    .phaseOR{
+        font-size: 3.5vw;
+        vertical-align: top;
+        margin-top:8vw;
+    }
+    .phaseBTN{
+        font-size:4vw;
+        width:17vw;
+        padding-bottom:3px;
+    }
+    .schedTop>img{
+        height: 10vw;
+    }
+
+    .schedText>span{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+    .schedTop>p{
+        font-size: 2.75vw;
+        padding:0;
+        margin:0;
+        margin-top:-2vw;
+        line-height: 2.75vw;
+        margin-left:12vw!important;
+    }
+    .faq{
+        margin-bottom: 2vw;
+    }
+    .faqQ{
+        font-size:4vw;
+        line-height: 4vw;
+        width:80vw!important;
+    }
+    .faqplus, .faqminus{
+        font-size:7vw;
+        line-height: 4vw;
+        margin-right: 0!important;
+    }
+    .faq>p{
+        font-size: 3vw;
+        max-width:80vw;
+    }
+    .faqdiv h1{
+        font-size: 5vw;
+    }
+}
+@media (max-width:650px){
+    .righty>.strongspan{
+        font-size:18px;
+        padding-top:0px;
+    }
+    .righty>.changing{
+        font-size:60px;
+        line-height: 60px;
+    }
+    .righty>.changing>#app{
+        font-size:50px;
+    }
+    .righty>.try{
+        font-size:25px;
+        line-height: 30px;
+        margin-top:0px!important;
+    }
+    .righty>.try>span{
+        font-size:20px;
+    }
+}
+@media (max-width:600px){
+    .mapInfo{
+        width:100%;
+        margin:0;
+    }
+}
+@media (max-width:599px){
+    .locationH{
+        font-size: 26px!important;
+    }
+    .phasePrice{
+        margin-top:1.75vw;
+        margin-left:-1.5vw;
+    }
+    .phaseP{
+        font-size: 1.75vw;
+        display: block;
+        line-height: 4vw;
+    }
+    .redBTNnew{
+        font-size:7vw;
+        line-height: 9vw;
+    }
+    .redBTNnew>span{
+        font-size: 9vw;
+        line-height: 9vw;
+    }
+    .redtext{
+        line-height: 6vw;
+        font-size: 6vw!important;
+        margin-left: 2px!important;
+        margin-top:2px!important;
+        margin-bottom:0!important;
+    }
+}
+@media (max-width:450px){
+    .phaseTitle{
+        font-size:2.75vw;
+    }
+    .phaseBTN{
+        width:17vw;
+        font-size:4.5vw;
+    }
+    .daysOut{
+        vertical-align: middle;
+        line-height: 2;
+    }
+    .caryrow{
+        padding:0!important;
+    }
+}
+@media (max-width:425px){
+    .mapInfo span{
+        font-size:5.75vw;
+    }
+    #tryfree input{
+    display: inline-block;
+    width:40%;
+    margin:5px;
+    height:30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+    #tryfree .redBTN{
+        font-size: 4vw;
+    }
+}

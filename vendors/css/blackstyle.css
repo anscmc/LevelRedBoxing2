@@ -1,0 +1,355 @@
+@font-face {
+	font-family: metropolis;
+    src:url('font/Metropolis-master/Metropolis-Black.otf')
+}
+@font-face {
+	font-family: metropolisMed;
+    src:url('font/Metropolis-master/Metropolis-Regular.otf')
+}
+@font-face {
+	font-family: metropolisIt;
+    src:url('font/Metropolis-master/Metropolis-BlackItalic.otf')
+}
+body{
+    font-family: metropolis;
+}
+.logoBar{
+    background-color: black;
+}
+.logoBar img{
+    height:100px;
+    padding:15px;
+    padding-left:30px;
+}
+.bannerPic{
+    width: 100%;
+}
+.bannerPic2{
+    width: 100%;
+    display: none;
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+#fadeVid{
+    width:100%;
+}
+#smallPrice{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: -2px;
+    margin-top:80px;
+}
+#bigPrice{
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.dealBTN{
+    background-color: rgb(254,0,0);
+    border:2px solid rgb(254,0,0);
+    display: inline-block;
+    padding-top:18px;
+    padding-bottom: 10px;
+    text-align: center;
+    width:90%;
+    border-radius: 60px;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: ease all .3s;
+    transition: ease all .3s;
+    color:white;
+}
+.dealBTN:hover{
+    background-color: transparent;
+    color:black;
+}
+#learnBTN{
+    background-color: rgb(254,0,0);
+    border:2px solid rgb(254,0,0);
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    right:5%;
+    bottom:20px;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: ease all .3s;
+    transition: ease all .3s;
+    color:white;
+    font-size: 20px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+#learnBTN:hover{
+    background-color: transparent;
+    color:black;
+}
+#smallDeal{
+    display: block;
+    line-height: 100%;
+    color:inherit;
+    font-size: 30px;
+    line-height: 100%;
+}
+#bigDeal{
+    display: block;
+    line-height: 100%;
+    color:inherit;
+    font-size:60px;
+}
+.lightP{
+    font-family: metropolisMed;
+    font-size: 30px;
+    line-height: 100%;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.darkP{
+    font-size:30px;
+    line-height: 100%;
+}
+.countBar{
+    margin-bottom:10px;
+    background-image: url(img/black/slash.jpg);
+    background-position: center;
+}
+#leftCount{
+    font-family:metropolisIt;
+    color:white;
+    background-color:transparent;
+    width:49.9%;
+    display: inline-block;
+    text-align: right;
+    font-size: 45px;
+    padding: 20px;
+    padding-right:30px;
+    vertical-align: middle;
+}
+#rightCount{
+    background-color:transparent;
+    color:black;
+    font-family:metropolisMed;
+    width:49.9%;
+    display: inline-block;
+    margin-left:-3px;
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 26px;
+    padding-bottom: 25px;
+    vertical-align: middle;
+}
+#demo{
+    font-family: metropolis;
+}
+#count{
+    font-family: metropolis;
+}
+.counter{
+    display: block;
+    text-align: center;
+    font-family: metropolisMed;
+    font-size: 30px;
+}
+.infoDiv{
+    background-image: url(img/black/bottom.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left:200px;
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+.infoDiv>span{
+    font-family: metropolis;
+    color:white;
+    font-size: 60px;
+}
+.infoDiv li{
+    font-family: metropolis;
+    color:white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+#playA{
+    position: absolute;
+    right:17%;
+    bottom:45%;
+    font-size: 100px;
+    color:rgba(200,200,200,.7);
+    cursor:pointer;
+    -webkit-transition: ease all .3s;
+    transition: ease all .3s;
+}
+#playA:hover{
+    color:rgba(200,200,200,1);
+}
+.erieVidWrap{
+    display:none;
+    width:600px;
+    max-width:40%;
+    position: absolute;
+    right:30px;
+    top:30px;
+}
+.showVid{
+    display: inline-block;
+}
+.hide{
+    display:none;
+}
+@media (max-width:1600px){
+    #smallPrice{
+        margin-top:20px;
+    }
+    .infoDiv{
+        padding-left:100px;
+    }
+}
+@media (max-width:1150px){
+    .erieVidWrap{
+        position: relative;
+        display: block;
+        left:0px;  
+        width:100%;
+        max-width: 100%;
+        margin:0px;
+    }
+    #fadeVid{
+        width:calc(100% - 50px);
+        margin:0px;
+    }
+    #playA{
+        display: none!important;
+    }
+}
+@media (max-width:1024px){
+    #leftCount{
+        background-color:black;
+        width:100vw;
+        font-size: 20px;
+        text-align: center;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    #rightCount{
+        background-color:rgb(189,189,189);
+        width:100vw;
+        padding:5px;
+        padding-top:10px;
+        margin:0px;
+    }
+    .counter{
+        font-size: 20px;
+    }
+    .countBar{
+        background-image: none!important;
+    }
+    .darkP{
+        margin-bottom:20px;
+    }
+    #smallPrice{
+        margin-top:20px;
+    }
+    .infoDiv{
+        padding-left:50px;
+    }
+}
+@media (max-width:767px){
+    .infoDiv>span{
+        font-size:40px!important;
+    }
+    .infoDiv ul>li{
+        font-size:20px!important;
+    }
+    .bannerPic{
+        display: none;
+    }
+    .bannerPic2{
+        display: block;
+    }
+}
+@media (max-width:699px){
+    #smallPrice{
+        font-size:20px;
+        line-height:20px;
+    }
+    #bigPrice{
+        font-size: 40px;
+        line-height:40px;
+    }
+    #smallDeal{
+        font-size:20px;
+        line-height:20px;
+    }
+    #bigDeal{
+        font-size: 40px;
+        line-height:40px;
+    }
+    .dealBTN{
+        padding-top:10px;
+        padding-bottom:2px;
+    }
+    .lightP{
+        font-size:24px;
+    }
+    .darkP{
+        font-size:24px;
+    }
+}
+@media (max-width:525px){
+    #learnBTN{
+        font-size:16px;
+        margin:0 auto;
+        display: inline-block;
+        left:20px;
+        right:20px;
+        padding-left:5px;
+        padding-right:5px;
+        padding-top:7px;
+        padding-bottom:5px;
+        position: relative;
+        margin-top:60px;
+        
+    }
+    #fadeVid{
+        width:calc(100% - 20px);
+        margin:0px;
+    }
+    .infoDiv{
+        text-align: left;
+        padding-left:20px;
+        background-position: 75%;
+        padding-top:25px;
+        padding-bottom:15px;
+        min-height:45vh;
+    }
+}
+@media (max-width:413px){
+    .lightP{
+        font-size:22px;
+    }
+    .darkP{
+        font-size:22px;
+    }
+    #learnBTN{
+        font-size:12px;
+    }
+}

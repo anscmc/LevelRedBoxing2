@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta property="og:url" content="https://levelredboxing.com/blog/carrots.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Carrots | Level Red Boxing" />
+        <meta property="og:description" content="Tired of your usual veggies? Let's make something sweet out of something crunchy! You'll often hear the statement..." />
+        <meta property="og:image" content="https://levelredboxing.com/resources/css/img/blogpics/set11/superfoods.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="../resources/js/jquery.waypoints.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/stylenov18.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/newstyle.min.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900,900i" rel="stylesheet">
+        <title>Carrots | Level Red Boxing</title>
+    </head>
+    <body style="background-color: transparent !important">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<nav class="navbar navbar-inverse deskNav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html"><img src="../resources/css/img/brand2.png"></a>
+<!--            <a class="mobFran">Own a Franchise</a>-->
+        </div>
+    <!--
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+        </ul>
+    -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../locations.html">Locations</a></li>
+          <li><a href="../thelevels.html">Levels</a></li>
+            
+            <li><a id="about" style="cursor:pointer;" onclick="toggleAbout()">About</a></li>
+            <li><a href="../blog.html">Community</a></li>
+            <li><a href="../locations.html">Contact</a></li>
+        </ul>
+        <a href="http://www.levelredboxing.com/franchise.html" id="franBTN">Own a Franchise</a>
+        <a onclick="toggleNav()" class="hamburger"><i class="fas fa-bars"></i></a>
+          <a class="phone" href="../locations.html"><i class="fas fa-phone"></i></a>
+      </div>
+</nav>
+    <div id="aboutDesk">
+        <a href="../theworkout.html" class="aboutLink">The Workout</a>
+        <a href="../sixpunches.html" class="aboutLink">Learn the Moves</a>
+        <a href="../http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
+    </div>
+    <a href="../locations.html" class="findYourStudio">Find Your Studio <i class="fas fa-play" style="color:rgb(254,0,0)!important;"></i></a>
+    <div id="mobileNav" class="mobileNav">
+<!--        <a><img src="resources/css/img/brand2.png"></a>-->
+        <a onclick="toggleNav()" class="hamburgerX">X</a>
+        <a class="phone" href="../locations.html"><i class="fas fa-phone"></i></a>
+        <div class="mobileWrap">
+            <a href="../locations.html">Locations</a>
+            <a href="../theworkout.html">The Workout</a>
+            
+            <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="../thelevels.html">The Levels</a><a href="../sixpunches.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
+            <div id="../aboutMob"></div>
+            <a href="../blog.html">Community</a>
+            <a href="../locations.html">Contact</a>
+            <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
+        </div>
+    </div>
+        
+<!--
+        <div class="blogHead6 mainHead">
+            <div class="container">
+
+            </div>
+        </div>
+-->
+        <div class="container blogPicPad">
+            <div class="row blogPicPad">
+                <div class="col-sm-12 blogPicPad">
+                <img style="width:100%;-webkit-filter: brightness(110%); " src="../resources/css/img/blogpics/set11/superfoods.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" style="padding: 0px;padding-left: 15px;">
+                    <h1 id="articleTitle" style="color: #c42126 !important">Carrots</h1>
+                    <p>Tired of your usual veggies? Let's make something sweet out of something crunchy! You'll often hear the statement, “Eat your carrots so you'll have good eyesight!” -  that's not the only nutritional benefit! </p>
+                    <p>There are several health benefits that can be derived from carrots, including:</p>
+
+                    <p><span style="font-weight: bold;">A healthy immune system: </span>Vitamin A, vitamin C, and vitamin K, along with antioxidants help improve the functioning immune system and prevents DNA mutations as we age. </p>
+                    <p><span style="font-weight: bold;">Cardiovascular Health: </span>Carrots have strong cholesterol lowing capabilities, by helping to encourage access bile to leave the body at higher rates than usual. Lowering cholesterol is highly important, especially for people who have a family history of heart disease, so don't forget to add carrots to your next meal.</p>
+                    <p><span style="font-weight: bold;">Weight loss: </span>Carrots contain great amounts of fiber that is crucial to the digestion process because the body's system simply cannot expel waste materials without it. A lack of fiber in the diet can lead to constipation and even hemorrhoids, which can be severely painful, so an intake of carrots is necessary to prevent it from happening. The fiber in carrots adds bulk to the body's waste material and helps it pass through the system with ease.</p>
+                    <p><span style="font-weight: bold;">Skin benefits: </span>Some vitamins and minerals within carrots help promote healthy skin and prevent the breakdown of body tissues. A strong immune system also contributes to a healthy look overall. With vitamin A and C, it helps keep the skin's glow and protects it from the harmful UV rays the sun gives off. Carrots also hold anti—aging properties that allow for collagen growth and skin regeneration!</p>
+                    <br>
+                    <div style="font-size: 16px !important;">
+                    <div style="display: inline-block">Nutrient Rich <i class="far fa-check-square"></i></div>
+                    <div style="display: inline-block">Heart Healthy <i class="far fa-check-square"></i></div>
+                    <div style="display: inline-block">Weight Loss Aid <i class="far fa-check-square"></i></div>
+                    <div style="display: inline-block">Youthful Glow <i class="far fa-check-square"></i></div>
+                    <div style="display: inline-block">Delicious <i class="far fa-check-square"></i></div>
+                        </div>
+<br>
+                    <p>Don't believe us? Try out this recipe and let us know what you think!</p>
+                    <hr>
+                    <h1 style="font-weight: 300;text-transform:none; ">Healthy Carrot Cake Muffins with Cream Glaze</h1>
+                    <hr>
+                    <h3>Ingredients</h3>
+                    <div style="text-align: left;margin-left:-20px">
+                        <img src="../resources/css/img/blogpics/set11/ingredients.jpg" style="width: 100%;max-width: 600px;">   
+                           <hr>
+                      
+                        <h3>Instructions</h3>
+                        <ol style="margin-left:30px;font-weight:500;">
+                          <li>Preheat oven to 350 degrees F. Line 12-cup muffin pan with liners and spray the inside with nonstick cooking spray to prevent batter from sticking to the liners. You can also omit the liners and generously spray the muffin pan with nonstick cooking spray; I prefer this method. </li>
+                          <li>Next add flour, baking soda, cinnamon, nutmeg and salt to a medium bowl; stir to combine and then set aside.</li>
+                          <li>In a separate large bowl, add carrots, maple syrup, olive oil, applesauce, egg and vanilla. Whisk to combine wet ingredients then slowly stir in almond milk and flour mixture until just combined. Fold in coconut flakes and raisins if you'd like. Divide batter evenly between muffins cups or liners. Bake for 18-20 minutes or until toothpick inserted into the middle comes out clean. Allow to cool for 10 minutes in pan then transfer muffins to a wire rack to finish cooling.</li>
+                          <li>Once muffins are completely cool, you can make the cream cheese glaze: Place cream cheese in medium microwave safe bowl and microwave on high for 30-45 seconds or until cream cheese is somewhat warm and a little runny. Stir gently and add in powdered sugar, vanilla extract and a few tablespoons of milk; stir again until glaze reaches desired consistency; not too runny and not overly thick. Dip each muffin top into cream cheese glaze then place back on wire rack. Sprinkle with coconut flakes if desired. Makes 12 muffins.</li>
+                            <h3>Notes</h3>
+                            <p><span style="text-decoration: underline;">To make vegan:</span> Replace egg with a flax egg by combining 1 tablespoon flaxseed meal and 3 tablespoons of water. Leave off cream cheese frosting and instead sprinkle tops with cinnamon and coarse sugar.</p>
+                             <p><span style="text-decoration: underline;">To make gluten free:</span> Replace egg with a flax egg by combining 1 tablespoon flaxseed meal and 3 tablespoons of water. Leave off cream cheese frosting and instead sprinkle tops with cinnamon and coarse sugar.</p>
+                            <p>Important notes about nutrition: The nutrition information provided includes everything except raisins and shredded coconut. If you add both, your muffins will be around 200 calories of good nutrition.</p>
+</ol> 
+
+                    </div>
+                    
+                     <div style="width:100%;text-align: center;margin-top:15px;margin-bottom:15px">
+                         <br>
+                        <a href="../blog.html" class="btn btn-full js--scroll-to-plans buyBtn viewBTN" style="margin-bottom:10px;width:auto;font-size:16px;border-radius: 0px;padding:5px;padding-left:10px;padding-right: 10px;margin:0;">Back to Blog Page <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                         <br>
+                         <br>
+                    </div>
+                </div>
+                <div class="col-md-4" style="text-align: center;">
+                    <a id="blogPromo" href="../locations.html" style="cursor: pointer;">
+                    <img src="../resources/css/img/newimg/buffpittpromo.jpg?v=2" style="width: 100%;margin-top:10px;">
+                    </a>
+
+               
+                    <div style="height:10px;"></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/levelredboxing" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/levelredboxing" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/levelredboxing">Level Red Boxing</a></blockquote></div>
+                    <div style="height:10px;"></div>
+                 
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/e0ff81dff87b5b6f9b7d97e7e1907c95.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+                </div>
+            </div>
+        </div>
+                  
+
+    <div class="lrbFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../resources/css/img/brand2.png" style="width: 100%;padding-bottom: 10px;max-width: 400px;">
+                </div>
+                <div class="col-md-4 share">
+                    <span>Share how you are</span>
+                    <a style="color: white;" href="https://strongateverylevel.com"><span>#strongatevery<span style="color:rgb(254,0,0);">level</span></span></a>
+                    <div class="icons">
+                    <a href="https://www.instagram.com/levelredboxing/"><i class="fab fa-instagram" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                <a href="https://www.facebook.com/LevelRedBoxing/"><i class="fab fa-facebook-square" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                <a href="https://www.youtube.com/channel/UCEOWxaM5Fc_bKdCEVfdUMhg"><i class="fab fa-youtube" style="font-size: 30px!important;margin-top:10px;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 stores">
+                    <a href="https://itunes.apple.com/us/app/level-red-boxing/id1359276124?mt=8" style="margin-bottom: 10px;"><img src="../resources/css/img/app/apple.svg"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.fitmetrix.levelredboxing"><img src="../resources/css/img/app/google.png"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="../index.html" class="bottomlink botHome">Home</a>
+                    <a href="http://www.levelredboxing.com/franchise.html" class="bottomlink">Franchising</a>
+                    <a href="../press.html" class="bottomlink">Press</a>
+                </div>
+                 <span class="copy" >&copy; 2019 Level Red Boxing | <a href="http://levelredboxing.com/terms.html">Terms of Service</a></span>
+            </div>
+        </div>  
+    </div>
+
+    <script src="../resources/js/script.js"></script>
+    
+    </body>  
+<script type="text/javascript">function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){$("#mobileNav").fadeToggle(200);}</script></html>
