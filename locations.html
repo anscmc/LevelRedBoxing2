@@ -34,12 +34,14 @@
         <link rel="stylesheet" type="text/css" href="resources/css/newstyle.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        
+        <link rel="stylesheet" href="map/style.css">
+    <script src="map/allLocations.js"></script>
         <script type="text/javascript">
             function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){
                 $("#mobileNav").fadeToggle(200);
             }
         </script>
+
     </head>
 
     <body>
@@ -98,158 +100,27 @@
         <br>
         </div>
 -->
-       <div id="locations" class="locations">        
-          <div class="container" style="padding:0;z-index: 1;">
-              <div class="row" style="max-width:1200px;padding:0;z-index: 1;">
+        
+    <div class="content">
+      <form action="#" method="post">
+        <label style="display: none;" for="maxRadius">
+          <input name="maxRadius" id="maxRadius" type="number" value="50" min="1" />
+        </label>
+          <h1 id="contactLink" style="font-weight:900;font-family: 'Lato', sans-serif"><span style="color:rgb(254,0,0);font-weight: 900;padding-right:1px;">&#91;</span>FIND A STUDIO LOCATION<span style="color:rgb(254,0,0);font-weight: 900;padding-left:5px;">&#93;</span></h1>
+        <label for="userAddress">
             
-                  <div class="col-sm-6">
-                    <br>
-                     <h1 id="contactLink" style="font-weight:900;font-family: 'Lato', sans-serif"><span style="color:rgb(254,0,0);font-weight: 900;padding-right:1px;">&#91;</span>FIND A STUDIO LOCATION<span style="color:rgb(254,0,0);font-weight: 900;padding-left:5px;">&#93;</span></h1>
-                     <hr style="margin-bottom:0px;margin-right: 20px;">
-                      <div class="locationsList">
-                          <br>
-                     <span style="font-weight:900;">Buffalo, NY</span>
-                <br>
-                <span>5933 Main Street</span>
-                <br>
-                <span>Williamsville, NY 14221</span>
-                          <br>
-                <span><a  class="phone2" style="color:black" href="tel:+1-716-634-2400"><i class="fas fa-phone-volume" aria-hidden="true"></i> (716) 634-2400</a></span>
-                                <br>
-                          <br>
-                <a href="https://www.instagram.com/levelredboxing_williamsville/" target="_blank" class="socialButtons" style="color:black !important"><i style="font-size:30px !important;color:#bc2a8d !important;" class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/LevelRedBoxingWilliamsville/?ref=br_rs" target="_blank" class="socialButtons"><i class="fab fa-facebook-square" style="font-size:30px !important;margin-left:10px;color:#3B5998;"></i></a>
-                 <br>
-<!--
-                <span><a class="phone2" style="color:black" href="tel:+1-814-315-2994"><i class="fa fa-phone" aria-hidden="true"></i>(284) 655-2534</a></span>
-                <br>
--->
-
-<!--                <a target="_blank" class="socialButtons"><i class="fab fa-facebook-square" style="padding-left:15px;padding-top:10px;font-size:30px;color:black;"></i></a>-->
-                          <br>
-                          <a class="btn btn-full js--scroll-to-plans buyBtn viewBTN" href="buffalo.html" style="margin-bottom:10px;width:200px;font-size:16px;border-radius: 0;margin-left: 14px;margin-left:0;padding:5px;">View Studio <img src="resources/css/img/whiteR.svg" style="height:20px;vertical-align:middle;margin-bottom:3px;"></a>
-                          <br>
-                          <hr>
-                      <span style="font-weight:900;">Erie, PA</span>
-                <br>
-                <span>2147 West 12th Street</span>
-                <br>
-                <span>Erie, PA 16505</span>
-                <br>
-                <span><a  class="phone2" style="color:black" href="tel:+1-814-315-2994"><i class="fas fa-phone-volume" aria-hidden="true"></i> (814) 315-2994</a></span>
-                <br>
-                          <br>
-                <a href="https://www.instagram.com/levelredboxing_erie/" target="_blank" class="socialButtons" style="color:black !important"><i style="font-size:30px !important;color:#bc2a8d !important;" class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/LevelRedBoxingErie/" target="_blank" class="socialButtons"><i class="fab fa-facebook-square" style="font-size:30px !important;margin-left:10px;color:#3B5998;"></i></a>
-                 <br>
-                          <br>
-                          <a class="btn btn-full js--scroll-to-plans buyBtn viewBTN" href="erie.html" style="margin-bottom:10px;width:200px;font-size:16px;border-radius: 0px;margin-left: 14px;margin-left:0;padding:5px;">View Studio <img src="resources/css/img/whiteR.svg" style="height:20px;vertical-align:middle;margin-bottom:3px;"></a>
-                          <br>
-                 <hr>
-                       <span style="font-weight:900;">Pittsburgh, PA</span>
-                <br>
-                <span>5933 Baum Blvd</span>
-                <br>
-                <span>Pittsburgh, PA 15206</span>
-                          <br>
-                <span><a  class="phone2" style="color:black" href="tel:+1-412-363-5933"><i class="fas fa-phone-volume" aria-hidden="true"></i> (412) 363-5933</a></span>
-                                          <br>
-                          <br>
-                <a href="https://www.instagram.com/levelredboxing_pittsburgh/" target="_blank" class="socialButtons" style="color:black !important"><i style="font-size:30px !important;color:#bc2a8d !important;" class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/Level-Red-Boxing-Pittsburgh-2012655009008569/?ref=br_rs" target="_blank" class="socialButtons"><i class="fab fa-facebook-square" style="font-size:30px !important;margin-left:10px;color:#3B5998;"></i></a>
-                          <br>
-                          <br>
-                          <a class="btn btn-full js--scroll-to-plans buyBtn viewBTN" href="pittsburgh.html" style="margin-bottom:10px;width:200px;font-size:16px;border-radius: 0;margin-left: 14px;margin-left:0;padding:5px;">View Studio <img src="resources/css/img/whiteR.svg" style="height:20px;vertical-align:middle;margin-bottom:3px;"></a>
-                                                    <hr>
-                      <span style="font-weight:900;">Cary, NC</span>
-                <br>
-                <span>302 Colonades Way #101</span>
-                <br>
-                <span>Cary, NC 27518</span>
-                       
-                          <br>
-                          <span><a  class="phone2" style="color:black" href="tel:+1-919-896-6332"><i class="fas fa-phone-volume" aria-hidden="true"></i> (919) 896-6332</a></span>
-                          <br>
-                          <br>
-                          <a href="https://www.instagram.com/levelredboxingcary/" target="_blank" class="socialButtons" style="color:black !important"><i style="font-size:30px !important;color:#bc2a8d !important;" class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/LevelRedBoxingCary/" target="_blank" class="socialButtons"><i class="fab fa-facebook-square" style="font-size:30px !important;margin-left:10px;color:#3B5998;"></i></a>
-<!--                <span>Suite D 101</span>-->
-                          
-<!--
-                <br>
-                          <br>
-                <a href="https://www.instagram.com/levelredboxing_erie/" target="_blank" class="socialButtons" style="color:black !important"><i style="font-size:30px !important;color:#bc2a8d !important;" class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/LevelRedBoxingErie/" target="_blank" class="socialButtons"><i class="fab fa-facebook-square" style="font-size:30px !important;margin-left:10px;color:#3B5998;"></i></a>
--->
-                 <br>
-                          <br>
-                          <a class="btn btn-full js--scroll-to-plans buyBtn viewBTN" href="cary-promo.html" style="margin-bottom:10px;width:200px;font-size:16px;border-radius: 0px;margin-left: 14px;margin-left:0;padding:5px;">View Studio <img src="resources/css/img/whiteR.svg" style="height:20px;vertical-align:middle;margin-bottom:3px;"></a>
-                          <br>
-                 <hr>
-
-                      <span style="font-weight:900;">Indianapolis, IN</span>
-<!--
-                <br>
-                <span>302 Colonades Way</span>
-                <br>
-                <span>Cary, NC 27518</span>
--->
-                          <br>
-                          <br>
-                          <span>Coming Soon!</span>
-<!--                <span>Suite D 101</span>-->
-                          
-<!--
-                <br>
-                          <br>
-                <a href="https://www.instagram.com/levelredboxing_erie/" target="_blank" class="socialButtons" style="color:black !important"><i style="font-size:30px !important;color:#bc2a8d !important;" class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/LevelRedBoxingErie/" target="_blank" class="socialButtons"><i class="fab fa-facebook-square" style="font-size:30px !important;margin-left:10px;color:#3B5998;"></i></a>
--->
-                 <br>
-<!--
-                          <br>
-                          <a class="btn btn-full js--scroll-to-plans buyBtn viewBTN" href="erie.html" style="margin-bottom:10px;width:200px;font-size:16px;border-radius: 0px;margin-left: 14px;margin-left:0;padding:5px;">View Studio <img src="resources/css/img/whiteR.svg" style="height:20px;vertical-align:middle;margin-bottom:3px;"></a>
-                          <br>
--->
-                 <hr>
-                       
-<!--
-                <br>
-                <span><a class="phone2" style="color:black" href="tel:+1-814-315-2994"><i class="fa fa-phone" aria-hidden="true"></i>(412) 420-2342</a></span>
--->
-                          
-<!--
-                <br>
-                           <hr>
-                       <span style="font-weight:900;">Raleigh, NC</span>
-                <br>
-                <span>Coming soon!</span>
-                          <br>  <hr>
-                       <span style="font-weight:900;">Toledo, OH</span>
-                <br>
-                <span>Coming soon!</span>
--->
-                          
-<!--
-                <a target="_blank" class="socialButtons" style="color:black !important"><i style="padding-right:15px;padding-top:10px;font-size:30px" class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a target="_blank" class="socialButtons"><i class="fab fa-facebook-square" style="padding-left:15px;padding-top:10px;font-size:30px;color:black;"></i></a>
--->
-     
-                          
-                      </div>
-                  </div>
-                  <div class="col-sm-6 mapWrap" style="padding-right: 0px;margin-bottom:5px;z-index:0;margin-top:00px;z-index:1;">
-                      <iframe
-                  frameborder="0" class="locationsMap"
-                  src="https://www.google.com/maps/d/embed?mid=1Ogqj24jQELs04cNmYwsppL0A2ZFPn6Xw&hl=en" allowfullscreen>
-            </iframe>
-                  </div>
-              </div>
-            
-          </div>
-         
-            
-        </div>
+          <input name="userAddress" id="userAddress" type="text" placeholder="Search by city or postal code" value=""/>
+        </label>
+        <button id="submitLocationSearch">Search</button>
+        <a href="locations.html" id="refClear">Reset</a>
+      </form>
+      <div id="locations-near-you-map"></div>
+      <h2 style="height:50px;margin-top:10px;" id="location-search-alert"></h2>
+      <div id="locations-near-you"></div>
+        
+      <script defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyDO914P3hhKOa8AoN-KRJnHgrVO6Os60AY&callback=createSearchableMap"></script>
+      <script src="map/createSearchableMap.js"></script>
+    </div>
 
             <div class="lrbFooter">
         <div class="container">
