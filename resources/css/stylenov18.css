@@ -428,7 +428,7 @@ body{
     
 }
 .imgCol>img{
-    width:95%;
+    width:80%;
     display: inline-block;
     margin-left:10px;
     position: absolute;
@@ -916,7 +916,8 @@ text-shadow: .5px .5px .5px black;
 }
 @media (max-width:1600px){
     .imgCol>img{
-        top:-32vh;   
+        top:-18vw; 
+        width:85%;
     }
 }
 @media (max-width:1599px){
@@ -993,6 +994,10 @@ text-shadow: .5px .5px .5px black;
     .space1{
     height:100px;
 }
+    .imgCol>img{
+        top:-15vw; 
+        width:90%;
+    }
 }
 
 
@@ -1209,8 +1214,8 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
         margin-left:230px;
     }
     .imgCol>img{
-        width:280px;
-        top:-15vw;
+        width:30%;
+        top:-10vw;
         left:-15px;
     }
     #gloveIMG {
@@ -1221,6 +1226,7 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
     }
 }
 @media (max-width:899px){
+
     .strongspan{
         font-size: 30px;
     }
