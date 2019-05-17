@@ -160,7 +160,7 @@ h1{
 .locLandTop{
     background-image:url(img/new18/landing.jpg);
     background-size: cover;
-    background-position: center;
+    background-position:center;
 }
 .locLandTop>span{
     width: 100%;

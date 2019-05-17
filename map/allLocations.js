@@ -52,6 +52,6 @@ var allLocations = [
     state: "IN",
     zip: "",
     phone: "",
-    weblink: ""
+    weblink: "https://levelredboxing.com/"
   },
 ];
