@@ -85,6 +85,15 @@
 
             $('body, html').animate({scrollTop: pos}, 1000);
             });
+            //      Pick video based on screen size           
+        $(document).ready(function(){
+                if($(window).width() > 600){
+                    $("#lrbVidHeader").prepend("<video id=\"homeDeskVid\" muted autoplay playsinline loop preload=\"metadata\" style=\"margin-top:-5vw;\"<source src='resources/css/img/video/homeDesk3.mp4#t=1' type=\"video/mp4\"></video>");
+                }
+                else{
+                    $("#lrbVidHeader").prepend("<video playsinline autoplay muted loop preload=\"auto\" id=\"homeMobVid\"<source src='resources/css/img/video/homeVidMob3.mp4#t=1' type=\"video/mp4\"></video>");
+                }
+            });
         </script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="fitmetrix/js/iframeResizer.min.js"></script>
@@ -107,10 +116,51 @@
     </head>
 
 <body style="background-color: white;">
-    <div style="background-color:black;">
+    <div style="background-color:black;z-index: 1000;position: relative;">
         <a href="http://levelredboxing.com/index.html"><img id="caryLogo" src="resources/css/img/brand2.png" style="height:75px;padding:0px;padding-left: 25px;"></a>
     </div>
-    <div class="locLandTop" style="padding:50px;padding-bottom:50px">
+    <div class="header" id="lrbVidHeader">
+    <div id="cover" style="position: absolute;left:0;top:0;width:100%;height:calc(100% + 5vw);background-color: rgba(0,0,0,0);z-index: 200;"></div>
+    <style>
+        video {
+          width: 100%    !important;
+          height: auto   !important;
+        }
+        @media(min-width:601px){
+            #homeMobVid{
+                display: none!important;
+            }
+            #cover{
+                top:-5vw!important;
+            }
+            .header{
+                min-height: 50vw;
+            }
+            #caryVid{
+                margin-top:-15vw;
+            }
+        }
+        @media(max-width:600px){
+            #homeDeskVid{
+                display: none!important;
+            }
+            #cover{
+                top:-2vw!important;
+            }
+            .space1{
+                height:60vw!important;
+            }
+            .header{
+                min-height: 100vw;
+            }
+            #caryVid{
+                margin-top:-15px;
+            }
+        }
+    </style>
+</div>
+<div id="caryVid" style="background-color: white; position: relative;z-index: 500;">
+    <div class="locLandTop" style="padding:50px;padding-bottom:50px;">
         <span class="landBold">Become a founding</span>
         <span class="landBold">Member today!</span>
 <!--
@@ -354,7 +404,7 @@
         </div>
 -->
     </div>
-    <div class="greyBack2" style="background-color: transparent!important;">
+    <div class="greyBack2" style="background-color: transparent!important;margin-top:-7px;">
         <div class="redline"></div>
     </div>
     <div id="tryfree" class="tryFree">
@@ -435,7 +485,7 @@
             <a class="copy" style="margin-right:40px;">&copy; 2019 Level Red Boxing</a>
         </div>
 -->
-
+    </div>
     </body> 
     <script src="resources/js/script.js"></script>
     

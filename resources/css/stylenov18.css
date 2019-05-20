@@ -467,7 +467,7 @@ body{
     font-size: 60px;
     font-weight: 900;
     font-family: metropolis;
-text-shadow: .5px .5px .5px black;
+    text-shadow: .5px .5px .5px black;
     line-height: 50px;
     text-transform: uppercase;
     width:100%;

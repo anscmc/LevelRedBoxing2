@@ -103,9 +103,25 @@
 //                  $('#try3free').addClass('animated fadeIn');
 //                }, { offset: '90%' });
             });
+            
+//      Pick video based on screen size           
+        $(document).ready(function(){
+                if($(window).width() > 600){
+                    $("#lrbVidHeader").prepend("<video id=\"homeDeskVid\" muted autoplay playsinline loop preload=\"metadata\" style=\"margin-top:-5vw;\"<source src='resources/css/img/video/homeDesk3.mp4#t=1' type=\"video/mp4\"></video>");
+                }
+                else{
+                    $("#lrbVidHeader").prepend("<video playsinline autoplay muted loop preload=\"auto\" id=\"homeMobVid\"<source src='resources/css/img/video/homeVidMob3.mp4#t=1' type=\"video/mp4\"></video>");
+                }
+            });
         </script>
+<!--
+        <video class="animated fadeIn" id="homeMobVid" muted autoplay playsinline loop preload="metadata">
+          <source src="resources/css/img/video/homeVidMob3.mp4#t=1" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+-->
     </head>
-
+    
 <body>
 <nav class="navbar navbar-inverse deskNav">
       <div class="container-fluid">
@@ -154,7 +170,7 @@
         </div>
     </div>
 
-<div class="header">
+<div class="header" id="lrbVidHeader">
     <div id="cover" style="position: absolute;left:0;top:0;width:100%;height:calc(100% + 5vw);background-color: rgba(0,0,0,0);z-index: 200;"></div>
     <style>
         video {
@@ -187,6 +203,7 @@
             }
         }
     </style>
+<!--
     <video class="animated fadeIn" id="homeMobVid" muted autoplay playsinline loop preload="metadata">
       <source src="resources/css/img/video/homeVidMob3.mp4#t=1" type="video/mp4">
       Your browser does not support the video tag.
@@ -195,6 +212,7 @@
       <source src="resources/css/img/video/homeDesk3.mp4#t=1" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+-->
     
     <div class="deskTrial animated fadeInUp">
         <img src="resources/css/img/rDark.png">
