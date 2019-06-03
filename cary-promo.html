@@ -116,6 +116,110 @@
     </head>
 
 <body style="background-color: white;">
+            <style type="text/css">
+            .redCaryBTN{
+                color:white;
+                padding:.5vw;
+                width:15vw;
+                position: absolute;
+                top:calc(50% - 2vw);
+                right:8vw;
+                box-shadow: 0 0 .5vw rgba(0,0,0,.5);
+                font-size: 1.5vw;
+                text-align: center;
+                font-family: metropolis;
+                display: inline-block;
+                background-color: rgb(254,0,0);
+                text-transform: uppercase;
+            }
+            .blackCaryBTN{
+                color:rgb(254,0,0);
+                padding:.5vw;
+                width:15vw;
+                position: absolute;
+                top:calc(50% - 2vw);
+                left:8vw;
+                box-shadow: 0 0 .5vw rgba(0,0,0,.5);
+                font-size: 1.5vw;
+                text-align: center;
+                font-family: metropolis;
+                display: inline-block;
+                background-color: black;
+                text-transform: uppercase;
+            }
+            .desk:hover{
+                background-color: white;
+                color:rgb(254,0,0);
+            }
+            .desk{
+                cursor: pointer;
+                text-decoration: none!important;
+                transition: ease all .3s;
+            }
+            .caryFreeBox{
+                width:550px;
+                max-width: 100%;
+                max-height: 100vh;
+                overflow: scroll;
+                position: fixed;
+                top:10%;
+                left:calc(50% - 225px);
+                z-index: 2000;
+                background-color: white;
+                display: none;
+                box-shadow: 0 0 15px rgba(0,0,0,.75);
+                border: 1px solid black;
+            }
+            @media(max-width:767px){
+                .desk{
+                    position: relative;
+                    margin: 0 auto;
+                    display: block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin-top:6vw;
+                    margin-bottom: 6vw;
+                    font-size: 7vw;
+                    width: 75vw;
+                    line-height: 12vw;
+                    text-transform: uppercase;
+                    padding: 0;
+                    padding-top:.5vw;
+                }
+                .caryFreeBox{
+                    left:0!important;
+                    width:100vw;
+                    height: 100vh;
+                    overflow: scroll!important;
+                    top:0;
+                }
+            }
+            .caryX{
+                color: black!important;
+                font-family: metropolis;
+                font-size: 40px;
+                position: absolute;
+                right: 15px;
+                top:5px;
+                cursor: pointer;
+                text-decoration: none!important;
+            }
+        </style>
+        <script type="text/javascript">
+            function showFreeCary(){
+                $("div.caryFreeBox").fadeToggle("fast");
+            }
+        </script>
+        <div class="caryFreeBox" style="overflow: hidden;">
+            <a onclick="showFreeCary()" class="caryX">X</a>
+            <h1>Free Class</h1>
+            <p style="text-align: center;margin:0;padding:0;font-size: 12px;">Fill out the form below and schedule a free class:</p>
+            
+            <script type="text/javascript" src="https://form.jotform.com/jsform/91516810831151"></script>
+            
+        </div>
     <div style="background-color:black;z-index: 1000;position: relative;">
         <a href="http://levelredboxing.com/index.html"><img id="caryLogo" src="resources/css/img/brand2.png" style="height:75px;padding:0px;padding-left: 25px;"></a>
     </div>
@@ -161,110 +265,7 @@
 </div>
 <div id="caryVid" style="background-color: white; position: relative;z-index: 500;">
     <div class="locLandTop" style="padding:50px;padding-bottom:50px;position: relative;">
-        <style type="text/css">
-            .redCaryBTN{
-                color:white;
-                padding:.5vw;
-                width:15vw;
-                position: absolute;
-                top:calc(50% - 2vw);
-                right:8vw;
-                box-shadow: 0 0 .5vw rgba(0,0,0,.5);
-                font-size: 1.5vw;
-                text-align: center;
-                font-family: metropolis;
-                display: inline-block;
-                background-color: rgb(254,0,0);
-                text-transform: uppercase;
-            }
-            .blackCaryBTN{
-                color:rgb(254,0,0);
-                padding:.5vw;
-                width:15vw;
-                position: absolute;
-                top:calc(50% - 2vw);
-                left:8vw;
-                box-shadow: 0 0 .5vw rgba(0,0,0,.5);
-                font-size: 1.5vw;
-                text-align: center;
-                font-family: metropolis;
-                display: inline-block;
-                background-color: black;
-                text-transform: uppercase;
-            }
-            .desk:hover{
-                background-color: white;
-                color:rgb(254,0,0);
-            }
-            .desk{
-                cursor: pointer;
-                text-decoration: none!important;
-                transition: ease all .3s;
-            }
-            .caryFreeBox{
-                display: inline-block;
-                width:450px;
-                max-width: 100%;
-                height:545px;
-                position: fixed;
-                top:15%;
-                left:calc(50% - 225px);
-                z-index: 1000;
-                background-color: white;
-                display: none;
-                box-shadow: 0 0 15px rgba(0,0,0,.75);
-                border: 1px solid black;
-            }
-            @media(max-width:767px){
-                .desk{
-                    position: relative;
-                    margin: 0 auto;
-                    display: block;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    bottom: 0;
-                    margin-top:6vw;
-                    margin-bottom: 6vw;
-                    font-size: 7vw;
-                    width: 75vw;
-                    line-height: 12vw;
-                    text-transform: uppercase;
-                    padding: 0;
-                    padding-top:.5vw;
-                }
-                .caryFreeBox{
-                    left:5vw!important;
-                    width:90vw;
-                    top:10px;
-                }
-            }
-            .caryX{
-                color: black!important;
-                font-family: metropolis;
-                font-size: 40px;
-                position: absolute;
-                right: 15px;
-                top:5px;
-                cursor: pointer;
-                text-decoration: none!important;
-            }
-        </style>
-        <script type="text/javascript">
-            function showFreeCary(){
-                $("div.caryFreeBox").fadeToggle("fast");
-            }
-        </script>
-        <div class="caryFreeBox" style="overflow: hidden;">
-            <a onclick="showFreeCary()" class="caryX">X</a>
-            <h1>Free Class</h1>
-            <p style="text-align: center;margin:0;padding:0;font-size: 12px;">Fill out the form below and schedule a free class:</p>
-            
-            <script type="text/javascript" src="https://form.jotform.com/jsform/91516810831151"></script>
-            
 
-            
-        </div>
         <a class="blackCaryBTN desk mobile" href="fitmetrix/cary/pricing-cary.html">Book a Class</a>
         
         <span class="landBold">Become a founding</span>
