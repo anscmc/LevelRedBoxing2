@@ -19,7 +19,7 @@ var allLocations = [
     state: "NC",
     zip: "21224",
     phone: "(919) 896-6332",
-    weblink: "cary-promo"
+    weblink: "cary"
   },
   {
     name: "Erie",
@@ -32,7 +32,7 @@ var allLocations = [
     phone: "(814) 315-2994",
     weblink: "erie"
   },
-    {
+  {
     name: "Pittsburgh",
     lat: 40.4607184,
     lng: -79.9290339,

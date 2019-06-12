@@ -313,9 +313,11 @@ h1{
     font-size: 1.5vw;
     text-shadow: 0 0 5px rgba(0,0,0,.45);
     vertical-align: top;
+    display: none!important;
 }
 .phase3{
     padding-top:1vw;
+    display: none!important;
 }
 .classesTop{
     font-family: metropolisMed;
@@ -859,6 +861,12 @@ h1{
         font-size:4vw;
         width:17vw;
         padding-bottom:3px;
+    }
+    .box{
+        width:100%!important;
+    }
+    .phaseBox{
+        width:100%!important;
     }
 }
 /*CARY / THANK / YOU POST FORM*/

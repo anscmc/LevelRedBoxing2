@@ -18,7 +18,7 @@
 <!--        <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <!--        <script src="../resources/js/jquery.waypoints.min.js"></script>-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://www.levelredboxing.com/resources/hide.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <link rel="stylesheet" type="text/css" href="../../vendors/css/normalize.css">
@@ -53,9 +53,53 @@
 <!-- End Facebook Pixel Code -->
 </head>
 <body>
-<div style="background-color:black;">
-    <a href="../../index.html"><img id="caryLogo" src="../../resources/css/img/brand2.png" style="height:75px;padding:0px;padding-left: 25px;"></a>
-</div>
+<nav class="navbar navbar-inverse deskNav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../../cary.html"><img src="../../resources/css/img/brand2.png"></a>
+<!--            <a class="mobFran">Own a Franchise</a>-->
+        </div>
+    <!--
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+        </ul>
+    -->
+        <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;">
+          <li><a href="../../theworkout.html">The Workout</a></li>
+            <li style="cursor: pointer"><a onclick="toggleAbout()">About</a></li>
+            <li><a href="../../blog.html" style="padding-right:0px;">Community</a></li>
+        </ul>
+          <ul class="nav navbar-nav navbar-right" style="margin-left:50px;!important;">
+              <li><a href="schedule-cary.html" style="padding-left:0px;">Schedule</a></li>
+            <li><a href="pricing-cary.html">Memberships</a></li>
+        </ul>
+        <a href="tel:1-919-896-6332" id="franBTN"><span style="font-family:metropolisMed;padding-right:20px;">Call Us!</span>(919) 896-6332</a>
+        <a onclick="toggleNav()" class="hamburger"><i class="fas fa-bars"></i></a>
+          <a class="phone" href="tel:1-919-896-6332"><i class="fas fa-phone"></i></a>
+      </div>
+</nav>
+        <div id="aboutDesk" style="left:350px;right:auto;">
+        <a href="../../thelevels.html" class="aboutLink">The Levels</a>
+        <a href="../../sixpunches.html" class="aboutLink">Learn the Moves</a>
+        <a href="http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
+    </div>
+    <div id="mobileNav" class="mobileNav">
+<!--        <a><img src="resources/css/img/brand2.png"></a>-->
+        <a onclick="toggleNav()" class="hamburgerX">X</a>
+        <a class="phone" href="tel:1-814-315-2994"><i class="fas fa-phone"></i></a>
+        <div class="mobileWrap">
+            <br>
+            <a href="pricing-erie.html">Memberships</a>
+            <a href="schedule-erie.html">Schedule</a>
+            
+            <a href="../../theworkout.html">The Workout</a>
+            <a href="../../blog.html">Community</a>
+            <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
+        </div>
+    </div>
+    <div style="height:100px"></div>
     <h1 style="text-align: center;margin-top:10px;">Pricing - Cary</h1>
     <!-- Fitmetrix iframe -->
 <iframe id="sf-frame" src="https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?locationID=6381&hidelocations=1" scrolling="no" frameborder="0" width="100%"></iframe>
