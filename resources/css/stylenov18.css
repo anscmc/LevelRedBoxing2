@@ -14,7 +14,9 @@
 	font-family: metropolisLt;
     src:url('font/Metropolis-master/Metropolis-Light.otf')
 }
-
+.hide19{
+    display: none!important;
+}
 .mapback{
     background-image: url(img/new18/club.jpg);
     background-size: cover;
