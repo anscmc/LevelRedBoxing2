@@ -1336,6 +1336,7 @@ header {
     top:7vw;
     left:calc(50% - 25vw);
     text-align: center;
+    box-shadow: 0 0 15px rgba(150,150,150,.75);
 }
 .appX{
     font-weight: 700;
@@ -1632,11 +1633,20 @@ label{
     line-height:100%;
     padding:0;
 }
+@media (max-width:991px){
+    .appBox{
+        width:95vw;
+        left:2.5vw;
+        top:2.5vh;
+        height:95vh;
+    }
+}
 @media (max-width:767px){
     #modelimg1{
         display:none !important;
         opacity: 0 !important;
     }
+    
 }
 @media (min-width:768px){
     #modelimg2{
