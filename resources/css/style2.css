@@ -1200,8 +1200,8 @@ input[type=submit]:active {
 /* ----------------------------------------------- */
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/kellyheader3.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/kellyheader3.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/franchise/franchisee_background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/franchise/franchisee_background.jpg);
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -1296,6 +1296,55 @@ header {
     }
 }
 */
+.showme{
+                    z-index: 50000!important;
+                }
+#appBTN{
+    background-color: rgb(254,0,0);
+    cursor: pointer;
+    margin:0 auto;
+    display: block;
+    width:200px;
+    color: white;
+    text-align: center;
+    border:1px solid rgb(254,0,0);
+    line-height: 40px;
+    transition: ease all .3s;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    text-decoration: none!important;
+}
+#appBTN:hover{
+    color: rgb(254,0,0);
+    background-color: white;
+}
+.appWrap{
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    align-content:  left:0;
+    top:0;
+    display: inline-block;
+    background-color: rgba(0,0,0,.75);
+    z-index: -100;
+}
+.appBox{
+    background-color:white;
+    width:50vw;
+    height:70vh;
+    overflow: scroll;
+    position: relative;
+    top:7vw;
+    left:calc(50% - 25vw);
+    text-align: center;
+}
+.appX{
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+    right:10px;
+    top:10px;
+    position: absolute;;
+}
 
 @media (max-width:1024px){
     .motivatorsHeader a{
@@ -1504,10 +1553,10 @@ textarea {
 }
 
 #head{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url('img/kellyheader3.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/kellyheader3.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(img/franchise/franchisee_background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/franchise/franchisee_background.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 60%;
     height: 100vh;
     background-attachment:fixed;
     background-repeat: no-repeat;
