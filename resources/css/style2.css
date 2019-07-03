@@ -1296,9 +1296,7 @@ header {
     }
 }
 */
-.showme{
-                    z-index: 50000!important;
-                }
+
 #appBTN{
     background-color: rgb(254,0,0);
     cursor: pointer;
@@ -1349,7 +1347,13 @@ header {
     display: inline-block;
     
 }
-
+.showme{
+    z-index: 50000!important;
+    display: inline-block!important;
+    height: 100vh!important;
+    width:100vw!important;
+}
+.hideme{}
 @media (max-width:1024px){
     .motivatorsHeader a{
     color:white !important;

@@ -19,7 +19,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 
         <link rel="stylesheet" type="text/css" href="resources/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style2.css?v=3">
+        <link rel="stylesheet" type="text/css" href="resources/css/style2.css?v=4">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <title>Franchise | Level Red Boxing</title>
@@ -275,6 +275,28 @@
         </script>
     </head>
     <body>
+        <!--APPLICATION-->
+    <script type="text/javascript">
+            function showApp(){
+                $("div.appWrap").toggleClass("showme");
+                $("div.franWrap").fadeToggle('slow');
+            }
+        </script>
+    <div class="appWrap">
+        <div class="appBox">
+            <div style="text-align: right">
+                <a onclick="showApp()" class="appX" style="color:black!important;">Close X</a>
+            </div>
+            
+
+            <h1 style="margin:0;text-transform: none;color:rgb(254,0,0)!important;font-weight:bold;">Level Red Boxing</h1>
+            <h1 style="margin:0;text-transform: none;color:rgb(254,0,0)!important;font-weight:bold;">Franchisee Application</h1>
+            <!--            <p style="text-align: center;margin:0;padding:0;font-size: 12px;">Please complete the application below:</p>-->
+            
+            <script type="text/javascript" src="https://form.jotform.com/jsform/91816367118159"></script>
+        </div> 
+    </div>
+        <div class="franWrap">
         <header id="mothead" class="animated fadeIn motivatorsHeader" style="position: fixed;width:100%;z-index: 10001;">
             <nav>
                 <div id="top" class="row" style="background-color: transparent">
@@ -317,26 +339,7 @@
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </div></a>
 -->
-<!--APPLICATION-->
-    <script type="text/javascript">
-            function showApp(){
-                $("div.appWrap").toggleClass("showme");
-            }
-        </script>
-    <div class="appWrap">
-        <div class="appBox">
-            <div style="text-align: right">
-                <a onclick="showApp()" class="appX" style="color:black!important;">Close X</a>
-            </div>
-            
 
-            <h1 style="margin:0;text-transform: none;color:rgb(254,0,0)!important;font-weight:bold;">Level Red Boxing</h1>
-            <h1 style="margin:0;text-transform: none;color:rgb(254,0,0)!important;font-weight:bold;">Franchisee Application</h1>
-            <!--            <p style="text-align: center;margin:0;padding:0;font-size: 12px;">Please complete the application below:</p>-->
-            
-            <script type="text/javascript" src="https://form.jotform.com/jsform/91816367118159"></script>
-        </div> 
-    </div>
 <div id="contactFranch">
     <div id="buffer1" class="bigchev" style="background-color: transparent;width:100%;height:90px;text-align: center"></div>
             <div class="container formLeft">
@@ -703,6 +706,7 @@
                
 
         <div id="bottom"></div>
+        </div>
     </body>  
      <div class="cart animated">
          <br>
