@@ -1309,7 +1309,9 @@ header {
     text-align: center;
     border:1px solid rgb(254,0,0);
     line-height: 40px;
+    -webkit-transition: ease all .3s;
     transition: ease all .3s;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.5);
     box-shadow: 0 0 15px rgba(0,0,0,.5);
     text-decoration: none!important;
 }
@@ -1321,30 +1323,31 @@ header {
     height:100vh;
     width:100vw;
     position: fixed;
-    align-content:  left:0;
+    left:0;
     top:0;
     display: inline-block;
     background-color: rgba(0,0,0,.75);
     z-index: -100;
+    overflow: scroll;
 }
 .appBox{
     background-color:white;
     width:50vw;
-    height:70vh;
-    overflow: scroll;
-    position: relative;
-    top:7vw;
-    left:calc(50% - 25vw);
+    height:auto;
+/*    overflow: scroll;*/
+    margin:0 auto;
+    margin-top: 20px;
     text-align: center;
+    -webkit-box-shadow: 0 0 15px rgba(150,150,150,.75);
     box-shadow: 0 0 15px rgba(150,150,150,.75);
 }
 .appX{
     font-weight: 700;
     font-size: 30px;
     cursor: pointer;
-    right:10px;
-    top:10px;
-    position: absolute;;
+    margin:20px;
+    display: inline-block;
+    
 }
 
 @media (max-width:1024px){
@@ -1636,9 +1639,11 @@ label{
 @media (max-width:991px){
     .appBox{
         width:95vw;
+/*
         left:2.5vw;
         top:2.5vh;
         height:95vh;
+*/
     }
 }
 @media (max-width:767px){
