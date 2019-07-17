@@ -956,9 +956,28 @@ text-shadow: .5px .5px .5px black;
     margin:0;
     margin-bottom: 10px;
 }
-
+.gifttext{
+    font-family: metropolis;
+    text-transform: uppercase;
+    color:white;
+    font-size: 35px;
+    width:100%;
+    display: block;
+    text-align: center;
+    margin:0;
+    line-height: 125%;
+}
+.giftbox{
+    text-align: center;
+}
 @media (min-width:1200px){
-    
+    .giftbox>img{
+        width:80%!important;
+    }
+}
+@media (max-width:1199px){
+    .gifttext{font-size:25px;}
+    .giftimg{max-height: 30px;}
 }
 @media (max-width:1600px){
     .imgCol>img{
@@ -1271,7 +1290,12 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
         padding:0px;
     }
 }
+@media (max-width:991px){
+    .gifttext{font-size:20px;}
+    .giftimg{max-height: 30px!important;}
+}
 @media (max-width:899px){
+    
     .partnerBox{
         display: block!important;
         width:400px;
@@ -1455,6 +1479,9 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
     
 }
 @media (max-width:599px){
+    .gifttext{
+        font-size: 14px;
+    }
     .strongspan{
         font-size: 24px;
         font-family: metropolisMed;
@@ -1576,6 +1603,9 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
     #gloveIMG{
         bottom:-80px;
     }
+    .giftimg{
+        height:20px!important;
+    }
 }
 @media (max-width:420px){
     .strongspan{
@@ -1601,6 +1631,9 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
 @media (max-width:413px){
     .bottomlink{
         font-size: 15px;
+    }
+    .gifttext{
+        font-size: 12px;
     }
 }
 @media (max-width:399px){
@@ -1658,5 +1691,11 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
         font-size: 24px;
         line-height: 22px;
         letter-spacing: 1px;
+    }
+    .gifttext{
+        font-size: 10px;
+    }
+    .giftimg{
+        height:20px!important;
     }
 }
