@@ -155,13 +155,14 @@ body{
     border-bottom: 6px solid red;
 }
 .deskTrial>img{
-    width:6vw;display: block;margin: 0 auto;
+    width:7vw;display: block;margin: 0 auto;
 }
 .deskTrial>span{
     font-family: metropolis!important;
     text-transform: uppercase;
     font-size: 1.5vw;
     margin:.75vw;
+    margin-top: 0;
     display: block;
 }
 .deskTrial>p{
@@ -189,7 +190,7 @@ body{
     border-bottom: 6px solid red;
 }
 .mobTrial>img{
-    width:20vw;display: block;margin: 0 auto;
+    width:27vw;display: block;margin: 0 auto;
     margin-top:15px;
 }
 .mobTrial>span{
@@ -1605,6 +1606,9 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
     }
     .giftimg{
         height:20px!important;
+    }
+    #levelup{
+        margin-top:-10px;
     }
 }
 @media (max-width:420px){
