@@ -40,6 +40,8 @@
             function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){
                 $("#mobileNav").fadeToggle(200);
             }
+            
+
         </script>
 
     </head>
@@ -160,6 +162,19 @@
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 -->
     <script src="resources/js/script.js"></script>
+                <script type="text/javascript">
+            function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){
+                $("#mobileNav").fadeToggle(200);
+            }
+            
+            $(document).ready(function(){
+                var myVal = document.URL.split('#').pop();
+                if (myVal.length < 7){
+                    $("#userAddress").val(myVal);
+                    $("#submitLocationSearch").click();
+                }
+            });
+        </script>
     </body>  
     
 </html>

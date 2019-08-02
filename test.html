@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name ="robots" content="noindex, nofollow">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123760229-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123760229-1');
+</script>
+
+<meta property="fb:app_id" content="496419921172234" /><meta property="og:url" content="https://levelredboxing.com/index.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Level Red Boxing | Strong at Every Level" />
+<meta property="og:description" content="Boxing-inspired group fitness classes. Stop going to the gym, start having an experience. Claim your free class now | Level Red Boxing" />
+<meta property="og:image" content="https://levelredboxing.com/resources/css/img/brandFB.png" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>Level Red Boxing | Strong at Every Level</title>
@@ -94,17 +108,34 @@
 //                $('#try3free').waypoint(function() {
 //                  $('#try3free').addClass('animated fadeIn');
 //                }, { offset: '90%' });
+                $('#navvy').css('opacity', 0);
+                $('#navvyTog').waypoint(function() {
+                  $('#navvy').toggleClass('animated fadeIn');
+                }, { offset: '95%' });
             });
             
 //      Pick video based on screen size           
         $(document).ready(function(){
                 if($(window).width() > 600){
-                    $("#lrbVidHeader").prepend("<video id=\"homeDeskVid\" muted autoplay playsinline loop preload=\"metadata\" style=\"margin-top:-5vw;\"<source src='resources/css/img/video/lrbheaderdesk.mp4#t=1' type=\"video/mp4\"></video>");
+                    $("#lrbVidHeader").prepend("<video id=\"homeDeskVid\" muted autoplay playsinline loop preload=\"metadata\" style=\"margin-top:-5vw;\"<source src='resources/css/img/video/homeDesk3.mp4#t=1' type=\"video/mp4\"></video>");
                 }
                 else{
-                    $("#lrbVidHeader").prepend("<video playsinline autoplay muted loop preload=\"auto\" id=\"homeMobVid\"<source src='resources/css/img/video/lrbheadermob2.mp4#t=1' type=\"video/mp4\"></video>");
+                    $("#lrbVidHeader").prepend("<video playsinline autoplay muted loop preload=\"auto\" id=\"homeMobVid\"<source src='resources/css/img/video/homeVidMob3.mp4#t=1' type=\"video/mp4\"></video>");
                 }
+            
+               
+
             });
+            
+            function findLocation(){
+                var value1 = document.getElementById("zipInput").value;
+                var queryString = value1;
+                window.location.href = "locations.html#" + queryString;
+            }
+            function showMoreFree(){
+                $("div.newBar").toggleClass("bigBar");
+            }
+                
         </script>
 <!--
         <video class="animated fadeIn" id="homeMobVid" muted autoplay playsinline loop preload="metadata">
@@ -115,6 +146,61 @@
     </head>
     
 <body>
+    <style type="text/css">
+        .newBar{
+            background-image: url(resources/css/img/new19/red-color-fade2.png);background-size: cover;position: fixed;z-index: 605;bottom:0;left:0;width:100%;text-align: center;
+            background-position: center;
+            height:70px;
+            -webkit-box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
+-moz-box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
+box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
+            transition: ease all .5s;
+        }
+        .bigBar{
+            height: 240px!important;
+            transition: ease all .5s;
+        }
+        .newBar img{
+            display: block;
+            margin:0 auto;
+            height:70px;
+            padding:5px;
+        }
+        #zipSearch{
+            color: white;
+            background-color: red;
+            font-weight: 500;
+            font-size: 20px;
+            padding:8px;
+            padding-left:12px;
+            padding-right: 12px;
+            box-shadow: 0 0 5px rgba(10,10,10,.3);
+            margin-left:10px;
+            cursor: pointer;
+            text-decoration: none!important;
+        }
+        #zipInput{
+            font-size: 20px;
+            padding:5px;
+            display: inlin-block;
+            margin:0 auto;
+            width:150px;
+        }
+        .fadefade{
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+        }
+        
+    </style>
+        
+        
+    <div class="newBar fadefade" id="navvy">
+        <a style="cursor: pointer;" onclick="showMoreFree()"><img src="resources/css/img/new19/free.png"></a>
+     
+        <p style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 25px;margin-top: 15px;font-size: 16px;">To welcome you to Level Red Boxing, we’re giving you a free class. Enter your postal code below:</p>
+        <input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345">
+        <a id="zipSearch" onclick="findLocation()" style="">Search</a>
+    </div>
 <nav class="navbar navbar-inverse deskNav">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -134,6 +220,7 @@
             
             <li><a id="about" style="cursor:pointer;" onclick="toggleAbout()">About</a></li>
             <li><a href="blog.html">Community</a></li>
+            <li><a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a></li>
             <li><a href="locations.html">Contact</a></li>
         </ul>
         <a href="http://www.levelredboxing.com/franchise.html" id="franBTN">Own a Franchise</a>
@@ -141,7 +228,7 @@
           <a class="phone" href="locations.html"><i class="fas fa-phone"></i></a>
       </div>
 </nav>
-    <div id="aboutDesk">
+    <div id="aboutDesk" style="right:380px;">
         <a href="theworkout.html" class="aboutLink">The Workout</a>
         <a href="sixpunches.html" class="aboutLink">Learn the Moves</a>
         <a href="http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
@@ -157,6 +244,7 @@
             <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="thelevels.html">The Levels</a><a href="sixpunches.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
             <div id="aboutMob"></div>
             <a href="blog.html">Community</a>
+            <a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a>
             <a href="locations.html">Contact</a>
             <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
         </div>
@@ -207,28 +295,28 @@
 -->
     
     <div class="deskTrial animated fadeInUp">
-        <img src="resources/css/img/rDark.png">
+        <img src="resources/css/img/new19/Rtilted.png">
         <span>Try us for free*</span>
         <div style="text-align: center;">
             <a href="locations.html" class="redBTN" style="margin-top:5px;">Find Your Studio</a>
             <br>
         </div>  
-        <p>*For first-time visitors and local residents only.</p>
+        <p style="max-width:310px;font-size: 10px;">*For first-time visitors and local residents only. Certain restrictions apply. See Terms of Use policy. $18 minimum value. At participating studios only. See studio for details.</p>
     </div>
 </div>
     
     <div class="vidDiv" style="z-index: 500;">
         <div class="mobTrial animated fadeInUp">
-        <img src="resources/css/img/rDark.png">
+        <img src="resources/css/img/new19/Rtilted.png">
         <span>Try us for free*</span>
         <div style="text-align: center;">
             <a href="locations.html" class="redBTN" style="margin-top:10px;">Find Your Studio</a>
             <br>
         </div>  
-        <p>*For first-time visitors and local residents only.</p>
+        <p style="font-size: 10px!important;">*For first-time visitors and local residents only. Certain restrictions apply. See Terms of Use policy. $18 minimum value. At participating studios only. See studio for details.</p>
     </div>
         <div class="container-fluid" style="margin-top:-10px;">
-            <div class="space1"></div>
+            <div id="navvyTog" class="space1"></div>
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-9">
@@ -244,7 +332,7 @@
                   <div class="linespace"></div>
                     
                     <div class="linespace"></div>
-                    <p style="padding-right:0px;">At LEVEL RED BOXING, we're a team of MOTIVATORS dedicated to delivering energizing full-body, boxing-inspired fitness. Level Red Boxing is for EVERYONE, no matter the fitness level or age. Here, you are STRONG AT EVERY LEVEL.</p>
+                    <p style="padding-right:0px;">Level Red Boxing is high energy workouts designed with you in mind. Motivation is our mentra and Strong at Every Level are the words we live by. No matter your fitness level, you can do it. Free gloves at every 100 classes help keep you motivated with 1 simple goal - keep knocking out classes and take over the world.</p>
                     <div style="text-align: center;padding-top:10px;">
                         <a href="theworkout.html" class="redBTN" style="margin-top:5px;">The Workout</a>
                     </div>   
