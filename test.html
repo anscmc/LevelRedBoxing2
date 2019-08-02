@@ -108,10 +108,18 @@
 //                $('#try3free').waypoint(function() {
 //                  $('#try3free').addClass('animated fadeIn');
 //                }, { offset: '90%' });
-                $('#navvy').css('opacity', 0);
-                $('#navvyTog').waypoint(function() {
-                  $('#navvy').toggleClass('animated fadeIn');
-                }, { offset: '95%' });
+                if($(window).width() > 600){
+                    $('#navvy').css('opacity', 0);
+                    $('#navvyTog').waypoint(function() {
+                      $('#navvy').toggleClass('animated fadeIn');
+                    }, { offset: '95%' });
+                }
+                else{
+                    $('#navvy').css('opacity', 0);
+                    $('#navvyTogMob').waypoint(function() {
+                      $('#navvy').toggleClass('animated fadeIn');
+                    }, { offset: '95%' });
+                }
             });
             
 //      Pick video based on screen size           
@@ -136,6 +144,7 @@
                 $("div.newBar").toggleClass("bigBar");
             }
                 
+
         </script>
 <!--
         <video class="animated fadeIn" id="homeMobVid" muted autoplay playsinline loop preload="metadata">
@@ -190,6 +199,15 @@ box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
             -webkit-animation-duration: .5s;
             animation-duration: .5s;
         }
+        @media (max-width:600px){
+            #zipP{
+                font-size: 13.5px!important;
+                margin-top:10px!important;
+            }
+            .bigBar{
+                height:220px!important;
+            }
+        }
         
     </style>
         
@@ -197,9 +215,18 @@ box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
     <div class="newBar fadefade" id="navvy">
         <a style="cursor: pointer;" onclick="showMoreFree()"><img src="resources/css/img/new19/free.png"></a>
      
-        <p style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 25px;margin-top: 15px;font-size: 16px;">To welcome you to Level Red Boxing, we’re giving you a free class. Enter your postal code below:</p>
+        <p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 25px;margin-top: 15px;font-size: 16px;padding:5px;">To welcome you to Level Red Boxing, we’re giving you a free class. Enter your postal code below:</p>
         <input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345">
         <a id="zipSearch" onclick="findLocation()" style="">Search</a>
+        <script>
+            var input = document.getElementById("zipInput");
+            input.addEventListener("keyup", function(event) {
+              if (event.keyCode === 13) {
+               event.preventDefault();
+               document.getElementById("zipSearch").click();
+              }
+            });
+        </script>
     </div>
 <nav class="navbar navbar-inverse deskNav">
       <div class="container-fluid">
@@ -332,7 +359,7 @@ box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
                   <div class="linespace"></div>
                     
                     <div class="linespace"></div>
-                    <p style="padding-right:0px;">Level Red Boxing is high energy workouts designed with you in mind. Motivation is our mentra and Strong at Every Level are the words we live by. No matter your fitness level, you can do it. Free gloves at every 100 classes help keep you motivated with 1 simple goal - keep knocking out classes and take over the world.</p>
+                    <p id="navvyTogMob" style="padding-right:0px;">Level Red Boxing is high energy workouts designed with you in mind. Motivation is our mentra and Strong at Every Level are the words we live by. No matter your fitness level, you can do it. Free gloves at every 100 classes help keep you motivated with 1 simple goal - keep knocking out classes and take over the world.</p>
                     <div style="text-align: center;padding-top:10px;">
                         <a href="theworkout.html" class="redBTN" style="margin-top:5px;">The Workout</a>
                     </div>   
