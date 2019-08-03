@@ -971,6 +971,63 @@ text-shadow: .5px .5px .5px black;
 .giftbox{
     text-align: center;
 }
+
+/*Free bar*/
+        .newBar{
+            background-image: url(img/new19/red-color-fade2.png);background-size: cover;position: fixed;z-index: 505;bottom:0;left:0;width:100%;text-align: center;
+            background-position: center;
+            height:50px;
+            -webkit-box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
+box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
+            -webkit-transition: ease all .5s;
+            transition: ease all .5s;
+        }
+        .bigBar{
+            height: 200px!important;
+            -webkit-transition: ease all .5s;
+            transition: ease all .5s;
+        }
+        .newBar img{
+            display: block;
+            margin:0 auto;
+            height:50px;
+            padding:5px;
+        }
+        #zipSearch{
+            color: white;
+            background-color: red;
+            font-weight: 500;
+            font-size: 20px;
+            padding:8px;
+            padding-left:12px;
+            padding-right: 12px;
+            -webkit-box-shadow: 0 0 5px rgba(10,10,10,.3);
+            box-shadow: 0 0 5px rgba(10,10,10,.3);
+            margin-left:10px;
+            cursor: pointer;
+            text-decoration: none!important;
+        }
+        #zipInput{
+            font-size: 20px;
+            padding:5px;
+            display: inlin-block;
+            margin:0 auto;
+            width:150px;
+        }
+        .fadefade{
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+        }
+        @media (max-width:600px){
+            #zipP{
+                font-size: 13.5px!important;
+                margin-top:10px!important;
+            }
+            .bigBar{
+                height:200px!important;
+            }
+        }
+
 @media (min-width:1200px){
     .giftbox>img{
         width:80%!important;

@@ -4,6 +4,38 @@ function toggleAbout(){
 $(document).ready(function(){
     $("#liRegistrationLink").css("color", "black!important");
 });
+            $(document).ready(function(){
+                               if($(window).width() > 600){
+                    $('#navvy').css('opacity', 0);
+                    $('body').waypoint(function() {
+                      $('#navvy').toggleClass('animated fadeIn');
+                    }, { offset: '-100px' });
+                }
+                else{
+                    $('#navvy').css('opacity', 0);
+                    $('body').waypoint(function() {
+                      $('#navvy').toggleClass('animated fadeIn');
+                    }, { offset: '-100px' });
+                } 
+                
+            });
+
+            function findLocation(){
+                var value1 = document.getElementById("zipInput").value;
+                var queryString = value1;
+                window.location.href = "https://levelredboxing.com/locations.html#" + queryString;
+            }
+            function showMoreFree(){
+                $("div.newBar").toggleClass("bigBar");
+            }
+            
+            var input = document.getElementById("zipInput");
+            input.addEventListener("keyup", function(event) {
+              if (event.keyCode === 13) {
+               event.preventDefault();
+               document.getElementById("zipSearch").click();
+              }
+            });
 //$(document).ready(function() {
 //    
 ////    

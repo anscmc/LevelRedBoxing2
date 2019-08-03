@@ -25,7 +25,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/stylenov18.min.css?v=7">
+        <link rel="stylesheet" type="text/css" href="resources/css/stylenov18.min.css?v=8">
         <link rel="stylesheet" type="text/css" href="resources/css/newstyle.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.min.css?v=1.2">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
@@ -35,6 +35,9 @@
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        
         <script>          
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
@@ -49,7 +52,7 @@ document.addEventListener('gesturestart', function (e) {
     <body>
 
 
-<nav class="navbar navbar-inverse deskNav">
+<div class="newBar fadefade" id="navvy"><a style="cursor: pointer;" onclick="showMoreFree()"><img src="resources/css/img/new19/free.png"></a><p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 15px;margin-top: 10px;font-size: 14px;padding:5px;">To welcome you to Level Red Boxing, we’re giving you a free class. Enter your postal code below:</p><input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345"><a id="zipSearch" onclick="findLocation()" style="">Search</a></div><nav class="navbar navbar-inverse deskNav">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html"><img src="resources/css/img/brand2.png"></a>
@@ -226,5 +229,5 @@ document.addEventListener('gesturestart', function (e) {
         </div>
        
     </body>  
-    <script src="resources/js/script.js"></script>
+    <script src="resources/js/script.js?v=2"></script>
 </html>
