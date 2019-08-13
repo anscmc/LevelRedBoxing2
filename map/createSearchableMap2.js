@@ -121,5 +121,6 @@ function createListOfLocations(locations) {
 $('#submitLocationSearch').on('click', function(e) {
   e.preventDefault();
   filterLocations();
+    $("#zipInput").val($("#userAddress").val());
     $("#zipcode").submit();
 });
