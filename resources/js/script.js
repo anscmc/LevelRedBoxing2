@@ -1,3 +1,4 @@
+
 function toggleAbout(){
                 $("#aboutDesk").fadeToggle(200);
             }
@@ -5,14 +6,14 @@ $(document).ready(function(){
     $("#liRegistrationLink").css("color", "black!important");
 });
             $(document).ready(function(){
+                
                                if($(window).width() > 600){
-                    $('#navvy').css('opacity', 0);
+                    
                     $('body').waypoint(function() {
                       $('#navvy').toggleClass('animated fadeIn');
                     }, { offset: '-100px' });
                 }
                 else{
-                    $('#navvy').css('opacity', 0);
                     $('body').waypoint(function() {
                       $('#navvy').toggleClass('animated fadeIn');
                     }, { offset: '-100px' });
