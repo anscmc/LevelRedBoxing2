@@ -25,7 +25,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://www.levelredboxing.com/resources/hide.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<!--
+        
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+-->
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
@@ -62,7 +67,9 @@ document.addEventListener('gesturestart', function (e) {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <!--        NAVBAR-->
-<div class="newBar fadefade"  id="navvy" style="opacity: 0;"><a style="cursor: pointer;" onclick="showMoreFree()"><img src="resources/css/img/new19/free.png"></a><p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 15px;margin-top: 10px;font-size: 14px;padding:5px;">To welcome you to Level Red Boxing, we're giving you a free class. Enter your postal code below:</p><input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345"><a id="zipSearch" onclick="findLocation()" style="">Search</a></div><nav class="navbar navbar-inverse deskNav">
+<div class="newBar fadefade"  id="navvy" style="opacity: 0;z-index: 1000000;"><a style="cursor: pointer;" onclick="showMoreFree()"><img src="resources/css/img/new19/free.png"></a><p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 15px;margin-top: 10px;font-size: 14px;padding:5px;">To welcome you to Level Red Boxing, we're giving you a free class. Enter your postal code below:</p><input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345"><a id="zipSearch" onclick="findLocation()" style="">Search</a></div>
+        
+    <nav class="navbar navbar-inverse deskNav">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html"><img src="resources/css/img/brand2.png"></a>
@@ -75,12 +82,16 @@ document.addEventListener('gesturestart', function (e) {
           <li><a href="#">Page 2</a></li>
         </ul>
     -->
+        <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;">
+          <li><a style="font-size: 20px!important;" href="memberships.html">Memberships</a></li>
+          <li><a href="locations.html" style="padding-right:0px;font-size: 20px!important;">Locations</a></li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="locations.html">Locations</a></li>
           <li><a href="thelevels.html">The Levels</a></li>
             
             <li><a id="about" style="cursor:pointer;" onclick="toggleAbout()">About</a></li>
             <li><a href="blog.html">Community</a></li>
+            <li><a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a></li>
             <li><a href="locations.html">Contact</a></li>
         </ul>
         <a href="http://www.levelredboxing.com/franchise.html" id="franBTN">Own a Franchise</a>
@@ -88,7 +99,7 @@ document.addEventListener('gesturestart', function (e) {
           <a class="phone" href="locations.html"><i class="fas fa-phone"></i></a>
       </div>
 </nav>
-    <div id="aboutDesk">
+    <div id="aboutDesk" style="right:335px;">
         <a href="theworkout.html" class="aboutLink">The Workout</a>
         <a href="sixpunches.html" class="aboutLink">Learn the Moves</a>
         <a href="http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
@@ -100,11 +111,12 @@ document.addEventListener('gesturestart', function (e) {
         <a class="phone" href="locations.html"><i class="fas fa-phone"></i></a>
         <div class="mobileWrap">
             <a href="locations.html">Locations</a>
-            <a href="thelevels.html">The Levels</a><a href="theworkout.html">The Workout</a>
-            
+            <a href="memberships.html">Memberships</a>
+            <a href="theworkout.html">The Workout</a>     
             <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="thelevels.html">The Levels</a><a href="sixpunches.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
             <div id="aboutMob"></div>
             <a href="blog.html">Community</a>
+            <a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a>
             <a href="locations.html">Contact</a>
             <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
         </div>
@@ -310,5 +322,5 @@ document.addEventListener('gesturestart', function (e) {
         </div>  
     </div>
     </body> 
-    <div style="height: 50px;"></div><script src="resources/js/script.js?v=2"></script>
+    <div style="height: 50px;"></div><script src="resources/js/script.js?v=3"></script>
 </html>

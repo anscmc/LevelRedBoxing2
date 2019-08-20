@@ -79,7 +79,7 @@
 
     <body style="background-color: transparent;">
       
-    <nav class="navbar navbar-inverse deskNav" style="background-color:black!important;">
+    <nav class="navbar navbar-inverse deskNav">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html"><img src="resources/css/img/brand2.png"></a>
@@ -92,12 +92,16 @@
           <li><a href="#">Page 2</a></li>
         </ul>
     -->
+        <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;">
+          <li><a style="font-size: 20px!important;" href="memberships.html">Memberships</a></li>
+          <li><a href="locations.html" style="padding-right:0px;font-size: 20px!important;">Locations</a></li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="locations.html">Locations</a></li>
           <li><a href="thelevels.html">The Levels</a></li>
             
             <li><a id="about" style="cursor:pointer;" onclick="toggleAbout()">About</a></li>
             <li><a href="blog.html">Community</a></li>
+            <li><a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a></li>
             <li><a href="locations.html">Contact</a></li>
         </ul>
         <a href="http://www.levelredboxing.com/franchise.html" id="franBTN">Own a Franchise</a>
@@ -105,7 +109,7 @@
           <a class="phone" href="locations.html"><i class="fas fa-phone"></i></a>
       </div>
 </nav>
-    <div id="aboutDesk">
+    <div id="aboutDesk" style="right:335px;">
         <a href="theworkout.html" class="aboutLink">The Workout</a>
         <a href="sixpunches.html" class="aboutLink">Learn the Moves</a>
         <a href="http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
@@ -117,15 +121,16 @@
         <a class="phone" href="locations.html"><i class="fas fa-phone"></i></a>
         <div class="mobileWrap">
             <a href="locations.html">Locations</a>
-            <a href="thelevels.html">The Levels</a><a href="theworkout.html">The Workout</a>
-            
+            <a href="memberships.html">Memberships</a>
+            <a href="theworkout.html">The Workout</a>     
             <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="thelevels.html">The Levels</a><a href="sixpunches.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
             <div id="aboutMob"></div>
             <a href="blog.html">Community</a>
+            <a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a>
             <a href="locations.html">Contact</a>
             <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
         </div>
-    </div>    
+    </div>  
     <script type="text/javascript">
         function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");}
         function toggleNav(){
@@ -185,5 +190,5 @@
        
     </div>
     </body> 
-    <div style="height: 50px;"></div><script src="resources/js/script.js?v=2"></script>
+    <div style="height: 50px;"></div><script src="resources/js/script.js?v=3"></script>
 </html>

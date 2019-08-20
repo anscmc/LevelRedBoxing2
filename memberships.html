@@ -152,7 +152,7 @@
         <a class="phone" href="locations.html"><i class="fas fa-phone"></i></a>
         <div class="mobileWrap">
             <a href="locations.html">Locations</a>
-            <a href="locations.html">Memberships</a>
+            <a href="memberships.html">Memberships</a>
             <a href="theworkout.html">The Workout</a>     
             <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="thelevels.html">The Levels</a><a href="sixpunches.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
             <div id="aboutMob"></div>
@@ -421,6 +421,16 @@
                         }
                     }
                     @media(max-width:767px){
+                        .memFluid{
+                            max-width: 95vw!important;
+                        }
+                        .memFluid p{
+                            padding-left: 0!important;
+                        }
+                        .memTiles img {
+                            margin-top:-5vw;
+                            margin-bottom: -5vw;
+                        }
                         #memRedLine{
                             margin-top:-2vw!important;
                             height:2.5vw!important;
@@ -440,7 +450,7 @@
                             padding-right:20px!important;
                         }
                         .locSubmit{
-                            margin-left: 5vw;
+/*                            margin-left: 5vw;*/
                             font-size: 6vw!important;
                             padding-top:.5vw;
                         }
@@ -450,7 +460,7 @@
                         .memLRB1{
                             font-size: 8vw;
                             top:16vw;
-                            left:1.5vw;
+                            left:1vw;
                             text-align: center;
                         }
                         .memLRB2{
@@ -526,6 +536,32 @@
                     @media(max-width:450px){
                         .spacespace{
                             height:100px;
+                        }
+                        .memLRB1{
+                            top:13vw;
+                        }
+                        .memLRB2{
+                            top:29vw;
+                        }
+                        .memLRB3{
+                            font-size: 8vw;
+                            top:43vw;
+                        }
+                        .memLRB4{
+                            font-size: 8vw;
+                            top:50vw;
+                        }
+                        .memLRB5{
+                            font-size: 6vw;
+                            top:63vw;
+                        }
+                        .memLRB6{
+                            font-size: 4vw;
+                            top:75vw;
+                        }
+                        .memLRB7{
+                            font-size: 4vw;
+                            top:79vw;
                         }
                     }
         </style>
@@ -745,5 +781,5 @@
        
     </div>
     </body>
-    <div style="height: 50px;"></div><script src="resources/js/script.js?v=2"></script>
+    <div style="height: 50px;"></div><script src="resources/js/script.js?v=3"></script>
 </html>
