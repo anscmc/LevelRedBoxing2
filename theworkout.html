@@ -94,7 +94,7 @@ document.addEventListener('gesturestart', function (e) {
 </nav>
     <div id="aboutDesk" style="right:335px;">
         <a href="theworkout.html" class="aboutLink">The Workout</a>
-        <a href="sixpunches.html" class="aboutLink">Learn the Moves</a>
+        <a href="themoves.html" class="aboutLink">Learn the Moves</a>
         <a href="http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
     </div>
     <a href="locations.html" class="findYourStudio">Find Your Studio <i class="fas fa-play" style="color:rgb(254,0,0)!important;"></i></a>
@@ -106,7 +106,7 @@ document.addEventListener('gesturestart', function (e) {
             <a href="locations.html">Locations</a>
             <a href="memberships.html">Memberships</a>
             <a href="theworkout.html">The Workout</a>     
-            <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="thelevels.html">The Levels</a><a href="sixpunches.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
+            <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="thelevels.html">The Levels</a><a href="themoves.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
             <div id="aboutMob"></div>
             <a href="blog.html">Community</a>
             <a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a>
@@ -161,8 +161,8 @@ document.addEventListener('gesturestart', function (e) {
         </div>
 
             <div class="everyleveldiv">
-                <div class="container">
-                    <div class="row">
+                <div class="container-fluid">
+                    <div class="row" style="max-width:100%!important;">
 
                         <div class="col-md-6" style="padding: 0;">
                                             <div id="strongwrap">
@@ -173,7 +173,7 @@ document.addEventListener('gesturestart', function (e) {
                 </div>
                         </div>
 
-            <div class="col-md-6" style="padding: 0;">
+            <div class="col-md-4" style="padding: 0;">
                                         <style type="text/css">
                             #tiltedBTN{
                                 position: absolute;
@@ -198,12 +198,13 @@ document.addEventListener('gesturestart', function (e) {
                             }
                             #workVidDiv>span{
                                 color:white;
-                                font-size: 50px;
+                                font-size: 40px;
                                 font-family: metropolis;
                                 text-align: left!important;
                                 display: block;
                                 line-height: 100%;
                             }
+/*
                             #workVidDiv>p{
                                 color:white;
                                 font-size: 28px;
@@ -212,6 +213,7 @@ document.addEventListener('gesturestart', function (e) {
                                 text-align: left;
                                 font-weight: 300;
                             }
+*/
                                 .workCaret{
                                     font-size: 55px!important;vertical-align: -.225em;
                                 }
@@ -233,13 +235,13 @@ document.addEventListener('gesturestart', function (e) {
 
                             }
                         </style>
-                <div id="workVidDiv" style="width:100%;display: inline-block;margin-top: 50px;margin-bottom: 50px;">
+                <div id="workVidDiv" style="width:100%;display: inline-block;margin-top: 70px;margin-bottom: 60px;">
                     <a onclick="playWorkout()" id="tiltedBTN">CLICK TO PLAY <i class="fas fa-caret-right workCaret"></i></a>
                     <video id="workVid" style="width:100%;background-color: white;"  poster="resources/css/img/sep19/poster.jpg"><source src="resources/css/img/sep19/workout3.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <span>Watch Carlee's story</span>
-                    <p>As a wife, mother, and teacher it's safe to say Carlee's schedule is packed. Hear what she has to say about why Level Red Boxing is a part of her day and life.</p>
+                    <p class="strongp" style="font-size: 18px;">As a wife, mother, and teacher it's safe to say Carlee's schedule is packed. Hear what she has to say about why Level Red Boxing is a part of her day and life.</p>
                 </div>
             </div>
                         
