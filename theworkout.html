@@ -173,7 +173,7 @@ document.addEventListener('gesturestart', function (e) {
                 </div>
                         </div>
 
-            <div class="col-md-4" style="padding: 0;">
+            <div class="col-md-4 workVidCol" style="padding: 0;">
                                         <style type="text/css">
                             #tiltedBTN{
                                 position: absolute;
@@ -217,6 +217,11 @@ document.addEventListener('gesturestart', function (e) {
                                 .workCaret{
                                     font-size: 55px!important;vertical-align: -.225em;
                                 }
+                                            @media(min-width:1280px){
+                                                .workVidCol{
+                                                    margin-left: 120px!important;
+                                                }
+                                            }
                             @media(max-width:1024px){
                                 #workVidDiv>span{font-size: 30px;}
                                 #workVidDiv>p{font-size: 20px;}
