@@ -44,8 +44,16 @@ document.addEventListener('gesturestart', function (e) {
 });        
         </script>
         <script type="text/javascript">
+            $(function() {
+                $("video").each(function(){ this.volume = 0.5; });
+            });
             function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){
                 $("#mobileNav").fadeToggle(200);
+            }
+            function playWorkout(){
+                $("#workVid").get(0).play()
+                $("#tiltedBTN").fadeToggle(0);
+                $("#workVid").prop("controls",true); 
             }
         </script>
     </head>
@@ -108,7 +116,7 @@ document.addEventListener('gesturestart', function (e) {
     </div>
         
         <div class="newSpace"></div>
-        <img id="workoutBack" src="resources/img/new/workout.jpg"> 
+        <img id="workoutBack" src="resources/css/img/new18/workout/workoutNew.jpg"> 
         <div class="resultswrap animated fadeIn" style="padding-left:0;padding-right:0;padding-top:3vw;padding-bottom:5vw;">
             <div class="container-fluid tiles" style="padding-left:1vw;padding-right:1vw;">
                 <div class="row" style="max-width:100%!important;padding:0px;">
@@ -153,12 +161,90 @@ document.addEventListener('gesturestart', function (e) {
         </div>
 
             <div class="everyleveldiv">
-                <div id="strongwrap">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6" style="padding: 0;">
+                                            <div id="strongwrap">
                     <span class="newstrongspan">strongat<span class="boldstrong">every</span>level</span>
                     <br>
-                    <p class="strongp">First class? New to exercise? No experience with anything but the treadmill? No sweat. At Level Red Boxing, you're Strong At Every Level. Classes have been molded to be great for both beginners and avid exercisers. After your first class, you'll see what we're talking about.</p>
+                    <p class="strongp" style="font-size: 18px;">First class? New to exercise? No experience with anything but the treadmill? No sweat. At Level Red Boxing, you're Strong At Every Level. Classes have been molded to be great for both beginners and avid exercisers. After your first class, you'll see what we're talking about.</p>
                     <a class="btn btn-full js--scroll-to-plans buyBtn viewBTN" href="locations.html" style="margin-bottom:10px;font-size:16px;border-radius: 0;margin-left:0px;padding:5px;padding-left:20px;padding-right:20px;">TRY A FREE CLASS</a>
                 </div>
+                        </div>
+
+            <div class="col-md-6" style="padding: 0;">
+                                        <style type="text/css">
+                            #tiltedBTN{
+                                position: absolute;
+                                top:35%;
+                                left:calc(50% - 150px);
+                                padding:0;
+                                line-height: 100%;
+                                width:300px;
+                                font-size: 45px;
+                                color: white;
+                                background-color: rgb(254,0,0);
+                                font-family: tiltedW;
+                                cursor: pointer;
+                                z-index: 5;
+                                text-decoration: none!important;
+                                border:1px solid transparent;
+                                transition: .3s ease all;
+                            }
+                            #tiltedBTN:hover{
+                                border: 1px solid black;
+                                text-shadow: 0 0 1px black;
+                            }
+                            #workVidDiv>span{
+                                color:white;
+                                font-size: 50px;
+                                font-family: metropolis;
+                                text-align: left!important;
+                                display: block;
+                                line-height: 100%;
+                            }
+                            #workVidDiv>p{
+                                color:white;
+                                font-size: 28px;
+                                line-height: 120%;
+                                font-family: 'Lato', sans-serif!important;
+                                text-align: left;
+                                font-weight: 300;
+                            }
+                                .workCaret{
+                                    font-size: 55px!important;vertical-align: -.225em;
+                                }
+                            @media(max-width:1024px){
+                                #workVidDiv>span{font-size: 30px;}
+                                #workVidDiv>p{font-size: 20px;}
+                                #tiltedBTN{font-size: 30px;width: 220px;top:35%;
+                                left:calc(50% - 110px);}
+                                .workCaret{
+                                    font-size: 35px!important;vertical-align: -.225em;
+                                }
+                            }
+                                            @media(max-width:767px){
+
+                                #tiltedBTN{font-size: 30px;width: 220px;top:30%;}
+                                                #strongwrap{
+                                                    margin-top:60px!important;
+                                                }
+
+                            }
+                        </style>
+                <div id="workVidDiv" style="width:100%;display: inline-block;margin-top: 50px;margin-bottom: 50px;">
+                    <a onclick="playWorkout()" id="tiltedBTN">CLICK TO PLAY <i class="fas fa-caret-right workCaret"></i></a>
+                    <video id="workVid" style="width:100%;background-color: white;"  poster="resources/css/img/sep19/poster.jpg"><source src="resources/css/img/sep19/workout3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span>Watch Carlee's story</span>
+                    <p>As a wife, mother, and teacher it's safe to say Carlee's schedule is packed. Hear what she has to say about why Level Red Boxing is a part of her day and life.</p>
+                </div>
+            </div>
+                    </div>
+                </div>
+
             </div>
             <div id="bringgoals">
                 <div class="container" style="text-align: right;">
@@ -234,7 +320,7 @@ document.addEventListener('gesturestart', function (e) {
         </div>
        
     </div>
-        </div>
+    
        
     </body>  
     <div style="height: 50px;"></div><script src="resources/js/script.js?v=3"></script>
