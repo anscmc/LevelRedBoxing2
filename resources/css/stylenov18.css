@@ -404,7 +404,7 @@ body{
 .locTRY:hover{
     
 }
-.vidDiv{
+.vidDiv2{
     background-color: white;
 /*
     -webkit-box-shadow: 0px 30px 120px 50px white;
@@ -412,6 +412,7 @@ body{
 */
     z-index: 100;
     position: relative;
+    display: block;
 }
 .levelup{
     text-transform: uppercase;
@@ -426,11 +427,11 @@ body{
 }
 
 @media (min-width:1920px){
-    .vidDiv p{
+    .vidDiv2 p{
         font-size: 35px!important;
     }
 }
-.vidDiv p{
+.vidDiv2 p{
     font-size: 30px;
     padding-right: 10px;
     padding-left:10px;
@@ -478,7 +479,7 @@ body{
     background-size:cover;
     background-position: top;
     z-index: 2;
-    overflow: hidden;
+/*    overflow: hidden;*/
     position: relative;
     padding-left: 100px;
     margin-top:-50px;
@@ -1117,7 +1118,7 @@ box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
     .header>img{
         width:350px;   
     }
-    .vidDiv p{
+    .vidDiv2 p{
         font-size: 25px;
     }
     #gloveIMG{
@@ -1129,7 +1130,7 @@ box-shadow: 0px 3px 18px 0px rgba(66,66,66,1);
     height:100px;
 }
 @media (max-width:1299px){
-    .vidDiv p{
+    .vidDiv2 p{
         font-size: 25px;
     }
     .space1{
@@ -1571,7 +1572,7 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
         font-size: 24px;
     }
 
-    .vidDiv p{
+    .vidDiv2 p{
         font-size:20px;
     }
     .linespace{
@@ -1634,7 +1635,7 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
         line-height: 25px;
         letter-spacing: 2px;
     }
-    .vidDiv .col-lg-9{
+    .vidDiv2 .col-lg-9{
         padding-top:25px;
     }
     .mobIMGlevel{
@@ -1716,7 +1717,7 @@ box-shadow: 0px -45px 93px 21px rgba(85,85,88,1);
     }
 }
 @media (max-width:399px){
-    .vidDiv p{
+    .vidDiv2 p{
         font-size: 16px;
         margin-bottom: 10px;
     }
