@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123760229-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,10 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-123760229-1');
+  gtag('config', 'AW-733699553');
 </script>
+<!-- Event snippet for Free class lead form conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-733699553/l-X7CNPI8qoBEOG77d0C', 'event_callback': callback }); return false; }</script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>Buffalo | Level Red Boxing</title>
@@ -281,7 +284,7 @@ typeHeader();
                            <span style="display: block">Questions</span>
                            <input class="form-control" type="text" data-forge-name="Question" name="question" required>
                        </div>
-                        <input type="submit" value="Send" class="locSubmit">
+                        <input onclick="return gtag_report_conversion('https://levelredboxing.com/free-class-buffalo.html');" type="submit" value="Send" class="locSubmit">
                         <span style="display:block;font-size:10px;">*For new members only</span><span style="display:block;font-size:10px;line-height: 100%;">*Handwrap purchase may apply</span>
                     </div>
                     </form>
