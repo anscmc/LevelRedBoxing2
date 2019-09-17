@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta property="fb:app_id" content="496419921172234" /><meta property="og:url" content="https://levelredboxing.com/blog/climb-to-success.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Climb to Success | Level Red Boxing" />
+        <meta property="og:description" content="Whether you’re warming up or looking to get a full body workout, Mountain Climbers will do the trick..." />
+        <meta property="og:image" content="https://levelredboxing.com/resources/css/img/blogpics/set16/supermove.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="../resources/js/jquery.waypoints.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://www.levelredboxing.com/resources/hide.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/stylenov18.min.css?v=12">
+        <link rel="stylesheet" type="text/css" href="../resources/css/newstyle.min.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900,900i" rel="stylesheet">
+        <title>Climb to Success | Level Red Boxing</title>
+    </head>
+    <body style="background-color: transparent !important">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="newBar fadefade"  id="navvy" style="opacity: 0;"><a style="cursor: pointer;" onclick="showMoreFree()"><img src="../resources/css/img/new19/free.png"></a><p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 15px;margin-top: 10px;font-size: 14px;padding:5px;">To welcome you to Level Red Boxing, we're giving you a free class. Enter your postal code below:</p><input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345"><a id="zipSearch" onclick="findLocation()" style="">Search</a></div><nav class="navbar navbar-inverse deskNav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html"><img src="../resources/css/img/brand2.png"></a>
+<!--            <a class="mobFran">Own a Franchise</a>-->
+        </div>
+    <!--
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+        </ul>
+    -->
+        <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;"><li><a style="font-size: 20px!important;" href="../memberships.html">Memberships</a></li><li><a href="../locations.html" style="padding-right:0px;font-size: 20px!important;">Locations</a></li></ul><ul class="nav navbar-nav navbar-right">
+          
+          <li><a href="../thelevels.html">Levels</a></li>
+            
+            <li><a id="about" style="cursor:pointer;" onclick="toggleAbout()">About</a></li>
+            <li><a href="../blog.html">Community</a></li>
+            <li><!--<a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a>--></li><li><a href="../locations.html">Contact</a></li>
+        </ul>
+        <a href="http://www.levelredboxing.com/franchise.html" id="franBTN">Own a Franchise</a>
+        <a onclick="toggleNav()" class="hamburger"><i class="fas fa-bars"></i></a>
+          <a class="phone" href="../locations.html"><i class="fas fa-phone"></i></a>
+      </div>
+</nav>
+    <div id="aboutDesk">
+        <a href="../theworkout.html" class="aboutLink">The Workout</a>
+        <a href="../themoves.html" class="aboutLink">Learn the Moves</a>
+        <a href="../http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
+    </div>
+    <a href="../locations.html" class="findYourStudio">Find Your Studio <i class="fas fa-play" style="color:rgb(254,0,0)!important;"></i></a>
+    <div id="mobileNav" class="mobileNav">
+<!--        <a><img src="resources/css/img/brand2.png"></a>-->
+        <a onclick="toggleNav()" class="hamburgerX">X</a>
+        <a class="phone" href="../locations.html"><i class="fas fa-phone"></i></a>
+        <div class="mobileWrap"><a href="../memberships.html">Memberships</a>
+            <a href="../locations.html">Locations</a>
+            <a href="../theworkout.html">The Workout</a>
+            
+            <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="../thelevels.html">The Levels</a><a href="../themoves.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
+            <div id="../aboutMob"></div>
+            <a href="../blog.html">Community</a>
+            <a href="../locations.html">Contact</a>
+            <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
+        </div>
+    </div>
+<!--
+        <div class="blogHead6 mainHead">
+            <div class="container">
+
+            </div>
+        </div>
+-->
+        <div class="container blogPicPad">
+            <div class="row blogPicPad">
+                <div class="col-sm-12 blogPicPad">
+                <img style="width:100%;-webkit-filter: brightness(100%); " src="../resources/css/img/blogpics/set16/supermove.jpg">
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" style="padding: 0px;padding-left: 15px;">
+                    <h1 id="articleTitle" style="color: rgb(254,0,0) !important">Climb to Success</h1>
+                    <p>Whether you’re warming up or looking to get a full body workout, Mountain Climbers will do the trick. Previously called “Running Planks”, this quick and repeating motion helps tone and strengthen a different variety of muscle groups. Here are some core benefits for performing this super move: </p>
+                    <p><span style="font-weight: bold;">Cardio: </span>Moving and thrusting continuously for a couple minutes can mimic similar effects of other exercises, such as Mountain Climbing (in the literal sense) and running. It raises your BPM and allows the body to condition itself and build more endurance and a healthier heart.</p>
+                    
+                    <p><span style="font-weight: bold;">Full Body Workout: </span>Much like a plank, since it’s a similar position, the body strengthens its arms, shoulders, and back, maintaining stability and holding up the weight of the body. The swift movements of your legs help strengthen your hip flexors, quads, and buttock, building muscle and quickness in your step! By using your core to also help maintain stability, you’re strengthening and slimming your waist! </p>
+                    
+                    <p><span style="font-weight: bold;">How to do: </span></p>
+                    <ol class="listUL" style="margin-left:30px;">
+                      <li style="font-weight: 500">Get into a plank position, making sure to distribute your weight evenly between your hands and your toes.</li>
+                      <li style="font-weight: 500">Check your form—your hands should be about shoulder-width apart, back flat, abs engaged, and head in alignment.</li>
+                      <li style="font-weight: 500">Pull your right knee into your chest as far as you can.</li>
+                        <li style="font-weight: 500">Then switch, pulling that knee out and bringing the other knee in.</li>
+                        <li style="font-weight: 500">Keeping your hips down, run your knees in and out as far and as fast as you can. Alternate inhaling and exhaling with each leg change.</li>
+                    </ol>
+                    <p>Keep in mind, much like any workout consistency is key to build endurance and strength. </p>
+
+                    <div style="width:100%;text-align: center;margin-top:15px;margin-bottom:15px">
+                        <a href="../blog.html" class="btn btn-full js--scroll-to-plans buyBtn viewBTN" style="margin-bottom:10px;width:auto;font-size:16px;border-radius: 0px;padding:5px;padding-left:10px;padding-right: 10px;margin:0;">Back to Blog Page <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-md-4" style="text-align: center;">
+                    <a id="blogPromo" href="../locations.html" style="cursor: pointer;">
+                    <img src="../resources/css/img/newimg/buffpittpromo.jpg?v=2" class="hide19"  style="width: 100%;margin-top:10px;">
+                    </a>
+
+               
+                    <div style="height:10px;"></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/levelredboxing" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/levelredboxing" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/levelredboxing">Level Red Boxing</a></blockquote></div>
+                    <div style="height:10px;"></div>
+                 
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/e0ff81dff87b5b6f9b7d97e7e1907c95.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+                </div>
+            </div>
+        </div>
+                  
+    <div class="lrbFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../resources/css/img/brand2.png" style="width: 100%;padding-bottom: 10px;max-width: 400px;">
+                </div>
+                <div class="col-md-4 share">
+                    <span>Share how you are</span>
+                    <a style="color: white;" href="https://strongateverylevel.com"><span>#strongatevery<span style="color:rgb(254,0,0);">level</span></span></a>
+                    <div class="icons">
+                    <a href="https://www.instagram.com/levelredboxing/"><i class="fab fa-instagram" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                <a href="https://www.facebook.com/LevelRedBoxing/"><i class="fab fa-facebook-square" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                <a href="https://www.youtube.com/channel/UCEOWxaM5Fc_bKdCEVfdUMhg"><i class="fab fa-youtube" style="font-size: 30px!important;margin-top:10px;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 stores">
+                    <a href="https://itunes.apple.com/us/app/level-red-boxing/id1359276124?mt=8" style="margin-bottom: 10px;"><img src="../resources/css/img/app/apple.svg"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.fitmetrix.levelredboxing"><img src="../resources/css/img/app/google.png"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="../index.html" class="bottomlink botHome">Home</a>
+                    <a href="http://www.levelredboxing.com/franchise.html" class="bottomlink">Franchising</a>
+                    <a href="../press.html" class="bottomlink">Press</a>
+                </div>
+                 <span class="copy" >&copy; 2019 Level Red Boxing | <a href="http://levelredboxing.com/terms.html">Terms of Service</a></span>
+            </div>
+        </div>  
+    </div>
+
+    <div style="height:50px;"></div><script src="../resources/js/script.js?v=3"></script>
+    
+    </body>  
+    
+<script type="text/javascript">function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){$("#mobileNav").fadeToggle(200);}</script></html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta property="fb:app_id" content="496419921172234" /><meta property="og:url" content="https://levelredboxing.com/blog/healthy-apple-crisp.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Healthy Apple Crisp | Level Red Boxing" />
+        <meta property="og:description" content="Summer is nearing the end, and the air is beginning to smell and feel like fall! So of course, we’re all dreaming of the delicious..." />
+        <meta property="og:image" content="https://levelredboxing.com/resources/css/img/blogpics/set16/superfoods.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="../resources/js/jquery.waypoints.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://www.levelredboxing.com/resources/hide.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/stylenov18.min.css?v=12">
+        <link rel="stylesheet" type="text/css" href="../resources/css/newstyle.min.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900,900i" rel="stylesheet">
+        <title>Healthy Apple Crisp | Level Red Boxing</title>
+    </head>
+    <body style="background-color: transparent !important">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="newBar fadefade"  id="navvy" style="opacity: 0;"><a style="cursor: pointer;" onclick="showMoreFree()"><img src="../resources/css/img/new19/free.png"></a><p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 15px;margin-top: 10px;font-size: 14px;padding:5px;">To welcome you to Level Red Boxing, we're giving you a free class. Enter your postal code below:</p><input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345"><a id="zipSearch" onclick="findLocation()" style="">Search</a></div><nav class="navbar navbar-inverse deskNav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html"><img src="../resources/css/img/brand2.png"></a>
+<!--            <a class="mobFran">Own a Franchise</a>-->
+        </div>
+    <!--
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+        </ul>
+    -->
+        <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;"><li><a style="font-size: 20px!important;" href="../memberships.html">Memberships</a></li><li><a href="../locations.html" style="padding-right:0px;font-size: 20px!important;">Locations</a></li></ul><ul class="nav navbar-nav navbar-right">
+          
+          <li><a href="../thelevels.html">Levels</a></li>
+            
+            <li><a id="about" style="cursor:pointer;" onclick="toggleAbout()">About</a></li>
+            <li><a href="../blog.html">Community</a></li>
+            <li><!--<a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a>--></li><li><a href="../locations.html">Contact</a></li>
+        </ul>
+        <a href="http://www.levelredboxing.com/franchise.html" id="franBTN">Own a Franchise</a>
+        <a onclick="toggleNav()" class="hamburger"><i class="fas fa-bars"></i></a>
+          <a class="phone" href="../locations.html"><i class="fas fa-phone"></i></a>
+      </div>
+</nav>
+    <div id="aboutDesk">
+        <a href="../theworkout.html" class="aboutLink">The Workout</a>
+        <a href="../themoves.html" class="aboutLink">Learn the Moves</a>
+        <a href="../http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
+    </div>
+    <a href="../locations.html" class="findYourStudio">Find Your Studio <i class="fas fa-play" style="color:rgb(254,0,0)!important;"></i></a>
+    <div id="mobileNav" class="mobileNav">
+<!--        <a><img src="resources/css/img/brand2.png"></a>-->
+        <a onclick="toggleNav()" class="hamburgerX">X</a>
+        <a class="phone" href="../locations.html"><i class="fas fa-phone"></i></a>
+        <div class="mobileWrap"><a href="../memberships.html">Memberships</a>
+            <a href="../locations.html">Locations</a>
+            <a href="../theworkout.html">The Workout</a>
+            
+            <a onclick="showAbout()">About</a><div class="aboutBox collapsible collapsed"><a href="../thelevels.html">The Levels</a><a href="../themoves.html">Learn the Moves</a><a href="http://www.strongateverylevel.com">Success Stories</a><br></div>
+            <div id="../aboutMob"></div>
+            <a href="../blog.html">Community</a>
+            <a href="../locations.html">Contact</a>
+            <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
+        </div>
+    </div>
+        
+<!--
+        <div class="blogHead6 mainHead">
+            <div class="container">
+
+            </div>
+        </div>
+-->
+        <div class="container blogPicPad">
+            <div class="row blogPicPad">
+                <div class="col-sm-12 blogPicPad">
+                <img style="width:100%;-webkit-filter: brightness(115%); " src="../resources/css/img/blogpics/set16/supperfood.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" style="padding: 0px;padding-left: 15px;">
+                    <h1 id="articleTitle" style="color: #c42126 !important">Crisp Air &amp; Apples</h1>
+                    <p>
+                    Summer is nearing the end, and the air is beginning to smell and feel like fall! So of course, we’re all dreaming of the delicious comfort foods that follow these cooler temperatures. But be weary! Sweets and sugary desserts can cause fatigue and weight gain. But don’t worry! Another delicious treat, that’s actually good for you, also grows this time of year: Apples! 
+                    </p>
+                    <p>An Apple a day keeps the doctor away… well, it at least tries to anyways. While it may not be a miracle fruit, it is however chalk full of tons of wonderful nutrients to help keep you healthy! For example, apples are made up of plant chemicals called flavonoids that help aid in digestion. The added fiber can slow digestion so you feel fuller after eating too, which can keep you from overeating. Eating fiber-rich foods helps control symptoms and lessens the effects of acid reflux and can also help with diarrhea and constipation. Overall, it’s fantastic for your tummy!</p>
+
+                    <p>Apples also help boost your immune system, thanks to their large sources of Vitamin C. And of course, apples are low in calories and sodium. The choice is simple! </p>
+                    <p>Check out this delicious recipe to help keep your craving under control and get your fall fixes! </p>
+
+                    <hr>
+                    <h1 style="font-weight: 300;text-transform:none; ">Healthy Apple Crisp</h1>
+                    <hr>
+                    <div style="text-align: left;margin-left:-20px">
+                    <h3 style="margin-bottom: 0;padding: 0;height: auto;display: inline-block;width: 100%;">Ingredients</h3>
+                        <bl style="margin-left:30px;font-weight:500;">
+                            <li>1/3 cup whole wheat pastry flour (or regular flour or gluten free oat flour or almond flour)</li>
+                            <li>1/2 cup old fashioned rolled oats, gluten free if desired</li>
+                            <li>1/3 cup dark brown sugar (can also sub coconut sugar but brown sugar is best)</li>
+                            <li>1/2 raw chopped pecans</li>
+                            <li>1/4 teaspoon cinnamon</li>
+                            <li>1/4 teaspoon salt</li>
+                            <li>1/4 cup cold butter or vegan buttery stick, cut into very small cubes (can also use coconut oil)</li>
+                        </bl>
+                        
+                        <h3 style="margin-bottom: 0;padding: 0;height: auto;display: inline-block;width: 100%;">For the crisp: </h3>
+                        <bl style="margin-left:30px;font-weight:500;">
+                            <li>5-6 medium Honeycrisp or Granny Smith apples, peeled, cored and very thinly sliced</li>
+                            <li>1/3 cup pure maple syrup</li>
+                            <li>1 teaspoon cinnamon</li>
+                            <li>pinch of nutmeg</li>
+                            <li>1 tablespoon bourbon (or pure vanilla extract)</li>
+                        </bl>
+                        <hr>
+                        <h3>Instructions</h3>
+                        <ol style="margin-left:30px;font-weight:500;">
+                          <li>Preheat oven to 350 degrees F. Generously grease an 8x8 baking pan with nonstick cooking spray. Set aside. </li>
+                          <li>To make the topping: Combine the flour, oats, brown sugar, cinnamon and pecans in a large bowl until well-combined. Add in the pieces of butter and use your hands to squeeze and combine until the mixture becomes crumbly and resembles wet sand. (Alternatively, you can cut in the butter with a pastry cutter, or place all of the topping ingredients in a food processor and pulse until just blended. My favorite method is to use my hands, as I believe you get the best crumbly topping that way.)</li>
+                          <li>Once finished, place topping in the fridge and begin making the apple filling.</li>
+                          <li>To make the filling: Place apples, maple syrup, cinnamon, nutmeg and bourbon (or vanilla) in a large bowl and toss to combine. Allow to sit for 5-10 minutes.</li>
+                          <li>Take 1/3 cup of the topping mixture and toss with the apple mixture. Place the apple mixture in prepared pan and sprinkle evenly with topping.</li>
+                          <li>Bake the crisp on a baking sheet (just in case the filling bubbles over!) for 45-55 minutes, or until topping is golden brown and filling is bubbling. Remove from oven and cool 10 minutes on wire rack. Serve warm with your favorite vanilla ice cream. Makes 9 servings.</li>
+                            
+                            <h3>Notes</h3>
+                            <p><span style="text-decoration: underline;">To make vegan:</span> sub a buttery vegan stick for the butter or use coconut oil.</p>
+                             <p><span style="text-decoration: underline;">To make gluten free:</span> in the topping, use certified gluten free oats and almond flour or an all purpose gluten free flour or gluten free oat flour.</p>
+
+</ol> 
+
+                    </div>
+                    
+                     <div style="width:100%;text-align: center;margin-top:15px;margin-bottom:15px">
+                         <br>
+                        <a href="../blog.html" class="btn btn-full js--scroll-to-plans buyBtn viewBTN" style="margin-bottom:10px;width:auto;font-size:16px;border-radius: 0px;padding:5px;padding-left:10px;padding-right: 10px;margin:0;">Back to Blog Page <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                         <br>
+                         <br>
+                    </div>
+                </div>
+                <div class="col-md-4" style="text-align: center;">
+                    <a id="blogPromo" href="../locations.html" style="cursor: pointer;">
+                    <img src="../resources/css/img/newimg/buffpittpromo.jpg?v=2" class="hide19"  style="width: 100%;margin-top:10px;">
+                    </a>
+
+               
+                    <div style="height:10px;"></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/levelredboxing" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/levelredboxing" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/levelredboxing">Level Red Boxing</a></blockquote></div>
+                    <div style="height:10px;"></div>
+                 
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/e0ff81dff87b5b6f9b7d97e7e1907c95.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+                </div>
+            </div>
+        </div>
+                  
+
+    <div class="lrbFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../resources/css/img/brand2.png" style="width: 100%;padding-bottom: 10px;max-width: 400px;">
+                </div>
+                <div class="col-md-4 share">
+                    <span>Share how you are</span>
+                    <a style="color: white;" href="https://strongateverylevel.com"><span>#strongatevery<span style="color:rgb(254,0,0);">level</span></span></a>
+                    <div class="icons">
+                    <a href="https://www.instagram.com/levelredboxing/"><i class="fab fa-instagram" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                <a href="https://www.facebook.com/LevelRedBoxing/"><i class="fab fa-facebook-square" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                <a href="https://www.youtube.com/channel/UCEOWxaM5Fc_bKdCEVfdUMhg"><i class="fab fa-youtube" style="font-size: 30px!important;margin-top:10px;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 stores">
+                    <a href="https://itunes.apple.com/us/app/level-red-boxing/id1359276124?mt=8" style="margin-bottom: 10px;"><img src="../resources/css/img/app/apple.svg"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.fitmetrix.levelredboxing"><img src="../resources/css/img/app/google.png"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="../index.html" class="bottomlink botHome">Home</a>
+                    <a href="http://www.levelredboxing.com/franchise.html" class="bottomlink">Franchising</a>
+                    <a href="../press.html" class="bottomlink">Press</a>
+                </div>
+                 <span class="copy" >&copy; 2019 Level Red Boxing | <a href="http://levelredboxing.com/terms.html">Terms of Service</a></span>
+            </div>
+        </div>  
+    </div>
+
+    <div style="height:50px;"></div><script src="../resources/js/script.js?v=3"></script>
+    
+    </body>  
+<script type="text/javascript">function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){$("#mobileNav").fadeToggle(200);}</script></html>
