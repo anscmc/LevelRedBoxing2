@@ -1783,7 +1783,9 @@ td{
         
     }
 }
-
+#franchform{
+    box-shadow: 0 0 10px 0px rgba(0,0,0,.5);
+}
 
 #investmenttable2 td{
     text-align: center;
