@@ -1798,7 +1798,11 @@ td{
     -webkit-box-shadow: 0 0 10px 0px rgba(0,0,0,.5);
     box-shadow: 0 0 10px 0px rgba(0,0,0,.5);
 }
-
+@media only screen and (max-width: 1000px){
+    h1 {
+        font-size: 125%!important;
+    }
+}
 #investmenttable2 td{
     text-align: center;
 }
