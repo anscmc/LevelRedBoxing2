@@ -28,7 +28,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style2.min.css?v=8">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic,700' rel='stylesheet' type='text/css'>
         <title>Franchise | Level Red Boxing</title>
         
                 <script src="resources/js/jquery-3.2.1.js"></script>
@@ -302,20 +302,47 @@
         <div id="head" style="text-align: left;">
             <div style="background-color: transparent;width:100%;height:100px;"></div>
             <style>@media (min-width:500px){.francon2{margin-top:10%!important;}}</style>
-            <div class="container francon2">
-                <div class="row" style="border-left:2px solid white;">
+            <div class="container-fluid francon2" style="text-align: right;">
+                <div class="row" style="border-left:2px solid white;display: inline-block;text-align: left;">
                     <h1 class="strongat2 animated fadeInUp3" style="color:white !important;text-align: left;font-weight: 300;" >Geared for Major Success.</h1>
                 <h1 class="strongat2 animated fadeInUp2" style="color:white !important;text-align: left;font-weight: 300;" >Better Member Retention.</h1>
                 <h1 class="strongat2 animated fadeInUp1" style="color:white !important;text-align: left;font-weight: 300;" >Endless Opportunities.</h1>
                     <div class="animated fadeIn2">
-                    <a href="#buffer1" class="btn btn-full js--scroll-to-plans buyBtn" style="margin-bottom:10px;width:200px;font-size:16px;margin-left:10px;margin-right:0px;">Take The Next Step</a>
-                    <a href="#clubmodel" class="btn btn-full js--scroll-to-plans buyBtn" style="margin-bottom:10px;width:200px;font-size:16px;margin-left:10px;margin-right:0px;">The Model</a>
+                        <style type="text/css">
+                            .buyBtn{
+                                background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.47522759103641454) 10%, rgba(176,33,37,0.5732668067226891) 56%);
+                                font-weight: 700!important;
+                                font-size: 18px!important;
+                                width: 290px!important;
+                            }
+                            .req:hover{
+                                color:black!important;
+                            }
+                            p,span{
+                                color:#323232;
+                            }
+                            @media (max-width:600px){
+                                .mobPad{
+                                    padding-right: 0!important;
+                                    margin-right: 0px;
+                                }
+                                #buffer1{
+                                    height: 0!important;
+                                }
+                                #bottomLines{
+                                    display: none!important;
+                                }
+                            }
+                        </style>
+                    <a href="#buffer1" class="btn btn-full js--scroll-to-plans buyBtn" style="margin-bottom:10px;font-size:16px;margin-left:10px;margin-right:0px;border-radius: 0;box-shadow: 0 0 5px rgb(50,50,50,.75)">Download Franchise Guide</a>
+<!--                    <a href="#clubmodel" class="btn btn-full js--scroll-to-plans buyBtn" style="margin-bottom:10px;width:200px;font-size:16px;margin-left:10px;margin-right:0px;border-radius: 0;box-shadow: 0 0 5px rgb(50,50,50,.75)">The Model</a>-->
 <!--                    <a href="#investment" class="btn btn-full js--scroll-to-plans buyBtn" style="margin-bottom:10px;width:200px;font-size:16px;margin-left:10px;margin-right:0px;">Initial Investment</a>-->
                         </div>
                 </div>
                 
             </div>
-            <a  href="#buffer1" class="animated fadeIn"><div id="bouncing" class="animated bigchev" style="background-color: transparent;width:100%;height:45px;text-align: center;color:white;position: absolute;bottom: 5vh">
+            <a  href="#buffbuff" class="animated fadeIn"><div id="bouncing" class="animated bigchev" style="background-color: transparent;width:100%;height:45px;text-align: center;color:white;position: absolute;bottom: 5vh">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </div></a>
         </div>
@@ -326,10 +353,11 @@
 -->
         
         <div id="contactFranch">
-    <div id="buffer1" class="bigchev" style="background-color: transparent;width:100%;height:90px;text-align: center"></div>
+    <div id="buffbuff" class="bigchev" style="background-color: transparent;width:100%;height:90px;text-align: center"></div>
             <div class="container formLeft">
-                <div class="row">
-                    <div id="lefty" class="col-sm-6" style="padding:10px">
+                <div class="row" style="padding-left: 0;padding-right: 0;">
+                    <div class="col-sm-3"></div>
+                    <div id="lefty" class="col-sm-6" style="padding:10px;padding-left: 0;padding-right: 0;">
                         <h1 style="margin-bottom: 0px;padding-bottom:10px;font-weight: 400;">Own a <span style="color: #c42126">Level Red</span> Franchise</h1>
                         <p class="formp"><span style="font-weight: 400">Welcome to Level Red Boxing</span> where you, yes you, can own your own successful fitness business!  Right now you could be smack dab in the middle of an exciting and unmatched fitness system. As a Level Red club owner expect to be ahead of the curve and recognized for delivering the best options for members in your community.</p>
                         <p class="formp"><span style="font-weight: 400">We're a team.</span> Along the way, get support from club pros who have been through the thick and thin.  We understand what you want out of your company so the support never stops.  We want exactly what you want and we're here for you.</p>
@@ -339,43 +367,7 @@
                             <a href="#hook" class="morespan"><span>More Information <i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
                         </div>
                     </div>
-                    <div id="franchform" class="col-sm-6" style="background-color:rgb(242,242,242);padding:10px;margin-bottom:25px;">
-                        <h1 style="margin-bottom: 0px;padding-bottom:10px;font-weight: 400;text-align: center">Take the Next Steps Now</h1>
-                        <br>
-<!--                        <h2 style="margin-top:5px;margin-bottom:5px;max-height:40px;">Fill out this form or call <span style=""><a style="color:#c42126 !important;" href="tel:+1-814-323-6262"><i class="fa fa-phone" style="color: #c42126 !important;" aria-hidden="true"></i>(814) 323-6262</a></span></h2>-->
-		
-                        <form data-forge-name="LRB Franchise" id="franchiseForm" style="text-align: center">
-                          <div class="form-group">
-                            <label for="first">First Name</label>
-                            <input data-forge-name="First" type="text" class="form-control" id="first" name="f1"  required>
-                          </div>
-                          <div class="form-group">
-                            <label for="last">Last Name</label>
-                            <input data-forge-name="Last" type="text" class="form-control" id="last" name="f1_2" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="email">Email</label>
-                            <input data-forge-name="Email" type="email" class="form-control" id="email" name="f3" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input data-forge-name="Phone" type="number" class="form-control" name="f2" id="phone" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="city">City</label>
-                            <input data-forge-name="City" type="text" class="form-control" name="f5" id="city">
-                          </div>
-                            <div class="form-group">
-                                <label for="st">State</label>
-                                <input data-forge-name="State" type="text" class="form-control" name="f6" id="st">
-                            </div>
-                            <div style="text-align:center" style="margin-left:10px;">
-								<input type="hidden" name="submit" value="submit"/>
-                                <input type="submit" value="Request Information" class="btn btn-default reqBTN">
-                            </div>
-                        </form>
-                        
-                    </div>
+
                         <div id="moreSmall" class="fullInfo2" style="text-align:center;">
                             <a href="#hook" class="morespan"><span>More Information <i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
                         </div>
@@ -385,7 +377,7 @@
         <div id="hook" class="bottomShadow" >
             <div style="position:absolute;bottom:0px;right:0px;width:50%;border-top:3px solid #c42126;"></div>
             <div id="buffer2" style="background-color: transparent;width:100%;height:100px;"></div>
-            <h1 style="text-align: center"><a class="redLetters">Level Red</a> Boxing... What's the Hook?</h1>
+            <h1 style="text-align: center;font-weight: 400;margin-left: 10px;margin-right: 10px;"><a class="redLetters">Level Red</a> Boxing... What's the Hook?</h1>
             <div class="container" style="border-left:3px solid #c42126;border-bottom:3px solid #c42126;padding-left: 15px">
                 <div class="row">
                 
@@ -414,7 +406,7 @@
             <div class="container" style="padding:10px;">
                 <div id="buffer3" style="background-color: transparent;width:100%;height:100px;"></div>
                 <div class="row">
-                    <h1>Why the <a class="redLetters">Level Red</a> Model?</h1>
+                    <h1 style="font-weight: 400;">Why the <a class="redLetters">Level Red</a> Model?</h1>
                     <div id="model" class="col-sm-6" style="padding-bottom: 25px;">
                         
             <span id="why1" class="modelSpan"><img src="resources/css/img/rDark.png" style="height:30px"> Small Footprint</span>
@@ -465,7 +457,7 @@
             </div>
                 </div>
 -->         <div id="123"  style="border-left:3px solid #c42126;border-top:3px solid #c42126;padding-top:85px">
-                <h1 id="gainH" style="text-align: center;margin-bottom: 0;">1.GAIN 2.MOTIVATE 3.RETAIN</h1>
+                <h1 id="gainH" style="text-align: center;margin-bottom: 0;font-weight: 400;">1.GAIN 2.MOTIVATE 3.RETAIN</h1>
             </div>
             
             <div id="123wrap" class="container" style="border-left:3px solid #c42126;">
@@ -475,10 +467,10 @@
                     
                     <div style="color: transparent">.</div>
 <!--            <h2 id="gain2"  style="text-align:left;max-height:26px;margin-bottom:0px;font-weight: 400;">Marketing</h2>-->
-                    <h3  id="gain2" style="text-align:left;margin-bottom:0px;font-weight: 400;">Marketing</h3>
+                    <h3  id="gain2" style="text-align:left;margin-bottom:0px;font-weight: 400;color: black;">Marketing</h3>
             <p id="gain3" >You're going to have a lot to brag about! We understand our customers and since you're new to things, we're here to help you get started. Our marketing team will be by your side every step of the way. Our creative geniuses develop daily, weekly, monthly, and seasonal marketing programs tailor made just for your area and audience.</p>
                     <br>
-                <p style="text-align: center;">Get the full package:</p>
+                <p style="text-align: center;color: black;">Get the full package:</p>
                 <div id="col1" class="col-sm-6 col123">
                     
                     <p style="margin-left: 30px;margin:0 auto;"><img src="resources/css/img/gloveIcon.png" style="height:20px;"> TV &amp; Web Ads</p>
@@ -505,10 +497,10 @@
                     
                     <div style="color: transparent">.</div>
                     
-            <h3  id="gain5" style="text-align:left;margin-bottom:0px;font-weight: 400;">Motivation</h3>
+            <h3  id="gain5" style="text-align:left;margin-bottom:0px;font-weight: 400;color: black;">Motivation</h3>
             <p id="gain5" >Level Red Boxing was formed with member and employee motivation in mind.  We've successfully created a systematic method for keeping members focused on achievement and employees equally focused on those members. We could go on and on about how awesome our instructors and workouts are, but our real success has been creating unmatched customer support and community
 </p>
-            <h3  id="gain6" style="text-align:left;margin-bottom:0px;font-weight: 400;">Retention</h3>
+            <h3  id="gain6" style="text-align:left;margin-bottom:0px;font-weight: 400;color: black;">Retention</h3>
             <p id="gain7" >Here's a scary reality, the majority of general athletic club members do not even use the membership! It's not fun wondering how much longer a member will stay a member. How would you feel if you had 5,000 customers and only 500 were actively using your product? What are they saying about you? It's a slippery slope. The majority of our members use the membership and look forward to each class. Members who are getting the most out of their memberships, rarely discontinue.  You have an opportunity to own a product that people can't wait to use and keep coming back for.</p>
                 </div>
             </div>
@@ -526,7 +518,7 @@
             <div class="container" style="border-left:3px solid #c42126;padding-left:7px;">
                 <div class="row" style="z-index:0 !important;">
                     <div id="buffer5 " style="background-color: rgb(242,242,242);width:100%;height:90px;"></div>
-                    <h1  style="text-align: center">Initial Benefits</h1>
+                    <h1  style="text-align: center;font-weight: 400;">Initial Benefits</h1>
                     <div id="fact1" class="col-sm-6">
                         <h3 style="font-weight: 400;margin-bottom:5px">Comprehensive Initial Training</h3>
                         <img src="resources/css/img/initial/new/comprehensive-training.jpg" style="width:100%">
@@ -556,10 +548,10 @@
         </div>
         
         <div id="investment" style="background-color: rgb(242,242,242)">
-            <div class="container" style="padding-left:0px;">
+            <div class="container mobPad" style="padding-left:0px;">
                 <div id="estRow" class="row" style="margin-left:0px !important;padding-right:0px;">
                     <div class="col-sm-12" style="padding-left:0px;padding-right:0px;margin-bottom:0px !important;padding-bottom:0px !important;">
-                        <div id="buffer4" style="background-color: rgb(242,242,242);width:100%;height:10px;border-top:3px solid #c42126;padding-left:0;border-right:3px solid #c42126;"></div>
+                        <div id="buffer1" style="background-color: rgb(242,242,242);width:100%;height:10px;border-top:3px solid #c42126;padding-left:0;border-right:3px solid #c42126;"></div>
 <!--                        <h1 style="text-align: center;font-weight: 300;margin-bottom:0px;border-right:3px solid #c42126;">Estimated Initial Investment</h1>-->
 
 <!--
@@ -671,15 +663,49 @@
     <tr><td style="font-weight:600;font-size:18px">Initial franchise fee</td><td>$0 </td><td>$10,000 </td></tr>
 </tbody></table>
 -->
-<div id="buffer6" style="background-color: rgb(242,242,242);width:100%;height:50px;padding-left:0;border-right:3px solid #c42126;"></div>
+<div id="buffer6" style="background-color: rgb(242,242,242);width:100%;height:75px;padding-left:0;border-right:3px solid #c42126;"></div>
                         <div style="text-align:center;border-right:3px solid #c42126;">
-                            <a id="takeLarge" href="#buffer1" class="btn btn-full js--scroll-to-plans buyBtn" style="width:200px;font-size:16px;margin-right:0px;margin-bottom:0px;">Take The Next Step</a>
-                            <a id="takeSmall" href="#lastp" class="btn btn-full js--scroll-to-plans buyBtn" style="margin-bottom:10px;width:200px;font-size:16px;margin-right:0px;margin-bottom:0px">Take The Next Step</a>
-                            
+                                                <div id="franchform" style="background-color:rgb(242,242,242);padding:10px;margin-bottom:25px;border:2px solid #c42126;max-width: 550px;margin:0 auto;">
+                        <h1 style="padding:10px;margin: 0px;padding-left: 0;padding-right: 0; padding-bottom:10px;font-weight: 400;text-align: center">Complete the Form Below</h1>
+                        <br>
+<!--                        <h2 style="margin-top:5px;margin-bottom:5px;max-height:40px;">Fill out this form or call <span style=""><a style="color:#c42126 !important;" href="tel:+1-814-323-6262"><i class="fa fa-phone" style="color: #c42126 !important;" aria-hidden="true"></i>(814) 323-6262</a></span></h2>-->
+		
+                        <form data-forge-name="LRB Franchise" id="franchiseForm" style="text-align: center">
+                          <div class="form-group">
+                            <label for="first">First Name</label>
+                            <input data-forge-name="First" type="text" class="form-control" id="first" name="f1"  required>
+                          </div>
+                          <div class="form-group">
+                            <label for="last">Last Name</label>
+                            <input data-forge-name="Last" type="text" class="form-control" id="last" name="f1_2" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input data-forge-name="Email" type="email" class="form-control" id="email" name="f3" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input data-forge-name="Phone" type="number" class="form-control" name="f2" id="phone" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="city">City</label>
+                            <input data-forge-name="City" type="text" class="form-control" name="f5" id="city">
+                          </div>
+                            <div class="form-group">
+                                <label for="st">State</label>
+                                <input data-forge-name="State" type="text" class="form-control" name="f6" id="st">
+                            </div>
+                            <div style="text-align:center" style="margin-left:10px;">
+								<input type="hidden" name="submit" value="submit"/>
+                                <input type="submit" value="Download Franchise Guide" class="btn btn-full buyBtn req" style="margin-bottom:10px;font-size:16px;margin-left:2px;margin-right:2px;border-radius: 0;box-shadow: 0 0 5px rgb(50,50,50,.75);background: none;">
+                            </div>
+                        </form>
+                        
+                    </div>
                             <div style="display:inline;width:50%;border-top:3px solid #c42126;height:3px;"></div>
                         </div>
 
-                        <div style="width:50%;float:right;height:20px;border-bottom:3px solid #c42126;border-left:3px solid #c42126;border-right:3px solid #c42126;"></div>
+                        <div id="bottomLines" style="width:50%;float:right;height:20px;border-bottom:3px solid #c42126;border-left:3px solid #c42126;border-right:3px solid #c42126;"></div>
                         <br>
                         <br>
         
