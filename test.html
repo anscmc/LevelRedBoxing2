@@ -27,8 +27,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 -->
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/stylenov182.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/loc.min.css?v=8">
+        <link rel="stylesheet" type="text/css" href="resources/css/stylenov182.css?v=11">
+        <link rel="stylesheet" type="text/css" href="resources/css/loc.min.css?v=11">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.min.css?v=1.2">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         
@@ -174,10 +174,15 @@
         </ul>
     -->
         <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;margin-top: 35px;">
-            <li><a href="fitmetrix/erie/pricing-erie.html">Memberships</a></li>
+            <li><a href="fitmetrix/erie/pricing-erie.html"><span>&#91;</span>Memberships<span>&#93;</span></a></li>
+            <li><a href="fitmetrix/erie/schedule-erie.html"><span>&#91;</span>Schedule<span>&#93;</span></a></li>
+            <li><a href="blog.html"><span>&#91;</span>Community<span>&#93;</span></a></li>
+            <li><a style="cursor: pointer;" onclick="toggleAbout()"><span>&#91;</span>About<span>&#93;</span></a></li>
+<!--
             <li><a href="fitmetrix/erie/schedule-erie.html">Schedule</a></li>
             <li><a href="blog.html">Community</a></li>
             <li style="cursor: pointer"><a onclick="toggleAbout()">About</a></li>
+-->
         </ul>
           <ul class="nav navbar-nav navbar-right" style="margin-top: 35px;">
               <a class="locSubmitc">Try A Free Class</a>
@@ -217,8 +222,8 @@
                 <div id="clubTop" class="clubTop">
                     <h1>ERIE, PA</h1>
                     <br>
-                    <a class="locSubmitc">Memberships</a>
-                    <a class="locSubmitc" style="background-color: transparent;margin-left: 10px;">View Schedule</a>
+                    <a href="fitmetrix/erie/pricing-erie.html" style="margin-top: 0px!important;" class="locSubmitc">Memberships</a>
+                    <a href="fitmetrix/erie/schedule-erie.html" class="locSubmitc" style="background-color: transparent;margin-left: 10px;">View Schedule</a>
                 </div>
             </div>
         </div>
@@ -230,13 +235,14 @@
 
                 <div class="col-sm-4">
                     <div class="clubDetails">
-                        <span><i class="fas fa-map-marker-alt"></i> 1234 Level Red Boxing Road</span>
-                        <span style="margin-bottom: 20px;"><i style="visibility: hidden!important;" class="fas fa-map-marker-alt"></i> Erie, PA 16501</span>
-                        <span style="margin-bottom: 20px;"><i class="fas fa-phone"></i> (814) 222-2222</span>
+                        <span><i class="fas fa-map-marker-alt"></i>2147 W 12th St</span>
+                        <span style="margin-bottom: 20px;"><i style="visibility: hidden!important;" class="fas fa-map-marker-alt"></i> Erie, PA 16505</span>
+                        <span style="margin-bottom: 20px;"><i class="fas fa-phone"></i> (814) 315-2994</span>
                         <span style="margin-bottom: 20px;"><i class="fas fa-envelope"></i> erie@levelredboxing.com</span>
-                        <span><i class="fas fa-clock"></i> Mon-Fri: 8am-7pm</span>
-                        <span><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sat: 6am-1pm</span>
-                        <span><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sun: 6am-12pm</span>
+                        <span><i class="fas fa-clock"></i> Mon-Thu: 5am-7pm</span>
+                        <span><i style="visibility: hidden!important;" class="fas fa-clock"></i> Fri: 5am-6pm</span>
+                        <span ><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sat: 8am-1pm</span>
+                        <span style="margin-bottom: 20px;"><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sat: 8am-12pm</span>
                     </div>
                 </div>
                 <div class="col-sm-7" style="overflow: hidden;">
@@ -250,7 +256,7 @@
     <style type="text/css">
         .clubFollow{
             color: white;
-            font-size: 40px;
+            font-size: 34px;
         }
         .clubFollow span{
             margin-right: 50px;
@@ -280,7 +286,7 @@
         .clubTop h1{
             text-align: left;
             color: white;
-            font-size: 50px;
+            font-size: 60px;
         }
         .clubTop{
             margin-top: 15vw;
@@ -324,6 +330,22 @@
         .clubDetails{
             margin-top: 50px;
         }
+        @media (max-width:767px){
+            .clubFollow span{
+                display: block;
+                margin-right: 0;
+                text-align: center;
+            }
+            .clubFollow{
+                text-align: center;
+            }
+            .clubTop{
+            margin-top: 40vw;
+                margin-bottom: 20vw;
+        }
+            .mapback {
+                background-position: 50%;
+            }
     </style>
     <br>
     <div id="scroller" style="margin-top: -80px;"></div>
@@ -742,8 +764,8 @@
     <!--        HERE-->
     <div class="clubFollow" style="width:100%;background-color: rgb(254,0,0);text-align: center;padding:30px;margin-bottom: 75px;">
         <span>FOLLOW ERIE, PA</span>
-        <a><i class="fab fa-facebook-square"></i></a>
-        <a><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/LevelRedBoxing/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/levelredboxing/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-instagram"></i></a>
     </div>
         <div style="position:relative;">
                 <div class="schedTop">
@@ -755,7 +777,7 @@
         </div>
 <!--        <p>Select your class and create your club profile.</p>-->
     </div>
-            <div id="memGreyBar" style="background-color: rgb(54,54,54);height:10vw;position: absolute;top:8vw;left:0;width:100%;display:inline-block;"></div>
+            <div id="memGreyBar" style="background-color: rgb(54,54,54);height:10vw;position: absolute;top:14vw;left:0;width:100%;display:inline-block;"></div>
         <div class="container">
 
         <div class="row memTiles" style="position: relative;margin-top:0;">
@@ -1025,6 +1047,7 @@
 -->
 
     </body> 
-    <div style="height: 50px;"></div><script src="resources/js/script.js?v=3"></script>
+<!--    <div style="height: 50px;"></div>-->
+    <script src="resources/js/script.js?v=3"></script>
     
 </html>

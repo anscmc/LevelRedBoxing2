@@ -116,12 +116,56 @@ body{
     padding-top: 5px!important;
 }
 .navbar ul>li>a:hover{
-    color:rgb(254,0,0)!important;
+    color:white!important;
 }
 .navbar-brand>img{
     height:100%;
     display: inline-block;
     margin-left:10px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+@media(max-width:1199px){
+    .navbar-brand>img{
+        height:100%;
+        display: inline-block;
+        margin-left:10px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    a.locSubmitc{
+        display: block;
+        width:64vw;
+        margin-left:0!important;
+        margin-top: 10px;
+    }
+    .clubTop h1{
+        margin-bottom: -10px;
+    }
+}
+.navbar-left>li{
+    line-height: 33px;
+    height: 33px;
+    vertical-align: middle;
+    color: white!important;
+}
+.navbar-left>li span{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 33px;
+    height: 33px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left:5px;
+    padding-right: 5px;
+    color:transparent;
+    vertical-align: middle;
+    -webkit-transition: ease all .75s;
+    transition: ease all .75s;
+}
+.navbar-left>li:hover span{
+    color: rgb(254,0,0);
 }
 #franBTN{
     color:white;
@@ -286,7 +330,7 @@ body{
 #aboutDesk{
     display: none;
     position: fixed;
-    left:45vw!important;
+    left:52vw!important;
     width:200px;
     top:95px;
     z-index: 1001;
