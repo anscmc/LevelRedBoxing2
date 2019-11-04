@@ -1,0 +1,530 @@
+        .clubFollow{
+            color: white;
+            font-size: 34px;
+        }
+        .clubFollow span{
+            margin-right: 50px;
+            font-weight: 700;
+        }
+        .clubFollow .fa-facebook-square{
+            color: white!important;
+            cursor: pointer;
+            margin-right: 30px;
+        }
+        .clubFollow .fa-instagram{
+            color: white!important;
+            cursor: pointer;
+        }
+        .locSubmitc{
+            text-align: center;
+            background-color: rgb(254,0,0);
+            font-size: 20px;
+            color: white!important;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border:2px solid rgb(254,0,0);
+            cursor: pointer;
+            text-decoration: none!important;
+        }
+        .clubTop h1{
+            text-align: left;
+            color: white;
+            font-size: 60px;
+        }
+        .clubTop{
+            margin-top: 15vw;
+            margin-bottom: 11vw;
+        }
+        .mapback{
+            background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(resources/css/img/bag_room.jpg);
+            background-position: top;
+        }
+/*
+        .clubMap{
+            margin-top: 100px;
+        }
+*/
+        .clubDetails .fa-phone{
+            color:#80909c!important;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .clubDetails .fa-envelope{
+            color:#80909c!important;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .clubDetails .fa-clock{
+            color:#80909c!important;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .clubDetails .fa-map-marker-alt{
+            color:#80909c!important;
+            margin-right: 16px;
+            font-size: 24px;
+        }
+        .clubDetails span{
+            color: #505050;
+            display: block;
+            font-weight: 400;
+            font-size: 20px; 
+        }
+        .clubDetails{
+            margin-top: 50px;
+        }
+        @media (max-width:767px){
+            .clubFollow span{
+                display: block;
+                margin-right: 0;
+                text-align: center;
+            }
+            .clubFollow{
+                text-align: center;
+            }
+            .clubTop{
+            margin-top: 40vw;
+                margin-bottom: 20vw;
+        }
+            .mapback {
+                background-position: 50%;
+            }
+            
+                        .locSubmit{
+                color:white;
+                background-color:rgb(254,0,0);
+                -webkit-transition: ease all .3s;
+                transition: ease all .3s;
+                border: 1px solid rgb(254,0,0);
+                width:auto;
+                padding:0;
+                padding-left:1.5vw;
+                padding-right:1.5vw;
+                padding-top:.1vw;
+                font-size:1.25vw;
+                line-height: 150%;
+                display: inline-block;
+                font-family: metropolis;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .locSubmit:hover{
+                background-color: white;
+                color:black;
+            }
+                    .spacespace{
+                        height:400px;
+                    }
+                    @media(max-width:1300px){
+                        .spacespace{
+                            height:200px;
+                        }
+                    }
+                    #memMob{
+                        display: none;
+                    }
+                    .memFluid{
+                        padding-left:5vw;
+                        padding-top:3vw;
+                    }
+                    .wire p{
+                        padding-left:5vw;
+                        margin:0;
+                        max-width: 68vw;
+                        color: black;
+                    }
+                    #subDiv{
+                        padding-left:5vw!important;
+                    }
+                    .redBold{
+                        color:rgb(254,0,0);
+                        font-family: metropolis;
+                        font-size: 2vw;
+                        margin-bottom: 25px;
+                        padding-bottom: 0;
+                        display: block;
+                    }
+                    .redBold>span{
+                        color:black;
+                    }
+                    #bouts>img{
+                        -webkit-filter: drop-shadow(0 0 .5vw rgba(50,50,50,.5));
+                        filter: drop-shadow(0 0 .5vw rgba(50,50,50,.5));
+                    }
+                    .wire{
+                        background-image: url(resources/css/img/mem/images/BG1.jpg);
+                        background-size: cover;
+                        background-position: right;
+                    }
+                    .clubWire{
+                        background-image: url(resources/css/img/mem/images/BG1.jpg);
+                        background-size: cover;
+                        background-position: right;
+                    }
+                    .memHeader{
+                        background-image: url(resources/css/img/mem/top.png);
+                        background-size: cover;
+                        background-position: bottom;
+                        height: 22vw;
+                        display: inline-block;
+                        width: 100%;
+                        position: relative;
+                    }
+                    .memTiles img{
+                        width:100%;
+                        display: inline-block;
+                        position: relative;
+                    }
+                    .memHeader>span{
+                        font-family: aero;
+                        color: rgba(255,255,255,.75);
+                        font-size: 6vw;
+                        bottom: 2vw;
+                        left:5vw;
+                        position: absolute;
+                        line-height: 100%;
+                    }
+
+                    .memLRB1{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:4.5vw;left:0;
+                        color: white;
+                        font-family: aero;
+                        text-transform: uppercase;
+                        font-size: 1.75vw;
+                    }
+                    .memLRB2{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:7.5vw;left:0;
+                        color: white;
+                        font-family: metropolis;
+                        text-transform: uppercase;
+                        font-size: 1.75vw;
+                    }
+                    .memLRB2>span{
+                        font-size: 3vw;
+                    }
+                    .memLRB3{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:11vw;left:0;
+                        color: white;
+                        font-family: aero;
+                        text-transform: uppercase;
+                        font-size: 2vw;
+                    }
+                    .memLRB4{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:12.8vw;left:0;
+                        color: white;
+                        font-family: aero;
+                        text-transform: uppercase;
+                        font-size: 2vw;
+                    }
+                    .memLRB5{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:16.5vw;left:0;
+                        color: white;
+                        font-family: metropolisMed;
+                        font-size: 1.25vw;
+                    }
+                    .memLRB6{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:19.5vw;left:0;
+                        color: white;
+                        font-family: metropolisMed;
+                        font-size: .9vw;
+                    }
+                    .memLRB7{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:20.5vw;left:0;
+                        color: white;
+                        font-family: metropolisMed;
+                        font-size: .9vw;
+                    }
+                    #shortyP{
+                        max-width:65%;
+                    }
+                    @media(min-width:768px){
+                        .redBold2, .benefitsRow{
+                            padding-left: 14vw;
+                        }
+                    }
+                    @media(min-width:1281px){
+                        .redBold2, .benefitsRow{
+                            padding-left: 5vw;
+                        }
+                    }
+                    
+                    @media(max-width:1600px){
+                        #shortyP{
+                            max-width:50%;
+                        }
+                        .memLRB1{
+                            font-size: 2vw;
+                            top:5vw;
+                        }
+                        .memLRB2{
+                            font-size: 2vw;
+                            top:9vw;
+                        }
+                        .memLRB3{
+                            font-size: 2vw;
+                            top:15vw;
+                        }
+                        .memLRB4{
+                            font-size: 2vw;
+                            top:13vw;
+                        }
+                        .memLRB5{
+                            font-size: 1.5vw;
+                            top:19vw;
+                        }
+                        .memLRB6{
+                            font-size: 1vw;
+                            top:22.5vw;
+                        }
+                        .memLRB7{
+                            font-size: 1vw;
+                            top:23.75vw;
+                        }
+                    }
+                    @media(max-width:1300px){
+/*
+                        #shortyP{
+                            max-width:1200px!important;
+                        }
+*/
+                        .memLRB1{
+                            font-size: 2.5vw;
+                            top:6vw;
+                        }
+                        .memLRB2{
+                            font-size: 2.5vw;
+                            top:11vw;
+                        }
+                        .memLRB3{
+                            font-size: 2.5vw;
+                            top:15vw;
+                        }
+                        .memLRB4{
+                            font-size: 2.5vw;
+                            top:17vw;
+                        }
+                        .memLRB5{
+                            font-size: 2vw;
+                            top:22vw;
+                        }
+                        .memLRB6{
+                            font-size: 1.25vw;
+                            top:26.5vw;
+                        }
+                        .memLRB7{
+                            font-size: 1.25vw;
+                            top:28vw;
+                        }
+                    }
+                    @media(max-width:767px){
+                        .memFluid{
+                            max-width: 95vw!important;
+                        }
+                        .memFluid p{
+                            padding-left: 0!important;
+                        }
+                        .memTiles img {
+                            margin-top:-5vw;
+                            margin-bottom: -5vw;
+                        }
+                        #memRedLine{
+                            margin-top:-2vw!important;
+                            height:2.5vw!important;
+                        }
+                        .redBold{
+                            font-size: 5vw!important;
+                            margin-bottom: 5vw;
+                            line-height: 100%;
+                        }
+                        .redBold2{
+                            font-size: 4vw!important;
+                        }
+                        .wire p{
+                            font-size: 4.5vw!important;
+                            width: 100%!important;
+                            max-width: 100%!important;
+                            padding-right:20px!important;
+                        }
+                        .locSubmit{
+/*                            margin-left: 5vw;*/
+                            font-size: 6vw!important;
+                            padding-top:.5vw;
+                        }
+                        .memTiles{
+                            margin:0!important;
+                        }
+                        .memLRB1{
+                            font-size: 8vw;
+                            top:16vw;
+                            left:1vw;
+                            text-align: center;
+                        }
+                        .memLRB2{
+                            font-size: 8vw;
+                            top:32vw;
+                        }
+                        .memLRB2>span{
+                            font-size: 13vw;
+                        }
+                        .memLRB3{
+                            font-size: 8vw;
+                            top:47vw;
+                        }
+                        .memLRB4{
+                            font-size: 8vw;
+                            top:54vw;
+                        }
+                        .memLRB5{
+                            font-size: 6vw;
+                            top:68vw;
+                        }
+                        .memLRB6{
+                            font-size: 4vw;
+                            top:81vw;
+                        }
+                        .memLRB7{
+                            font-size: 4vw;
+                            top:84.5vw;
+                        }
+                        #memGreyBar{
+                            display: none!important;
+                        }
+                    }
+                    @media(max-width:650px){
+                        #memRedLine{
+                            margin-top:-2.1vw!important;
+                        }
+                        .memHeader{
+                            height: 50vw;
+                        }
+                        #memDesk{
+                            display:none!important;
+                        }
+                        #memMob{
+                            display: block!important;
+                        }
+                        .redBold{
+                            font-size: 4.5vw;
+                        }
+                        .memFluid p{
+                            font-size: 4.5vw!important;
+                            max-width: 100%!important;
+                        }
+                        .memFluid{
+                            padding-left:4vw;
+                            padding-top:6vw;
+                            margin-top: 5vw;
+                        }
+                        .locSubmit{
+                            font-size: 5vw!important;
+                            padding-left:3.5vw;
+                            padding-right:3.5vw;
+                            line-height: 150%;
+                        }
+                        #subDiv{
+                            padding-left: 0!important;
+                        }
+                        .shortyP{
+                            width:100%!important;
+                            max-width: 100%!important;
+                        }
+                    }
+                    @media(max-width:450px){
+                        .spacespace{
+                            height:100px;
+                        }
+                        .memLRB1{
+                            top:13vw;
+                        }
+                        .memLRB2{
+                            top:29vw;
+                        }
+                        .memLRB3{
+                            font-size: 8vw;
+                            top:43vw;
+                        }
+                        .memLRB4{
+                            font-size: 8vw;
+                            top:50vw;
+                        }
+                        .memLRB5{
+                            font-size: 6vw;
+                            top:63vw;
+                        }
+                        .memLRB6{
+                            font-size: 4vw;
+                            top:75vw;
+                        }
+                        .memLRB7{
+                            font-size: 4vw;
+                            top:79vw;
+                        }
+                    }
+                        @font-face {
+            font-family: aero;
+            src:url('resources/css/img/mem/aero.ttf')
+        }
+            .benefitsRow{
+                margin-top:3vw;
+                max-width: 92vw;
+            }
+            .benefitsRow .col-sm-6>div>span{
+                margin:0;
+                margin-left: .75vw;
+                line-height: 100%;
+                padding: 0;
+                font-size: 1.2vw;
+                display: block;
+                color: black;
+            }
+            .benefitsRow .lineText{
+                margin-bottom: .25vw!important;
+                font-family: aero;
+                font-size: 1.5vw!important;
+                text-transform: uppercase;
+                line-height: 100%;
+            }
+            @media(max-width:767px){
+                .benefitsRow{
+                    margin:0!important;
+                    max-width: 100%!important;
+                }
+                .benefitsRow .col-sm-6>div>span{
+                    font-size: 3.5vw;
+                }
+                .benefitsRow .lineText{
+                    font-size: 5.5vw!important;
+                }
+                .benefitsRow>div{
+                    margin-bottom: 5vw;
+                }
+            }

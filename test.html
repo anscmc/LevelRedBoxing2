@@ -27,8 +27,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 -->
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/stylenov182.css?v=11">
-        <link rel="stylesheet" type="text/css" href="resources/css/loc.min.css?v=11">
+        <link rel="stylesheet" type="text/css" href="resources/css/stylenov182.css?v=12">
+        <link rel="stylesheet" type="text/css" href="resources/css/loc.min.css?v=12">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.min.css?v=1.2">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         
@@ -135,7 +135,51 @@
                 $("#plus11").fadeToggle(0);
                 $("#minus11").fadeToggle(0);
             }
-
+            $(document).ready(function(){
+                
+                $('#tile1').css('opacity', 0);
+                $('#tile1').waypoint(function() {
+                  $('#tile1').addClass('animated fadeInUp');
+                }, { offset: '90%' });
+                $('#tile2').css('opacity', 0);
+                $('#tile2').waypoint(function() {
+                  $('#tile2').addClass('animated fadeInUp');
+                }, { offset: '80%' });
+                $('#tile3').css('opacity', 0);
+                $('#tile3').waypoint(function() {
+                  $('#tile3').addClass('animated fadeInUp');
+                }, { offset: '70%' });
+                
+                $('#benSpan').css('opacity', 0);
+                $('#benSpan').waypoint(function() {
+                  $('#benSpan').addClass('animated fadeIn');
+                }, { offset: '90%' });
+                
+                $('#memcol1').css('opacity', 0);
+                $('#memcol1').waypoint(function() {
+                  $('#memcol1').addClass('animated fadeInLeft');
+                }, { offset: '95%' });
+                $('#memcol2').css('opacity', 0);
+                $('#memcol2').waypoint(function() {
+                  $('#memcol2').addClass('animated fadeInRight');
+                }, { offset: '95%' });
+                $('#memcol3').css('opacity', 0);
+                $('#memcol3').waypoint(function() {
+                  $('#memcol3').addClass('animated fadeInLeft');
+                }, { offset: '95%' });
+                $('#memcol4').css('opacity', 0);
+                $('#memcol4').waypoint(function() {
+                  $('#memcol4').addClass('animated fadeInRight');
+                }, { offset: '95%' });
+                $('#memcol5').css('opacity', 0);
+                $('#memcol5').waypoint(function() {
+                  $('#memcol5').addClass('animated fadeInLeft');
+                }, { offset: '95%' });
+                $('#memcol6').css('opacity', 0);
+                $('#memcol6').waypoint(function() {
+                  $('#memcol6').addClass('animated fadeInRight');
+                }, { offset: '95%' });
+            });
         </script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="fitmetrix/js/iframeResizer.min.js"></script>
@@ -174,8 +218,8 @@
         </ul>
     -->
         <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;margin-top: 35px;">
-            <li><a href="fitmetrix/erie/pricing-erie.html"><span>&#91;</span>Memberships<span>&#93;</span></a></li>
-            <li><a href="fitmetrix/erie/schedule-erie.html"><span>&#91;</span>Schedule<span>&#93;</span></a></li>
+            <li><a href="#scroller2"><span>&#91;</span>Memberships<span>&#93;</span></a></li>
+            <li><a href="#scroller"><span>&#91;</span>Schedule<span>&#93;</span></a></li>
             <li><a href="blog.html"><span>&#91;</span>Community<span>&#93;</span></a></li>
             <li><a style="cursor: pointer;" onclick="toggleAbout()"><span>&#91;</span>About<span>&#93;</span></a></li>
 <!--
@@ -184,8 +228,8 @@
             <li style="cursor: pointer"><a onclick="toggleAbout()">About</a></li>
 -->
         </ul>
-          <ul class="nav navbar-nav navbar-right" style="margin-top: 35px;">
-              <a class="locSubmitc">Try A Free Class</a>
+          <ul class="nav navbar-nav navbar-right" style="margin-top: 25px;">
+              <a class="locSubmitc" style="margin:0!important;">Try A Free Class</a>
 <!--
               <li><a href="fitmetrix/erie/schedule-erie.html" style="padding-left:0px;">Schedule</a></li>
             <li><a href="fitmetrix/erie/pricing-erie.html">Memberships</a></li>
@@ -220,10 +264,10 @@
         <div class="container">
             <div class="row">
                 <div id="clubTop" class="clubTop">
-                    <h1>ERIE, PA</h1>
+                    <h1 style="margin-left: 10px;">ERIE, PA</h1>
                     <br>
-                    <a href="fitmetrix/erie/pricing-erie.html" style="margin-top: 0px!important;" class="locSubmitc">Memberships</a>
-                    <a href="fitmetrix/erie/schedule-erie.html" class="locSubmitc" style="background-color: transparent;margin-left: 10px;">View Schedule</a>
+                    <a href="#scroller2" style="margin-top: 0px!important;" class="locSubmitc">Memberships</a>
+                    <a href="#scroller" class="locSubmitc2" style="margin-left: 10px;">View Schedule</a>
                 </div>
             </div>
         </div>
@@ -277,12 +321,61 @@
             font-size: 20px;
             color: white!important;
             padding: 10px;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 200px;
             border:2px solid rgb(254,0,0);
             cursor: pointer;
             text-decoration: none!important;
+            transition: ease all .3s;
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 5px;
         }
+        .locSubmitc:hover{
+            background-color: transparent;
+            color: white;
+        }
+        .locSubmitc2{
+            text-align: center;
+            background-color: transparent;
+            font-size: 20px;
+            color: white!important;
+            padding: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width:200px;
+            border:2px solid rgb(254,0,0);
+            cursor: pointer;
+            text-decoration: none!important;
+            transition: ease all .3s;
+            display: inline-block;
+        }
+        .locSubmitc2:hover{
+            background-color: rgb(254,0,0);
+            color: white;
+        }
+        .locSubmitc3{
+            text-align: center;
+            background-color: transparent;
+            font-size: 20px;
+            color: black!important;
+            padding: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 200px;
+            max-width: 40%;
+            border:2px solid rgb(254,0,0);
+            cursor: pointer;
+            text-decoration: none!important;
+            transition: ease all .3s;
+            display: inline-block;
+        }
+        .locSubmitc3:hover{
+            background-color: rgb(254,0,0);
+            color: black;
+        }
+
         .clubTop h1{
             text-align: left;
             color: white;
@@ -338,6 +431,7 @@
             }
             .clubFollow{
                 text-align: center;
+                font-size: 8vw;
             }
             .clubTop{
             margin-top: 40vw;
@@ -354,7 +448,7 @@
 <!--        <img src="resources/css/img/rDark.png">-->
         <div class="schedText" style="width:100%;">
             <br>
-            <span style="color:black!important;text-align: center!important;width: 100%!important;display: block!important;font-style: normal;">Erie Schedule</span>
+            <span style="color:black!important;text-align: center!important;width: 100%!important;display: block!important;font-style: normal;font-size: 50px;margin-bottom: 15px;line-height: 100%;">Erie Schedule</span>
         </div>
 <!--        <p>Select your class and create your club profile.</p>-->
     </div>
@@ -762,27 +856,97 @@
                     }
         </style>
     <!--        HERE-->
-    <div class="clubFollow" style="width:100%;background-color: rgb(254,0,0);text-align: center;padding:30px;margin-bottom: 75px;">
+    <div class="clubFollow" style="width:100%;background-color: rgb(254,0,0);text-align: center;padding:30px;">
         <span>FOLLOW ERIE, PA</span>
         <a href="https://www.facebook.com/LevelRedBoxing/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-facebook-square"></i></a>
         <a href="https://www.instagram.com/levelredboxing/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-instagram"></i></a>
     </div>
+    <div id="scroller2" style="height: 75px;"></div>
         <div style="position:relative;">
                 <div class="schedTop">
 <!--        <img src="resources/css/img/rDark.png">-->
                     <br>
                     <br>
         <div class="schedText" style="width:100%;">
-            <span style="color:black!important;text-align: center!important;width: 100%!important;display: block!important;font-style: normal;">Glove Up</span>
+            <span style="color:black!important;text-align: center!important;width: 100%!important;display: block!important;font-style: normal;font-size: 50px;margin-bottom: 15px;line-height: 90%;">Glove Up</span>
         </div>
 <!--        <p>Select your class and create your club profile.</p>-->
+        <div style="text-align: center;margin-top: 10px;margin-bottom: 25px;">
+            <a id="leftTog" onclick="switchMem()" style="margin:0;margin-right: -3px;" class="locSubmitc">Memberships</a>
+            <a id="rightTog" onclick="switchMem()" class="locSubmitc3" style="margin:0;margin-left: -3px;">Packages</a>            
+        </div>
+                  
     </div>
-            <div id="memGreyBar" style="background-color: rgb(54,54,54);height:10vw;position: absolute;top:14vw;left:0;width:100%;display:inline-block;"></div>
-        <div class="container">
+            <div id="memGreyBar" style="background-color: rgb(54,54,54);height:10vw;position: absolute;top:20vw;left:0;width:100%;display:inline-block;"></div>
+        <div class="container-fluid" style="padding:0;">
 
-        <div class="row memTiles" style="position: relative;margin-top:0;">
-            
-            <div id="tile1" class="col-sm-4">
+        <div class="row memTiles" style="position: relative;margin-top:0;text-align: center;padding:0;">
+            <style type="text/css">
+                .tilez{
+                    display: inline-block;
+                    max-width:100%;
+                    width: 23vw;
+                    position: relative;
+                }
+                .tileyShow{
+                    display: inline-block!important;
+                }
+                .tiley{
+                    display: none;
+                    max-width:100%;
+                    width: 23vw;
+                    position: relative;
+                    left:calc(50% - 11.5vw);
+                }
+                
+/*
+                .tiley{
+                    display: none;
+                }
+*/
+                @media(max-width:1800px){
+                    .tilez, .tiley{
+                        width:27vw;
+                    }
+                    .tiley{
+                        left:calc(50% - 13.5vw);
+                    }
+                    #memGreyBar{
+                        top:24vw!important;
+                    }
+                }
+                @media(max-width:1300px){
+                    .tilez, .tiley{
+                        width:30vw;
+                    }
+                    .tiley{
+                        left:calc(50% - 15vw);
+                    }
+                    #memGreyBar{
+                        top:29vw!important;
+                    }
+                }
+                @media(max-width:767px){
+                    .tilez, .tiley{
+                        width:100%;
+                    }
+                    .tiley{
+                        left:0;
+                    }
+                }
+            </style>
+            <div id="tile4" class="animated fadeInUp tiley">
+                <img src="resources/css/img/mem/Redtile2.png">
+                <span class="memLRB1">Level Red</span>
+                <span class="memLRB2"><span>4</span>Bout</span>
+                <span class="memLRB3">4 Classes</span>
+                <span class="memLRB4">Per Month</span>
+                <span class="memLRB5">Free Gloves</span>
+                <span class="memLRB6">Additional Sessions</span>
+                <span class="memLRB7">Added at Discounted Rate*</span>
+                <a href="fitmetrix/erie/pricing-erie.html" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;">Buy Now</a>
+            </div>  
+            <div id="tile1" class="animated tilez">
                 <img src="resources/css/img/mem/Redtile1.png">
                 <span class="memLRB1">Level Red</span>
                 <span class="memLRB2">Contender</span>
@@ -793,8 +957,9 @@
                 <span class="memLRB6">Additional Sessions</span>
                 <span class="memLRB7">Added at Discounted Rate*</span>
 -->
+                <a href="fitmetrix/erie/pricing-erie.html" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;">Buy Now</a>
             </div>
-            <div id="tile2" class="col-sm-4">
+            <div id="tile2" class="animated tilez">
                 <img src="resources/css/img/mem/Redtile2.png">
                 <span class="memLRB1">Level Red</span>
                 <span class="memLRB2"><span>8</span>Bout</span>
@@ -803,8 +968,9 @@
                 <span class="memLRB5">Free Gloves</span>
                 <span class="memLRB6">Additional Sessions</span>
                 <span class="memLRB7">Added at Discounted Rate*</span>
+                <a href="fitmetrix/erie/pricing-erie.html" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;">Buy Now</a>
             </div>
-            <div id="tile3" class="col-sm-4">
+            <div id="tile3" class="animated tilez">
                 <img src="resources/css/img/mem/Redtile2.png">
                 <span class="memLRB1">Level Red</span>
                 <span class="memLRB2"><span>4</span>Bout</span>
@@ -813,8 +979,9 @@
                 <span class="memLRB5">Free Gloves</span>
                 <span class="memLRB6">Additional Sessions</span>
                 <span class="memLRB7">Added at Discounted Rate*</span>
+                <a href="fitmetrix/erie/pricing-erie.html" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;">Buy Now</a>
             </div>
-                        
+                 
         </div>
 <!--
         <div id="bouts" style="text-align: left;position: relative;">
@@ -824,7 +991,11 @@
             <img style="width:30%;display: inline-block;" src="resources/css/img/memberships/4bout-card.png">
         </div>
 -->
-        <br>
+
+    </div>
+        </div>
+    <div class="container">
+                <br>
         <br>
         <br>
         <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Your membership benefits include</span></span>
@@ -931,7 +1102,6 @@
             </div>
         </div>
     </div>
-        </div>
         <br>
 <div style="padding:0;margin:0;text-align: center;margin-bottom: 3px;margin-top: 50px;">
     <img style="width:32%;display: inline-block;" src="resources/css/img/mem/images/1.png">

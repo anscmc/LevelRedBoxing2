@@ -37,6 +37,16 @@ $(document).ready(function(){
                document.getElementById("zipSearch").click();
               }
             });
+
+function switchMem(){
+    $('#leftTog').toggleClass('locSubmitc');
+    $('#leftTog').toggleClass('locSubmitc3');
+    $('#rightTog').toggleClass('locSubmitc3');
+    $('#rightTog').toggleClass('locSubmitc');
+    $('div.tilez').fadeToggle(300);
+//    $('div.tiley').toggleClass('tileyShow');
+    $('div.tiley').fadeToggle(300);
+}
 //$(document).ready(function() {
 //    
 ////    
