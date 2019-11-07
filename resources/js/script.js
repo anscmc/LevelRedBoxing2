@@ -26,9 +26,10 @@ $(document).ready(function(){
                 var queryString = value1;
                 window.location.href = "https://levelredboxing.com/locations.html#" + queryString;
             }
-            function showMoreFree(){
-                $("div.newBar").toggleClass("bigBar");
-            }
+//DISABLED
+//            function showMoreFree(){
+//                $("div.newBar").toggleClass("bigBar");
+//            }
             
             var input = document.getElementById("zipInput");
             input.addEventListener("keyup", function(event) {

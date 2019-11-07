@@ -15,7 +15,7 @@
         <style>
             .col-md-3{font-size: 16px !important;}
         </style>
-        <title>Locations | Level Red Boxing</title>
+        <title>Free Class Locations Map | Level Red Boxing</title>
 
         
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -34,8 +34,8 @@
         <link rel="stylesheet" type="text/css" href="resources/css/newstyle.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="map/style.css">
-        <script src="map/allLocations.js"></script>
+        <link rel="stylesheet" href="map2/style.css">
+        <script src="map2/allLocations.js"></script>
         <script type="text/javascript">
             function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){
                 $("#mobileNav").fadeToggle(200);
@@ -47,7 +47,7 @@
     </head>
 
     <body>
-        <div class="newBar fadefade"  id="navvy" style="opacity: 0;height: 50px!important;"><a href="free-class-locations.html" style="cursor: pointer;" onclick="showMoreFree()"><img src="resources/css/img/new19/free.png"></a><p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 15px;margin-top: 10px;font-size: 14px;padding:5px;">To welcome you to Level Red Boxing, we're giving you a free class. Enter your postal code below:</p><input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345"><a id="zipSearch" onclick="findLocation()" style="">Search</a></div>
+
             <nav class="navbar navbar-inverse deskNav" style="position:relative;">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -121,14 +121,14 @@
           <input name="userAddress" id="userAddress" type="text" placeholder="Search by city or postal code" value=""/>
         </label>
         <button id="submitLocationSearch">Search</button>
-        <a href="locations.html" id="refClear">Reset</a>
+        <a href="free-class-locations.html" id="refClear">Reset</a>
       </form>
       <div id="locations-near-you-map"></div>
       <h2 style="height:50px;margin-top:10px;" id="location-search-alert"></h2>
       <div id="locations-near-you"></div>
         
       <script defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyDO914P3hhKOa8AoN-KRJnHgrVO6Os60AY&callback=createSearchableMap"></script>
-      <script src="map/createSearchableMap.js"></script>
+      <script src="map2/createSearchableMap.js"></script>
     </div>
 
             <div class="lrbFooter">
@@ -168,7 +168,7 @@
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 -->
-    <div style="height: 50px;"></div><script src="resources/js/script.js?v=3"></script>
+    <script src="resources/js/script.js?v=3"></script>
                 <script type="text/javascript">
             function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){
                 $("#mobileNav").fadeToggle(200);
