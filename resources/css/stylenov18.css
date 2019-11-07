@@ -14,6 +14,93 @@
 	font-family: metropolisLt;
     src:url('font/Metropolis-master/Metropolis-Light.otf')
 }
+/*FREE CLASS*/
+.freeClassWrap{
+    padding-top: 100px;
+    min-height: 100vh;
+        background-image: url(img/mem/images/BG1.jpg);
+    background-size: cover;
+    background-position:right;
+    -webkit-box-shadow: inset 0px -25px 40px -30px rgba(255,255,255,1);
+    box-shadow: inset 0px -25px 40px -30px rgba(255,255,255,1);
+}
+.freeFormWrap{
+
+    text-align: center;
+    padding:10px;
+/*    min-height: 90vh;*/
+}
+.freeClassWrap h1{
+    color: black;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.freeFormWrap p{
+    color: #666666;
+    font-size: 18px;
+    margin:10px;
+    text-align: center;
+}
+#studioSelect p{
+    color: #666666;
+    font-size: 18px;
+    margin:10px;
+    text-align: center;
+}
+#locselect{
+    margin:0 auto;
+    display: block;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    width: 250px;
+}
+.formBox{
+    width:90%;
+    max-width: 760px;
+    margin:0 auto;
+    padding:10px;
+}
+.studioBox{
+    background-color: white;
+    padding:10px;
+    padding-left:20px;
+    padding-right: 20px;
+    border: .5px solid rgba(50,50,50,.3);
+    margin:0 auto;
+    text-align: left;
+    position: relative;
+}
+.studioBox h2{
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:0;
+    padding:0;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.studioBox>p{
+    text-align: left!important;
+    margin:0!important;
+    font-size: 16px!important;
+}
+.floatStudio{
+    position: absolute;
+    right:20px;
+    top:10px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #666666!important;
+    opacity: .75;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
 .hide19{
     display: none!important;
 }
