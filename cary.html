@@ -12,16 +12,14 @@
 </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Cary, NC | Level Red Boxing</title>
+        <title>Cary, North Carolina | Level Red Boxing</title>
         <meta name="description" content="Boxing-inspired group fitness classes. Stop going to the gym, start having an experience. Claim your free class now | Level Red Boxing">
         <meta name="keywords" content="level red boxing, level red, boxing, gym, fitness, memberships, group fitness">
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://www.levelredboxing.com/resources/hide.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>  
 <!--
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
@@ -29,8 +27,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 -->
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/stylenov18.min.css?v=12">
-        <link rel="stylesheet" type="text/css" href="resources/css/loc.min.css?v=8">
+        <link rel="stylesheet" type="text/css" href="resources/css/stylenov182.css?v=12">
+        <link rel="stylesheet" type="text/css" href="resources/css/loc.min.css?v=12">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.min.css?v=1.2">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         
@@ -45,21 +43,21 @@
             function showAbout(){$("div.aboutBox.collapsible").toggleClass("collapsed");} function toggleNav(){
                 $("#mobileNav").fadeToggle(200);
             }
-//            $('#formid').on('submit', function() {
-//                $("#formid").fadeToggle(200);
-//                $("#formtitle").text('Thank you! Please visit us in-club to redeem your free class voucher.');
+//            $(document).ready(function(){
+//
+//                $('#sf-frame').css('opacity', 0);
+//                $('#sf-frame').waypoint(function() {
+//                  $('#sf-frame').addClass('animated fadeIn');
+//                }, { offset: '90%' });
+//                
 //            });
-
-
+            
             $(document).ready(function(){
- 
-                // hide our element on page load
-                $('#sf-frame').css('opacity', 0);
-                $('#sf-frame').waypoint(function() {
-                  $('#sf-frame').addClass('animated fadeIn');
-                }, { offset: '90%' });
-                
+                $('#clubTop').waypoint(function() {
+                  $('#clubNav').toggleClass("navbarFill");
+                }, { offset: '15%' });
             });
+            
                         $(document).on('click', 'a[href^="#"]', function(e) {
 
             var id = $(this).attr('href');
@@ -137,13 +135,57 @@
                 $("#plus11").fadeToggle(0);
                 $("#minus11").fadeToggle(0);
             }
+            $(document).ready(function(){
+                
+                $('#tile1').css('opacity', 0);
+                $('#tile1').waypoint(function() {
+                  $('#tile1').addClass('animated fadeInUp');
+                }, { offset: '90%' });
+                $('#tile2').css('opacity', 0);
+                $('#tile2').waypoint(function() {
+                  $('#tile2').addClass('animated fadeInUp');
+                }, { offset: '80%' });
+                $('#tile3').css('opacity', 0);
+                $('#tile3').waypoint(function() {
+                  $('#tile3').addClass('animated fadeInUp');
+                }, { offset: '70%' });
+                
+                $('#benSpan').css('opacity', 0);
+                $('#benSpan').waypoint(function() {
+                  $('#benSpan').addClass('animated fadeIn');
+                }, { offset: '90%' });
+                
+                $('#memcol1').css('opacity', 0);
+                $('#memcol1').waypoint(function() {
+                  $('#memcol1').addClass('animated fadeInLeft');
+                }, { offset: '95%' });
+                $('#memcol2').css('opacity', 0);
+                $('#memcol2').waypoint(function() {
+                  $('#memcol2').addClass('animated fadeInRight');
+                }, { offset: '95%' });
+                $('#memcol3').css('opacity', 0);
+                $('#memcol3').waypoint(function() {
+                  $('#memcol3').addClass('animated fadeInLeft');
+                }, { offset: '95%' });
+                $('#memcol4').css('opacity', 0);
+                $('#memcol4').waypoint(function() {
+                  $('#memcol4').addClass('animated fadeInRight');
+                }, { offset: '95%' });
+                $('#memcol5').css('opacity', 0);
+                $('#memcol5').waypoint(function() {
+                  $('#memcol5').addClass('animated fadeInLeft');
+                }, { offset: '95%' });
+                $('#memcol6').css('opacity', 0);
+                $('#memcol6').waypoint(function() {
+                  $('#memcol6').addClass('animated fadeInRight');
+                }, { offset: '95%' });
+            });
         </script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="fitmetrix/js/iframeResizer.min.js"></script>
 <script type="text/javascript" src="fitmetrix/js/fitmetrix.js"></script>
-        
 
-                <!-- Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -160,9 +202,14 @@
     </head>
 
 <body style="background-color: white;">
-<nav class="navbar navbar-inverse deskNav">
-      <div class="container-fluid">
-        <div class="navbar-header">
+    
+              <div class="newBar fadefade"  id="navvy" href="free-class-locations.html" style="opacity: 0;height: 50px!important;"><a href="free-class.html#cary" style="cursor: pointer;height: 100%;width:100%;" onclick="showMoreFree()"><img src="resources/css/img/new19/free.png"></a>
+<!--              <p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 15px;margin-top: 10px;font-size: 14px;padding:5px;">To welcome you to Level Red Boxing, we're giving you a free class. Enter your postal code below:</p><input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345"><a id="zipSearch" onclick="findLocation()" style="">Search</a>-->
+    </div>
+    
+<nav id="clubNav" class="navbar navbar-inverse deskNav"  style="padding-bottom: 15px;">
+      <div class="container">
+        <div class="navbar-header" >
           <a class="navbar-brand" href="index.html"><img src="resources/css/img/brand2.png"></a>
 <!--            <a class="mobFran">Own a Franchise</a>-->
         </div>
@@ -173,17 +220,25 @@
           <li><a href="#">Page 2</a></li>
         </ul>
     -->
-        <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;">
-          <li><a href="theworkout.html">The Workout</a></li>
+        <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;margin-top: 35px;">
+            <li><a href="#scroller2"><span>&#91;</span>Memberships<span>&#93;</span></a></li>
+            <li><a href="#scroller"><span>&#91;</span>Schedule<span>&#93;</span></a></li>
+            <li><a href="blog.html"><span>&#91;</span>Community<span>&#93;</span></a></li>
+            <li><a style="cursor: pointer;" onclick="toggleAbout()"><span>&#91;</span>About<span>&#93;</span></a></li>
+<!--
+            <li><a href="fitmetrix/cary/schedule-cary.html">Schedule</a></li>
+            <li><a href="blog.html">Community</a></li>
             <li style="cursor: pointer"><a onclick="toggleAbout()">About</a></li>
-            <li><a href="blog.html" style="padding-right:0px;">Community</a></li>
-            <li><a href="#scroller" style="padding-right:0px;">First Timers</a></li>
+-->
         </ul>
-          <ul class="nav navbar-nav navbar-right" style="margin-left:50px;!important;">
-              <li><a href="#scroller" style="padding-left:0px;">Schedule</a></li>
+          <ul class="nav navbar-nav navbar-right" style="margin-top: 25px;">
+              <a href="free-class.html#cary" class="locSubmitc" style="margin:0!important;">Try A Free Class</a>
+<!--
+              <li><a href="fitmetrix/cary/schedule-cary.html" style="padding-left:0px;">Schedule</a></li>
             <li><a href="fitmetrix/cary/pricing-cary.html">Memberships</a></li>
+-->
         </ul>
-        <a href="tel:1-919-896-6332" id="franBTN"><span style="font-family:metropolisMed;padding-right:20px;">Call Us!</span>(919) 896-6332</a>
+<!--        <a href="tel:1-919-896-6332" id="franBTN"><span style="font-family:metropolisMed;padding-right:20px;">Call Us!</span>(919) 896-6332</a>-->
         <a onclick="toggleNav()" class="hamburger"><i class="fas fa-bars"></i></a>
           <a class="phone" href="tel:1-919-896-6332"><i class="fas fa-phone"></i></a>
       </div>
@@ -207,59 +262,21 @@
             <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
         </div>
     </div>
-    <div class="mapWrap mapback animated fadeIn">
-<!--        <div class="mapCover"></div>-->
-<!--            <iframe class="locMap" frameborder="0" src="https://www.google.com/maps/d/embed?mid=1UzTU34XBlReIoWxzi-2A3K-Dz_aFsqev"></iframe>-->
-        <div class="container-fluid locContainer">
-            <div class="row" style="padding: 0;">
-                <div class="col-sm-4" style="text-align: left">
-                <div class="mapInfo">
-                    <a class="logoR"><img src="resources/css/img/whiteR.svg" style="height:70px;"></a>
-                    <a target="_blank" href="http://maps.google.com/?q=302 Colonades Way #101, Cary, NC" style="display: block;"><h1 class="locationH" style="text-align: left;">Cary, NC</h1></a>
-                    <a target="_blank" href="http://maps.google.com/?q=302 Colonades Way #101" style="display: inline-block;"><span>302 Colonades Way #101</span></a>
-                    <a target="_blank" href="http://maps.google.com/?q=302 Colonades Way #101" style="display: inline-block;"><span>Cary, NC 27518</span></a>
-                    <a target="_blank" href="http://maps.google.com/?q=302 Colonades Way #101, Cary, NC" style="text-decoration: none;margin-top:10px;margin-bottom: 10px;"><span>Directions <i class="fas fa-arrow-right"></i></span></a>
-                    <a href="tel:1-919-896-6332" style="text-decoration:none;">(919) 896-6332</a>
-                </div>
-                </div>
-                <div class="col-sm-8 righty" style="padding: 0;">
-                                        <br>
-                     <span class="strongspan" style="margin-top:10px;">Strong At Every Level</span>
-<!--    <div id="app"></div>-->
-                    <style type="text/css">
-                        .changing{
-                            font-size:170px;
-                        }
-                        #app{
-                            font-size: 140px;
-                        }
-                    </style>
-    <p class="changing" style="text-align: center;">[<span id="app"></span>]</p>
-            <script src="resources/js/core.js"></script>
-            <script type="text/javascript">
-                function typeHeader(){
-                    var app = document.getElementById('app');
 
-var typewriter = new Typewriter(app, {
-    loop: true
-});
-
-typewriter.typeString('CARDIO')
-    .pauseFor(1250)
-    .deleteAll()
-    .typeString('STRENGTH')
-    .pauseFor(1250)
-    .deleteAll()
-//    .deleteChars(7)
-//    .typeString('<strong>altered!</strong>')
-    .typeString('CORE')
-    .pauseFor(1250)
-    .start();
-                    setTimeout(typeHeader, 5100);
-                }
-typeHeader();
-        </script>
-                    <style>
+    <div class="mapback animated fadeIn">
+        <div class="container">
+            <div class="row">
+                <div id="clubTop" class="clubTop">
+                    <h1 style="margin-left: 10px;">CARY, NC</h1>
+                    <br>
+                    <a href="#scroller2" style="margin-top: 0px!important;" class="locSubmitc">Memberships</a>
+                    <a href="#scroller" class="locSubmitc2" style="margin-left: 10px;">View Schedule</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+                            <style>
                         .try{font-size: 70px;}.try>span{font-size:60px;}
         .clubFollow{
             font-size: 40px;
@@ -289,71 +306,856 @@ typeHeader();
                                 padding-top:40px;
                                 display: block;
                                 margin-bottom: 15px;
+                                font-size: 5vw!important;
                             }
                         }
 
-                    </style>
-<div id="scroll"></div>
-<!--    <a href="fitmetrix/pittsburgh/pricing-pittsburgh.html"><p class="locTRY try" style="text-align: center;margin-top:20px;">[<span style="text-decoration: none!important;">Try Us For Free</span>]</p></a>-->
-                    
-                </div>
-            </div>
-        </div>
+    </style>
+        
+        
+        <div class="clubFollow" style="width:100%;background-color: rgb(254,0,0);text-align: center;padding:30px;margin-bottom: 0px;margin-top: -7px;">
+        <a href="fitmetrix/cary/3-for-19.html" style="color: white!important;text-transform: uppercase;"><span>Get 3 Classes for $19.99</span></a>
+        <a href="fitmetrix/cary/3-for-19.html" class="locSubmitc" style="box-shadow: 0 0 10px rgba(50,50,50,.5);padding:0;height: 50px;line-height: 50px;margin: 0;">Buy Now</a>
     </div>
-    <div class="clubFollow" style="width:100%;background-color: rgb(254,0,0);text-align: center;padding:30px;margin-bottom: 0px;margin-top: -7px;">
-        <a href="fitmetrix/cary/3-for-19.html"><span>Get 3 Classes for $19.99</span></a>
-        <a href="fitmetrix/cary/3-for-19.html" class="locSubmit" style="box-shadow: 0 0 10px rgba(50,50,50,.5);">Buy Now</a>
-    </div>
-    <div class="locBox animated fadeIn">
-        <div class="container-fluid">
-            <div class="row" style="padding:0px;">
-                <div class="col-md-8 lefty" style="padding:0px;">
-                    <span>Stop working out, start having an experience</span>
-                  
-                    <p style="padding-right: 10px!important;margin-top:10px;margin-bottom:0px;max-width:630px;">Start today and become part of thousands who are leveling up their workouts every day.</p>
-<!--                    <span class="redSpan">Book you first class below</span>-->
-                  <br>
-<a href="#scroller" class="redBTNnew"><span style="padding-right:4px;width:auto!important;margin-top:10px!important;">&#91;</span>Get Started<span style="padding-left:5px;">&#93;</span></a>
-                    <p class="redtext" style="margin-bottom:0;">Book your first class today</p>
-                </div>
-                <div class="col-md-3" style="text-align: center;padding:0px;">
-                    <form class="locFormBox" data-forge-name="LRB Cary Homepage Form" style="text-align: center;padding:10px;">
-                    <div style="width: 100%;text-align: center">
-                        <div class="form-group locForm">
-                           <span style="font-size:25px;">Free Class Voucher</span>
-                           <p style="font-size:12px;">Reserve a free class credit for filling out this form:</p>
-                           <span style="display: block">Name</span>
-                           <input class="form-control" data-forge-name="Name" type="text" name="name" required>
-                           <span style="display: block">Email</span>
-                           <input class="form-control" data-forge-name="Email" type="email" name="email" required>
-                           <span style="display: block">Phone</span>
-                           <input class="form-control" type="text" data-forge-name="Phone" name="phone" required>
-                           <span style="display: block">Questions</span>
-                           <input class="form-control" type="text" data-forge-name="Question" name="question" required>
-                       </div>
-                        <input type="submit" value="Send" class="locSubmit">
-                        <span style="display:block;font-size:10px;">*For new members only</span><span style="display:block;font-size:10px;line-height: 100%;">*Handwrap purchase may apply</span>
+    <div id="clubMap" class="clubMap clubWire" style="">
+        <div style="height: 100px;"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="clubDetails">
+                        <span><i class="fas fa-map-marker-alt"></i> 302 Colonades Way Unit 101</span>
+                        <span style="margin-bottom: 20px;"><i style="visibility: hidden!important;" class="fas fa-map-marker-alt"></i> Cary, NC 27518</span>
+                        <span style="margin-bottom: 20px;"><i class="fas fa-phone"></i> (919) 896-6332</span>
+                        <a href="mailto:infocary@levelredboxing.com" style="text-decoration: none!important;"><span style="margin-bottom: 20px;"><i class="fas fa-envelope"></i> infocary@levelredboxing.com</span></a>
+                        <span><i class="fas fa-clock"></i> Mon-Thu: 5am-7pm</span>
+                        <span><i style="visibility: hidden!important;" class="fas fa-clock"></i> Fri: 5am-6pm</span>
+                        <span ><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sat: 8am-1pm</span>
+                        <span style="margin-bottom: 20px;"><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sat: 8am-12pm</span>
                     </div>
-                    </form>
+                </div>
+                <div class="col-sm-7" style="overflow: hidden;">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=18jCH1vdJdQmxNAQ9gXmTmyqu2uSWkrwN" style="width:100%;height:400px;margin-top: -50px;border: none;"></iframe>
                 </div>
             </div>
         </div>
+        <div style="height: 100px;"></div>
     </div>
 
-    <div id="scroller"></div>
+    <style type="text/css">
+        .clubFollow{
+            color: white;
+            font-size: 34px;
+        }
+        .clubFollow span{
+            margin-right: 50px;
+            font-weight: 700;
+        }
+        .clubFollow .fa-facebook-square{
+            color: white!important;
+            cursor: pointer;
+            margin-right: 30px;
+        }
+        .clubFollow .fa-instagram{
+            color: white!important;
+            cursor: pointer;
+        }
+        .locSubmitc{
+            text-align: center;
+            background-color: rgb(254,0,0);
+            font-size: 20px;
+            color: white!important;
+            padding: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 200px;
+            border:2px solid rgb(254,0,0);
+            cursor: pointer;
+            text-decoration: none!important;
+            transition: ease all .3s;
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+        .locSubmitc:hover{
+            background-color: transparent;
+            color: white;
+        }
+        .locSubmitc2{
+            text-align: center;
+            background-color: transparent;
+            font-size: 20px;
+            color: white!important;
+            padding: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width:200px;
+            border:2px solid rgb(254,0,0);
+            cursor: pointer;
+            text-decoration: none!important;
+            transition: ease all .3s;
+            display: inline-block;
+        }
+        .locSubmitc2:hover{
+            background-color: rgb(254,0,0);
+            color: white;
+        }
+        .locSubmitc3{
+            text-align: center;
+            background-color: transparent;
+            font-size: 20px;
+            color: black!important;
+            padding: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 200px;
+            max-width: 40%;
+            border:2px solid rgb(254,0,0);
+            cursor: pointer;
+            text-decoration: none!important;
+            transition: ease all .3s;
+            display: inline-block;
+        }
+        .locSubmitc3:hover{
+            background-color: rgb(254,0,0);
+            color: black;
+        }
+
+        .clubTop h1{
+            text-align: left;
+            color: white;
+            font-size: 60px;
+        }
+        .clubTop{
+            margin-top: 15vw;
+            margin-bottom: 11vw;
+        }
+        .mapback{
+            background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(resources/css/img/bag_room.jpg);
+            background-position: top;
+        }
+/*
+        .clubMap{
+            margin-top: 100px;
+        }
+*/
+        .clubDetails .fa-phone{
+            color:#80909c!important;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .clubDetails .fa-envelope{
+            color:#80909c!important;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .clubDetails .fa-clock{
+            color:#80909c!important;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .clubDetails .fa-map-marker-alt{
+            color:#80909c!important;
+            margin-right: 16px;
+            font-size: 24px;
+        }
+        .clubDetails span{
+            color: #505050;
+            display: block;
+            font-weight: 400;
+            font-size: 20px; 
+        }
+        .clubDetails{
+            margin-top: 50px;
+        }
+        @media (max-width:767px){
+            .clubFollow span{
+                display: block;
+                margin-right: 0;
+                text-align: center;
+            }
+            .clubFollow{
+                text-align: center;
+                font-size: 8vw;
+            }
+            .clubTop{
+            margin-top: 40vw;
+                margin-bottom: 20vw;
+        }
+            .mapback {
+                background-position: 50%;
+            }
+    </style>
+    <br>
+    <div id="scroller" style="margin-top: -80px;"></div>
     <br>
     <div class="schedTop">
-        <img src="resources/css/img/rDark.png">
-        <div class="schedText">
-            <span>First-Timer?</span>
+<!--        <img src="resources/css/img/rDark.png">-->
+        <div class="schedText" style="width:100%;">
+            <br>
+            <span style="color:black!important;text-align: center!important;width: 100%!important;display: block!important;font-style: normal;font-size: 50px;margin-bottom: 15px;line-height: 100%;">Cary Schedule</span>
         </div>
-        <p>Select your class and create your club profile.</p>
+<!--        <p>Select your class and create your club profile.</p>-->
     </div>
     <div style="margin-top:0px;z-index: 200;position: relative;">
     <iframe id="sf-frame" src="https://www.fitmetrix.io/webportal/schedule/f5236ca2-041c-e811-a971-c0456042e755?locationID=6381&hidelocations=1&hideFilters=1" scrolling="no" frameborder="0" width="100%"></iframe>
         </div>
+                    <style>
+            .locSubmit{
+                color:white;
+                background-color:rgb(254,0,0);
+                -webkit-transition: ease all .3s;
+                transition: ease all .3s;
+                border: 1px solid rgb(254,0,0);
+                width:auto;
+                padding:0;
+                padding-left:1.5vw;
+                padding-right:1.5vw;
+                padding-top:.1vw;
+                font-size:1.25vw;
+                line-height: 150%;
+                display: inline-block;
+                font-family: metropolis;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .locSubmit:hover{
+                background-color: white;
+                color:black;
+            }
+                    .spacespace{
+                        height:400px;
+                    }
+                    @media(max-width:1300px){
+                        .spacespace{
+                            height:200px;
+                        }
+                    }
+                    #memMob{
+                        display: none;
+                    }
+                    .memFluid{
+                        padding-left:5vw;
+                        padding-top:3vw;
+                    }
+                    .wire p{
+                        padding-left:5vw;
+                        margin:0;
+                        max-width: 68vw;
+                        color: black;
+                    }
+                    #subDiv{
+                        padding-left:5vw!important;
+                    }
+                    .redBold{
+                        color:rgb(254,0,0);
+                        font-family: metropolis;
+                        font-size: 2vw;
+                        margin-bottom: 25px;
+                        padding-bottom: 0;
+                        display: block;
+                    }
+                    .redBold>span{
+                        color:black;
+                    }
+                    #bouts>img{
+                        -webkit-filter: drop-shadow(0 0 .5vw rgba(50,50,50,.5));
+                        filter: drop-shadow(0 0 .5vw rgba(50,50,50,.5));
+                    }
+                    .wire{
+                        background-image: url(resources/css/img/mem/images/BG1.jpg);
+                        background-size: cover;
+                        background-position: right;
+                    }
+                    .clubWire{
+                        background-image: url(resources/css/img/mem/images/BG1.jpg);
+                        background-size: cover;
+                        background-position: right;
+                    }
+                    .memHeader{
+                        background-image: url(resources/css/img/mem/top.png);
+                        background-size: cover;
+                        background-position: bottom;
+                        height: 22vw;
+                        display: inline-block;
+                        width: 100%;
+                        position: relative;
+                    }
+                    .memTiles img{
+                        width:100%;
+                        display: inline-block;
+                        position: relative;
+                    }
+                    .memHeader>span{
+                        font-family: aero;
+                        color: rgba(255,255,255,.75);
+                        font-size: 6vw;
+                        bottom: 2vw;
+                        left:5vw;
+                        position: absolute;
+                        line-height: 100%;
+                    }
+
+                    .memLRB1{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:4.5vw;left:0;
+                        color: white;
+                        font-family: aero;
+                        text-transform: uppercase;
+                        font-size: 1.75vw;
+                    }
+                    .memLRB2{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:7.5vw;left:0;
+                        color: white;
+                        font-family: metropolis;
+                        text-transform: uppercase;
+                        font-size: 1.75vw;
+                    }
+                    .memLRB2>span{
+                        font-size: 3vw;
+                    }
+                    .memLRB3{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:11vw;left:0;
+                        color: white;
+                        font-family: aero;
+                        text-transform: uppercase;
+                        font-size: 2vw;
+                    }
+                    .memLRB4{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:12.8vw;left:0;
+                        color: white;
+                        font-family: aero;
+                        text-transform: uppercase;
+                        font-size: 2vw;
+                    }
+                    .memLRB5{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:16.5vw;left:0;
+                        color: white;
+                        font-family: metropolisMed;
+                        font-size: 1.25vw;
+                    }
+                    .memLRB6{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:19.5vw;left:0;
+                        color: white;
+                        font-family: metropolisMed;
+                        font-size: .9vw;
+                    }
+                    .memLRB7{
+                        line-height: 100%;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;top:20.5vw;left:0;
+                        color: white;
+                        font-family: metropolisMed;
+                        font-size: .9vw;
+                    }
+                    #shortyP{
+                        max-width:65%;
+                    }
+                    @media(min-width:768px){
+                        .redBold2, .benefitsRow{
+                            padding-left: 14vw;
+                        }
+                    }
+                    @media(min-width:1281px){
+                        .redBold2, .benefitsRow{
+                            padding-left: 5vw;
+                        }
+                    }
+                    
+                    @media(max-width:1600px){
+                        #shortyP{
+                            max-width:50%;
+                        }
+                        .memLRB1{
+                            font-size: 2vw;
+                            top:5vw;
+                        }
+                        .memLRB2{
+                            font-size: 2vw;
+                            top:9vw;
+                        }
+                        .memLRB3{
+                            font-size: 2vw;
+                            top:15vw;
+                        }
+                        .memLRB4{
+                            font-size: 2vw;
+                            top:13vw;
+                        }
+                        .memLRB5{
+                            font-size: 1.5vw;
+                            top:19vw;
+                        }
+                        .memLRB6{
+                            font-size: 1vw;
+                            top:22.5vw;
+                        }
+                        .memLRB7{
+                            font-size: 1vw;
+                            top:23.75vw;
+                        }
+                    }
+                    @media(max-width:1300px){
+/*
+                        #shortyP{
+                            max-width:1200px!important;
+                        }
+*/
+                        .memLRB1{
+                            font-size: 2.5vw;
+                            top:6vw;
+                        }
+                        .memLRB2{
+                            font-size: 2.5vw;
+                            top:11vw;
+                        }
+                        .memLRB3{
+                            font-size: 2.5vw;
+                            top:15vw;
+                        }
+                        .memLRB4{
+                            font-size: 2.5vw;
+                            top:17vw;
+                        }
+                        .memLRB5{
+                            font-size: 2vw;
+                            top:22vw;
+                        }
+                        .memLRB6{
+                            font-size: 1.25vw;
+                            top:26.5vw;
+                        }
+                        .memLRB7{
+                            font-size: 1.25vw;
+                            top:28vw;
+                        }
+                    }
+                    @media(max-width:767px){
+                        .memFluid{
+                            max-width: 95vw!important;
+                        }
+                        .memFluid p{
+                            padding-left: 0!important;
+                        }
+                        .memTiles img {
+                            margin-top:-5vw;
+                            margin-bottom: -5vw;
+                        }
+                        #memRedLine{
+                            margin-top:-2vw!important;
+                            height:2.5vw!important;
+                        }
+                        .redBold{
+                            font-size: 5vw!important;
+                            margin-bottom: 5vw;
+                            line-height: 100%;
+                        }
+                        .redBold2{
+                            font-size: 4vw!important;
+                        }
+                        .wire p{
+                            font-size: 4.5vw!important;
+                            width: 100%!important;
+                            max-width: 100%!important;
+                            padding-right:20px!important;
+                        }
+                        .locSubmit{
+/*                            margin-left: 5vw;*/
+                            font-size: 6vw!important;
+                            padding-top:.5vw;
+                        }
+                        .memTiles{
+                            margin:0!important;
+                        }
+                        .memLRB1{
+                            font-size: 8vw;
+                            top:16vw;
+                            left:1vw;
+                            text-align: center;
+                        }
+                        .memLRB2{
+                            font-size: 8vw;
+                            top:32vw;
+                        }
+                        .memLRB2>span{
+                            font-size: 13vw;
+                        }
+                        .memLRB3{
+                            font-size: 8vw;
+                            top:47vw;
+                        }
+                        .memLRB4{
+                            font-size: 8vw;
+                            top:54vw;
+                        }
+                        .memLRB5{
+                            font-size: 6vw;
+                            top:68vw;
+                        }
+                        .memLRB6{
+                            font-size: 4vw;
+                            top:81vw;
+                        }
+                        .memLRB7{
+                            font-size: 4vw;
+                            top:84.5vw;
+                        }
+                        #memGreyBar{
+                            display: none!important;
+                        }
+                    }
+                    @media(max-width:650px){
+                        #memRedLine{
+                            margin-top:-2.1vw!important;
+                        }
+                        .memHeader{
+                            height: 50vw;
+                        }
+                        #memDesk{
+                            display:none!important;
+                        }
+                        #memMob{
+                            display: block!important;
+                        }
+                        .redBold{
+                            font-size: 4.5vw;
+                        }
+                        .memFluid p{
+                            font-size: 4.5vw!important;
+                            max-width: 100%!important;
+                        }
+                        .memFluid{
+                            padding-left:4vw;
+                            padding-top:6vw;
+                            margin-top: 5vw;
+                        }
+                        .locSubmit{
+                            font-size: 5vw!important;
+                            padding-left:3.5vw;
+                            padding-right:3.5vw;
+                            line-height: 150%;
+                        }
+                        #subDiv{
+                            padding-left: 0!important;
+                        }
+                        .shortyP{
+                            width:100%!important;
+                            max-width: 100%!important;
+                        }
+                    }
+                    @media(max-width:450px){
+                        .spacespace{
+                            height:100px;
+                        }
+                        .memLRB1{
+                            top:13vw;
+                        }
+                        .memLRB2{
+                            top:29vw;
+                        }
+                        .memLRB3{
+                            font-size: 8vw;
+                            top:43vw;
+                        }
+                        .memLRB4{
+                            font-size: 8vw;
+                            top:50vw;
+                        }
+                        .memLRB5{
+                            font-size: 6vw;
+                            top:63vw;
+                        }
+                        .memLRB6{
+                            font-size: 4vw;
+                            top:75vw;
+                        }
+                        .memLRB7{
+                            font-size: 4vw;
+                            top:79vw;
+                        }
+                    }
+        </style>
+    <!--        HERE-->
+    <div class="clubFollow" style="width:100%;background-color: rgb(254,0,0);text-align: center;padding:30px;">
+        <span>FOLLOW CARY, NC</span>
+        <a href="https://www.facebook.com/LevelRedBoxingCary/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/levelredboxing_cary/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-instagram"></i></a>
+    </div>
+    <div id="scroller2" style="height: 75px;"></div>
+        <div style="position:relative;">
+                <div class="schedTop">
+<!--        <img src="resources/css/img/rDark.png">-->
+                    <br>
+                    <br>
+        <div class="schedText" style="width:100%;">
+            <span style="color:black!important;text-align: center!important;width: 100%!important;display: block!important;font-style: normal;font-size: 50px;margin-bottom: 15px;line-height: 90%;">Glove Up</span>
+        </div>
+<!--        <p>Select your class and create your club profile.</p>-->
+        <div style="text-align: center;margin-top: 10px;margin-bottom: 25px;">
+            <a id="leftTog" onclick="switchMem()" style="margin:0;margin-right: -3px;" class="locSubmitc">Memberships</a>
+            <a id="rightTog" onclick="switchMem()" class="locSubmitc3" style="margin:0;margin-left: -3px;">Packages</a>            
+        </div>
+                  
+    </div>
+            <div id="memGreyBar" style="background-color: rgb(54,54,54);height:10vw;position: absolute;top:20vw;left:0;width:100%;display:inline-block;"></div>
+        <div class="container-fluid" style="padding:0;">
+
+        <div class="row memTiles" style="position: relative;margin-top:0;text-align: center;padding:0;">
+            <style type="text/css">
+                .tilez{
+                    display: inline-block;
+                    max-width:100%;
+                    width: 23vw;
+                    position: relative;
+                }
+                .tileyShow{
+                    display: inline-block!important;
+                }
+                .tiley{
+                    display: none;
+                    max-width:100%;
+                    width: 23vw;
+                    position: relative;
+                    left:calc(50% - 11.5vw);
+                }
+                
+/*
+                .tiley{
+                    display: none;
+                }
+*/
+                @media(max-width:1800px){
+                    .tilez, .tiley{
+                        width:27vw;
+                    }
+                    .tiley{
+                        left:calc(50% - 13.5vw);
+                    }
+                    #memGreyBar{
+                        top:24vw!important;
+                    }
+                }
+                @media(max-width:1300px){
+                    .tilez, .tiley{
+                        width:30vw;
+                    }
+                    .tiley{
+                        left:calc(50% - 15vw);
+                    }
+                    #memGreyBar{
+                        top:29vw!important;
+                    }
+                }
+                @media(max-width:767px){
+                    .tilez, .tiley{
+                        width:100%;
+                    }
+                    .tiley{
+                        left:0;
+                    }
+                }
+            </style>
+           <div id="tile4" class="animated fadeInUp tiley" style="position: relative;">
+                <img src="resources/css/img/mem/Redtile2.png">
+                <span class="memLRB1" style="top:15%;">Level Red</span>
+                <span class="memLRB2" style="top:25%;">Blow-for-Blow</span>
+                <span class="memLRB2" style="top:30%;">Class Packs</span>
+<!--                <span class="memLRB4" style="top:39%;">10 Classes</span>-->
+                <span class="memLRB3" style="top:46%;">10 Classes</span>
+<!--                <span class="memLRB3" style="top:53%;">20 Classes</span>-->
+                <span class="memLRB5" style="top:65%; font-size: 200%;">Free Gloves</span>
+                <a href="fitmetrix/cary/pricing-cary.html" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;">Buy Now</a>
+            </div>  
+<div id="tile1" class="animated tilez">
+                <img src="resources/css/img/mem/Redtile1.png">
+                <span class="memLRB1">Level Red</span>
+                <span class="memLRB2">Contender</span>
+                <span class="memLRB3">Unlimited</span>
+                <span class="memLRB4">Classes</span>
+                <span class="memLRB5">Free Gloves</span>
+                <a href="fitmetrix/cary/pricing-cary.html" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;margin:0;">Buy Now</a>
+            </div>
+            <div id="tile2" class="animated tilez">
+                <img src="resources/css/img/mem/Redtile2.png">
+                <span class="memLRB1">Level Red</span>
+                <span class="memLRB2"><span>8</span>Bout</span>
+                <span class="memLRB3">8 Classes</span>
+                <span class="memLRB4">Per Month</span>
+                <span class="memLRB5">Free Gloves</span>
+<!--
+                <span class="memLRB6">Additional Sessions</span>
+                <span class="memLRB7">Added at Discounted Rate*</span>
+-->
+                <a href="fitmetrix/cary/pricing-cary.html" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;margin:0;">Buy Now</a>
+            </div>
+            <div id="tile3" class="animated tilez">
+                <img src="resources/css/img/mem/Redtile2.png">
+                <span class="memLRB1">Level Red</span>
+                <span class="memLRB2"><span>4</span>Bout</span>
+                <span class="memLRB3">4 Classes</span>
+                <span class="memLRB4">Per Month</span>
+                <span class="memLRB5">Free Gloves</span>
+<!--
+                <span class="memLRB6">Additional Sessions</span>
+                <span class="memLRB7">Added at Discounted Rate*</span>
+-->
+                <a href="fitmetrix/cary/pricing-cary.html" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;margin:0;">Buy Now</a>
+            </div>
+                 
+        </div>
+<!--
+        <div id="bouts" style="text-align: left;position: relative;">
+            <div style="background-color: rgb(54,54,54);height:15vw;position: absolute;top:35%;left:-10vw;width:150vw;display: inline-block;"></div>
+            <img style="width:30%;display: inline-block;" src="resources/css/img/memberships/contender-card.png">
+            <img style="width:30%;display: inline-block;" src="resources/css/img/memberships/8bout-card.png">
+            <img style="width:30%;display: inline-block;" src="resources/css/img/memberships/4bout-card.png">
+        </div>
+-->
+
+    </div>
+        </div>
+    <div class="container">
+                <br>
+        <br>
+        <br>
+        <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Your membership benefits include</span></span>
+        <style ></style>
+        <style type="text/css">
+            @font-face {
+            font-family: aero;
+            src:url('resources/css/img/mem/aero.ttf')
+        }
+            .benefitsRow{
+                margin-top:3vw;
+                max-width: 92vw;
+            }
+            .benefitsRow .col-sm-6>div>span{
+                margin:0;
+                margin-left: .75vw;
+                line-height: 100%;
+                padding: 0;
+                font-size: 1.2vw;
+                display: block;
+                color: black;
+            }
+            .benefitsRow .lineText{
+                margin-bottom: .25vw!important;
+                font-family: aero;
+                font-size: 1.5vw!important;
+                text-transform: uppercase;
+                line-height: 100%;
+            }
+            @media(max-width:767px){
+                .benefitsRow{
+                    margin:0!important;
+                    max-width: 100%!important;
+                }
+                .benefitsRow .col-sm-6>div>span{
+                    font-size: 3.5vw;
+                }
+                .benefitsRow .lineText{
+                    font-size: 5.5vw!important;
+                }
+                .benefitsRow>div{
+                    margin-bottom: 5vw;
+                }
+            }
+        </style>
+        <div class="row benefitsRow">
+            <div id="memcol1" class="col-sm-6">
+                <div style="width:12%;display: inline-block;vertical-align: top;">
+                    <img style="width: 100%;margin-top:0;" src="resources/css/img/mem/icons/contract.png">
+                </div>
+                <div style="width:79%;display: inline-block;vertical-align: top;">
+                    <span class="lineText">MONTH - TO - MONTH</span>
+                    <span class="regText">No annual commitment required</span>
+                </div>
+            </div>
+            <div id="memcol2" class="col-sm-6">
+                <div style="width:12%;display: inline-block;vertical-align: top;">
+                    <img style="width: 100%;margin-top:-.75vw;" src="resources/css/img/mem/icons/redr.png">
+                </div>
+                <div style="width:79%;display: inline-block;vertical-align: top;">
+                    <span class="lineText">Access to all our studios</span>
+                    <span class="regText">Nationwide reciprocation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row benefitsRow">
+            <div id="memcol3" class="col-sm-6">
+                <div style="width:12%;display: inline-block;vertical-align: top;">
+                    <img style="width: 100%" src="resources/css/img/mem/icons/thumbsup.png">
+                </div>
+                <div style="width:79%;display: inline-block;margin-top:.5vw;vertical-align: top;">
+                    <span class="lineText">No long term contract</span>
+                    <span class="regText">30 Day cancellation</span>
+                </div>
+            </div>
+            <div id="memcol4" class="col-sm-6">
+                <div style="width:12%;display: inline-block;vertical-align: top;">
+                    <img style="width: 70%;margin-left: 1vw;" src="resources/css/img/mem/icons/flag.png">
+                </div>
+                <div style="width:79%;display: inline-block;margin-top:1vw;vertical-align: top;">
+                    <span class="lineText">Online and mobile booking</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row benefitsRow">
+            <div id="memcol5" class="col-sm-6">
+                <div style="width:12%;display: inline-block;vertical-align: top;">
+                    <img style="width: 100%" src="resources/css/img/mem/icons/freeze.png">
+                </div>
+                <div style="width:79%;display: inline-block;margin-top:.5vw;vertical-align: top;">
+                    <span class="lineText">Freeze privileges</span>
+                </div>
+            </div>
+            <div id="memcol6" class="col-sm-6">
+                <div style="width:12%;display: inline-block;vertical-align: top;">
+                    <img style="width: 100%;margin-top: 5px;" src="resources/css/img/mem/icons/calendar.png">
+                </div>
+                <div style="width:79%;display: inline-block;margin-top:.5vw;vertical-align: top;">
+                    <span class="lineText">Consistent class times</span>
+                    <span class="regText">Open 7 days per week</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <br>
+<div style="padding:0;margin:0;text-align: center;margin-bottom: 3px;margin-top: 50px;">
+    <img style="width:32%;display: inline-block;" src="resources/css/img/mem/images/1.png">
+    <img style="width:32%;display: inline-block;" src="resources/css/img/mem/images/2.png">
+    <img style="width:32%;display: inline-block;" src="resources/css/img/mem/images/3.png">
+</div>
+<!--
     <div class="faqdiv">
-        <div class="container-fluid">
+                <div class="container-fluid">
             <h1>Frequently Asked Questions</h1>
             <div class="faq">
                 <a class="faqQ" onclick="show1()">How early should I arrive before my first class?<a onclick="show1()" id="plus1" class="faqplus">+</a><a onclick="show1()" id="minus1" class="faqminus">-</a></a>
@@ -388,20 +1190,17 @@ typeHeader();
                 <a class="faqQ" onclick="show7()">Can I bring a friend?<a onclick="show7()" id="plus7" class="faqplus">+</a><a onclick="show7()" id="minus7" class="faqminus">-</a></a>
                 <p class="faq7 collapsible collapsed">Totally encouraged! Working out with a friend is a great way to enjoy your first class!</p>
             </div>
-<!--
             <div class="faq">
                 <a class="faqQ" onclick="show8()">Are there showers?<a onclick="show8()" id="plus8" class="faqplus">+</a><a onclick="show8()" id="minus8" class="faqminus">-</a></a>
-                <p class="faq8 collapsible collapsed">Unfortunately this club location is not equipped with showers.</p>
-
+                <p class="faq8 collapsible collapsed">Yes, our club has private showers with towels, soap, lotion and body spray.</p>
             </div>
             <div class="faq">
                 <a class="faqQ" onclick="show9()">Is there childcare?<a onclick="show9()" id="plus9" class="faqplus">+</a><a onclick="show9()" id="minus9" class="faqminus">-</a></a>
-                <p class="faq9 collapsible collapsed">We do not provide childcare, but if your child is 15 or older they can workout too!</p>
-
+                <p class="faq9 collapsible collapsed">Free babysitting is included Monday through Saturday. There are no babysitting services Sundays.</p>
             </div>
--->
         </div>
     </div>
+-->
 <!--&hidelocations=1-->
     <div class="lrbFooter">
         <div class="container">
@@ -463,6 +1262,8 @@ typeHeader();
 -->
 
     </body> 
-    <div style="height: 50px;"></div><script src="resources/js/script.js?v=3"></script>
+
+    <div style="height: 50px;"></div>
+    <script src="resources/js/script.js?v=3"></script>
     
 </html>
