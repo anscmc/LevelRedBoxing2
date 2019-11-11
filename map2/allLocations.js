@@ -41,7 +41,7 @@ var allLocations = [
     state: "PA",
     zip: "15206",
     phone: "(412) 363-5933",
-    weblink: "free-class.html#pittsburgh"
+    weblink: "free-class-pittsburgh"
   },
     {
     name: "Indianapolis",
