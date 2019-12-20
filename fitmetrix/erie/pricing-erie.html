@@ -101,10 +101,46 @@
             <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
         </div>
     </div>
-    
+
+        
+        
     <div style="height: 100px"></div>
-    <h1 style="text-align: center;margin-top:10px;">Pricing - Erie</h1>
-    <!-- Fitmetrix iframe -->
+
+    
+<!--    <h1 style="text-align: cente
+r;margin-top:10px;">Pricing - Erie</h1>-->
+    
+    <script type="text/javascript">
+            $(document).ready(function(){
+                var myVal = document.URL.split('#').pop();
+                if (myVal == "champ"){
+                    $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=137&locationid=4041&hidelocations=1");
+                    $("#showbtn").toggleClass("hideshow");
+                }
+                if (myVal == "contender"){
+                    $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=203&locationid=4041&hidelocations=1");
+                    $("#showbtn").toggleClass("hideshow");
+                }
+                if (myVal == "undercard"){
+                    $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=136&locationid=4041&hidelocations=1");
+                    $("#showbtn").toggleClass("hideshow");
+                }
+                if (myVal == "blow"){
+                    $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=11112,11115,11237&locationid=4041&hidelocations=1");
+                    $("#showbtn").toggleClass("hideshow");
+                }
+                else{
+                    
+                }
+            });
+            function showall(){
+                $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?locationID=4041&hidelocations=1");
+                $("#showbtn").addClass("hideshow");
+            }
+    </script>
+<a id="showbtn" class="hideshow" onclick="showall()" style="cursor: pointer;text-decoration: none!important;display: block;margin:0 auto;padding:0;text-align: center;color: #323232;">Show All Packages</a>
+    
+<!-- Fitmetrix iframe -->
 <iframe id="sf-frame" src="https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?locationID=4041&hidelocations=1" scrolling="no" frameborder="0" width="100%"></iframe>
 
     <div class="lrbFooter">

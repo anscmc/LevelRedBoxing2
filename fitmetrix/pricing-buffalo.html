@@ -86,7 +86,35 @@
         </div>
     </div>
     <div style="height: 100px"></div>
-    
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var myVal = document.URL.split('#').pop();
+                if (myVal == "8bout"){
+                    $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=181&locationid=4166&hidelocations=1");
+                    $("#showbtn").toggleClass("hideshow");
+                }
+                if (myVal == "contender"){
+                    $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=183&locationid=4166&hidelocations=1");
+                    $("#showbtn").toggleClass("hideshow");
+                }
+                if (myVal == "4bout"){
+                    $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=180&locationid=4166&hidelocations=1");
+                    $("#showbtn").toggleClass("hideshow");
+                }
+                if (myVal == "blow"){
+                    $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=11112&locationid=4166&hidelocations=1");
+                    $("#showbtn").toggleClass("hideshow");
+                }
+                else{
+                    
+                }
+            });
+            function showall(){
+                $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?locationID=4166&hidelocations=1");
+                $("#showbtn").addClass("hideshow");
+            }
+    </script>
+<a id="showbtn" class="hideshow" onclick="showall()" style="cursor: pointer;text-decoration: none!important;display: block;margin:0 auto;padding:0;text-align: center;color: #323232;">Show All Packages</a>
     <!-- Fitmetrix iframe -->
 <iframe id="sf-frame" src="https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?locationID=4166&hidelocations=1" scrolling="no" frameborder="0" width="100%"></iframe>
     

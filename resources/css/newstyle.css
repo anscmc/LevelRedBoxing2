@@ -10,7 +10,9 @@
 	font-family: tiltedW;
     src:url('img/new19/fontRegular.ttf')
 }
-
+.hideshow{
+    display: none!important;
+}
 #demo{
     font-weight: bold;
     font-size: 16px;
