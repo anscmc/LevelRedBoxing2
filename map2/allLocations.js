@@ -8,7 +8,7 @@ var allLocations = [
     state: "NY",
     zip: "14221",
     phone: "(716) 634-2400",
-    weblink: "free-class.html#buff"
+    weblink: "free-class/buffalo.html"
   },
   {
     name: "Cary",
@@ -19,7 +19,7 @@ var allLocations = [
     state: "NC",
     zip: "21224",
     phone: "(919) 896-6332",
-    weblink: "free-class.html#cary"
+    weblink: "free-class/cary.html"
   },
   {
     name: "Erie",
@@ -30,7 +30,7 @@ var allLocations = [
     state: "PA",
     zip: "16505",
     phone: "(814) 315-2994",
-    weblink: "free-class.html#erie"
+    weblink: "free-class/erie.html"
   },
   {
     name: "Pittsburgh",
@@ -41,7 +41,7 @@ var allLocations = [
     state: "PA",
     zip: "15206",
     phone: "(412) 363-5933",
-    weblink: "pittsburgh"
+    weblink: "pittsburgh.html"
   },
     {
     name: "Indianapolis",
