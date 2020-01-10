@@ -880,6 +880,7 @@ text-shadow: .5px .5px .5px black;
 }
 .lvltext>span{
     color:#323232;
+    
 /*    text-shadow: .5px .5px .5px black;*/
     font-size: 3.25vw;
 }
@@ -889,6 +890,7 @@ text-shadow: .5px .5px .5px black;
     color: #444444;
     font-size: 2.25vw;
     line-height: 105%;
+    font-weight: 200!important;
 /*    text-shadow: .5px .5px .5px black;*/
 }
 .toptext{
@@ -897,6 +899,7 @@ text-shadow: .5px .5px .5px black;
     color: #444444;
     font-size: 2.25vw;
     line-height: 105%;
+    font-weight: 100!important;
 }
 .redBTNlvl{
     background-color:rgb(254,0,0);
