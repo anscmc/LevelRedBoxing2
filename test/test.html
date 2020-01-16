@@ -1,0 +1,60 @@
+<script type="text/javascript">
+        
+            function toggleMenu(){
+                $("#mobileMenu").fadeToggle("fast");
+            }
+
+            // Scroll to element
+            $(document).on('click', 'a[href^="#"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
+
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos}, 1500);
+            });
+            
+</script>
+
+<style type="text/css">
+    #mobileMenu{
+        background-color:black;
+        height:100%;
+        width:100%;
+        display:fixed;
+        top:0;
+        left:0;
+        z-index:1100;
+    }
+    #mobileMenu>a{
+        font-family: 'Montserrat';
+        font-size: 6vw;
+        display:block;
+        width:100%;
+        text-align:center;
+        line-height:110%;
+        padding:5px;
+        font-weight: 400;
+        line-height: 42px;
+        color:#ffffff;
+    }
+</style>
+
+<div id="mobileMenu">
+    <a onclick="toggleMenu()">About</a>
+    <a onclick="toggleMenu()">Freebies</a>
+    <a onclick="toggleMenu()">Affiliates</a>
+    <a onclick="toggleMenu()">Sign-up</a>
+    <a onclick="toggleMenu()">Contact</a>
+</div>
