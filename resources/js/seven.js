@@ -7,19 +7,49 @@ function sleep(ms) {
 async function validate(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
-if ( username == "test" && password == "test"){
+if ( username == "LRB" && password == "member"){
        hideLogin();
         await sleep(750);
         showWorkout();
         return false;
 }
-else if ( username == "admin" && password == "admin123"){
+else if ( username == "lrb" && password == "member"){
         hideLogin();
         await sleep(750);
         showWorkout();
         return false;
 }
-else if ( username == "pitt" && password == "pitt"){
+else if ( username == "Lrb" && password == "member"){
+       hideLogin();
+        await sleep(750);
+        showWorkout();
+        return false;
+}
+    else if ( username == "lRb" && password == "member"){
+       hideLogin();
+        await sleep(750);
+        showWorkout();
+        return false;
+}
+    else if ( username == "lrB" && password == "member"){
+       hideLogin();
+        await sleep(750);
+        showWorkout();
+        return false;
+}
+        else if ( username == "LRb" && password == "member"){
+       hideLogin();
+        await sleep(750);
+        showWorkout();
+        return false;
+}
+        else if ( username == "LrB" && password == "member"){
+       hideLogin();
+        await sleep(750);
+        showWorkout();
+        return false;
+}
+        else if ( username == "lRB" && password == "member"){
        hideLogin();
         await sleep(750);
         showWorkout();
