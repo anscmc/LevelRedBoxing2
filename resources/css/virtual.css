@@ -171,8 +171,8 @@ div.parallax2:last-child {
     display: none;
 }
 .vidvid{
-    -webkit-box-shadow: 0 0 10px rgba(20,20,20,1);
-    box-shadow: 0 0 5px black;
+    -webkit-box-shadow: 0 0 10px rgba(25,25,25,.75);
+    box-shadow: 0 0 10px rgba(25,25,25,.75);
 }
 @media(max-width:767px){
     div.parallax1 {
