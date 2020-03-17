@@ -167,8 +167,34 @@ div.parallax2:last-child {
 .virtualVid{
     margin-top: 3vw;
 }
-
+.mob{
+    display: none;
+}
 @media(max-width:767px){
+    div.parallax1 {
+        background-position: 0 0;
+        background-image: url(img/virtual/login3.jpg);
+        padding-top:150px;
+        min-height: 85vh;
+    }
+    div.parallax1:last-child {
+      margin-bottom: 0;
+    }
+    div.parallax2 {
+        background-position: 0 0;
+        background-image: url(img/virtual/workout2.jpg);
+        padding-top:150px;
+        min-height: 85vh;
+    }
+    div.parallax2:last-child {
+      margin-bottom: 0;
+    }
+    .mob{
+        display: block;
+    }
+    .desk{
+        display: none!important;
+    }
     .virtualTitle{
         font-size: 6vw;
         margin-bottom: 5vw;
