@@ -156,6 +156,7 @@ div.parallax2:last-child {
     position: absolute;
     left: .8vw;
     bottom: .8vw;
+    -webkit-transition: ease all .3s;
     transition: ease all .3s;
     border:2px solid rgb(254,0,0);
 }
@@ -167,6 +168,53 @@ div.parallax2:last-child {
     margin-top: 3vw;
 }
 
-@media(max-width:500px){
-    
+@media(max-width:767px){
+    .virtualTitle{
+        font-size: 6vw;
+        margin-bottom: 5vw;
+    }
+    .loginBox{
+        width:95%;
+        margin-left:2.5%!important;
+        margin-bottom: 40vw;
+    }
+    .loginTitle{
+        font-size: 5vw!important;
+    }
+    .loginLabel{
+        font-size: 3.5vw;
+    }
+    #smbt{
+        font-size: 5vw!important;
+    }
+    .loginBox>input{
+        font-size: 5vw;
+        line-height: 5vw;
+        padding: 2vw!important;
+        padding-top: 2.25vw!important;
+    }
+    .virtualInfo{
+        
+    }
+    .videoTitle{
+        font-size: 8vw;
+        padding: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 1.5vw;
+    }
+    .videoMarker{
+        font-size: 12vw;
+        margin-left: 10vw;
+    }
+    .botmark{
+        margin-bottom: 10vw;
+    }
+    .videoP{
+        font-size: 4vw;
+        text-shadow: 0 0 .5vw black;
+    }
+    .virtualVid{
+        padding:0;
+    }
 }

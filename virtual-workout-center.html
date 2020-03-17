@@ -188,7 +188,7 @@
         </div>
 -->
         
-        <div class="parallax1 animated fadeIn">
+        <div class="parallax parallax1 animated fadeIn">
             <h1 class="virtualTitle">Virtual Workout Center</h1>
             <div class="loginBox">
                 <span class="loginTitle">Member Login</span>
@@ -211,13 +211,13 @@
                 </div>
             </div>
         </div>
-        <div class="parallax2">
+        <div class="parallax parallax2">
 
             <h1 class="videoTitle">Virtual Workout Center</h1>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-1"></div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 virtualInfo">
                         <span class="videoMarker">Today's</span>
                         <span class="videoMarker botmark">Workout...</span>
                         <p class="videoP">Morbi dapibus erat eu elit maximus varius. Quisque mattis sapien a consectetur auctor. Quisque cursus volutpat quam a varius. In hac habitasse platea dictumst. Ut tincidunt aliquet elit, vitae volutpat felis varius sit amet. Fusce porttitor molestie mi in euismod.</p>
@@ -291,26 +291,10 @@
 </script>
     </body> 
     <script type="text/javascript">
-        (function(){
 
-  var parallax = document.querySelectorAll(".parallax1"),
-      speed = .4;
-
-  window.onscroll = function(){
-    [].slice.call(parallax).forEach(function(el,i){
-
-      var windowYOffset = window.pageYOffset,
-          elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
-      
-      el.style.backgroundPosition = elBackgrounPos;
-
-    });
-  };
-
-})();
                 (function(){
 
-  var parallax = document.querySelectorAll(".parallax2"),
+  var parallax = document.querySelectorAll(".parallax"),
       speed = .4;
 
   window.onscroll = function(){
