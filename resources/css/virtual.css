@@ -170,6 +170,10 @@ div.parallax2:last-child {
 .mob{
     display: none;
 }
+.vidvid{
+    -webkit-box-shadow: 0 0 10px rgba(20,20,20,1);
+    box-shadow: 0 0 5px black;
+}
 @media(max-width:767px){
     div.parallax1 {
         background-position: 0 0;
