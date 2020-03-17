@@ -1,0 +1,172 @@
+@font-face {
+            font-family: aero;
+            src:url('img/mem/aero.ttf')
+        }
+div.parallax1 {
+    background-position: 0 0;
+    background-image: url(img/virtual/login.jpg);
+    padding-top:150px;
+    min-height: 85vh;
+}
+div.parallax1:last-child {
+  margin-bottom: 0;
+}
+.virtualTitle{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 1vw black;
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-family: metropolis;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.loginBox{
+    background-color: rgba(255,255,255,.85);
+    padding:25px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px black;
+    display: inline-block;
+    width:500px;
+    margin-left:calc(50% - 250px);
+    
+}
+.loginBox>span{
+    display: block;
+    text-align: left;
+    font-family: metropolis;
+    color: black!important;
+    margin-bottom: 10px;
+}
+.loginLabel{
+    font-size: 18px;
+    color: black!important;
+}
+.loginTitle{
+    text-align: center!important;
+    font-family: metropolis;
+    font-size: 40px!important;
+    margin-bottom: 5px;
+}
+.loginBox input{
+    width:100%;
+    padding:5px!important;
+    font-size: 35px;
+    border-color: red;
+    border-top-style: solid;
+    border-width:1.5px;
+}
+            .locSubmit{
+                color:white;
+                background-color:rgb(254,0,0);
+                -webkit-transition: ease all .3s;
+                transition: ease all .3s;
+                border: 1px solid rgb(254,0,0);
+                width:200px;
+                padding-top:2px;
+                font-size:24px;
+                line-height: 45px;
+                height:45px;
+                display: inline-block;
+                font-family: metropolis;
+                text-align: center;
+                text-decoration: none!important;
+                cursor: pointer;
+            }
+            .locSubmit:hover{
+                background-color: white;
+                color:black;
+            }
+                    .errormsg{
+    text-align: center;
+    font-size: 12px;margin:5px;
+    color:rgb(255,0,0);
+    display: none;
+}
+.shstore{
+    display: block!important;
+}
+div.parallax2 {
+    background-position: 0 0;
+    background-image: url(img/virtual/workout.jpg);
+    padding-top:125px;
+    min-height: 85vh;
+    display: none;
+    text-align: center;
+}
+div.parallax2:last-child {
+  margin-bottom: 0;
+}
+.videoTitle{
+    font-family: aero;
+    font-size: 5vw;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    width:auto;
+    display: inline-block;
+    margin:0;
+    padding:5;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(10,10,10,.75);
+    margin-bottom: 3vw;
+}
+.videoMarker{
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    font-size: 4.5vw;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    text-align: left;
+    text-shadow: 0 0 2px black; /* IE 9 */
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+}
+.botmark{
+    margin-bottom: 4vw;
+}
+.videoP{
+    color: white;
+    text-shadow: 0 0 1vw black;
+    font-size: 1.2vw;
+    line-height: 100%;
+    text-align: left;
+    padding-right: 1vw;
+}
+.botSpace{
+    height: 10vw;
+}
+.virtualBTN{
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(254,0,0);
+    display: inline-block;
+    padding:.5vw 1vw .2vw 1vw;
+    line-height: 125%;
+    font-size: 2vw;
+    font-family: metropolis;
+    cursor: pointer;
+    text-decoration: none!important;
+    position: absolute;
+    left: .8vw;
+    bottom: .8vw;
+    transition: ease all .3s;
+    border:2px solid rgb(254,0,0);
+}
+.virtualBTN:hover{
+    background-color: white;
+    color: rgb(254,0,0);
+}
+.virtualVid{
+    margin-top: 3vw;
+}
+
+@media(max-width:500px){
+    
+}

@@ -15,7 +15,7 @@
         <style>
             .col-md-3{font-size: 16px !important;}
         </style>
-        <title>Virtual Workout | Level Red Boxing</title>
+        <title>Virtual Workout Center | Level Red Boxing</title>
 
         
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -32,6 +32,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 <!--        <link rel="stylesheet" type="text/css" href="resources/css/newstyle.min.css">-->
         <link rel="stylesheet" type="text/css" href="resources/css/stylenov18.min.css?v=13">
+        <link rel="stylesheet" type="text/css" href="resources/css/virtual.css">
         
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
@@ -112,7 +113,7 @@
 <!-- End Facebook Pixel Code -->
     </head>
 
-    <body style="background-color: transparent;">
+    <body style="background-color: transparent;min-height: 85vh;">
       
     <nav class="navbar navbar-inverse deskNav">
       <div class="container-fluid">
@@ -172,48 +173,80 @@
             $("#mobileNav").fadeToggle(200);
         }
     </script>
-                <style>
-            .locSubmit{
-                color:white;
-                background-color:rgb(254,0,0);
-                -webkit-transition: ease all .3s;
-                transition: ease all .3s;
-                border: 1px solid rgb(254,0,0);
-                width:200px;
-                font-size:20px;
-                line-height: 40px;
-                height:40px;
-                display: inline-block;
-                font-family: metropolis;
-                text-align: center;
-            }
-            .locSubmit:hover{
-                background-color: white;
-                color:black;
-            }
-                    .spacespace{
-                        height:400px;
-                    }
-                    @media(max-width:1300px){
-                        .spacespace{
-                            height:200px;
-                        }
-                    }
-                    @media(max-width:450px){
-                        .spacespace{
-                            height:100px;
-                        }
-                    }
-        </style>
 
- 
-<p style="color: black;text-align: center;font-size: 1.5em;padding:20px;">Thank you! Your info has been received. Someone will contact you as soon as possible.</p>
 
+
+
+<!--
         <div style="text-align: center">
             <a class="locSubmit" href="index.html">Homepage <i class="fas fa-arrow-right"></i></a>
         </div>
+-->
         
+        <div class="parallax1 animated fadeIn">
+            <h1 class="virtualTitle">Virtual Workout Center</h1>
+            <div class="loginBox">
+                <span class="loginTitle">Member Login</span>
+                <input type="text" name="username" id="username" />
+                <span class="loginLabel">Username</span>
+                <input type="password" name="password" id="password" />
+                <span class="loginLabel">Password</span>
+                <div style="text-align: center;">
+                <a id="smbt" class="locSubmit" onclick="validate()">ENTER</a>
+                <p class="errormsg">Incorrect username and/or password. Please try again.</p>
+                    <script type="text/javascript">
+                            var input = document.getElementById('password');
+                            input.addEventListener("keyup", function(event) {
+                              if (event.keyCode === 13) {
+                               event.preventDefault();
+                               document.getElementById('smbt').click();
+                              }
+                            });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="parallax2">
 
+            <h1 class="videoTitle">Virtual Workout Center</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <span class="videoMarker">Today's</span>
+                        <span class="videoMarker botmark">Workout...</span>
+                        <p class="videoP">Morbi dapibus erat eu elit maximus varius. Quisque mattis sapien a consectetur auctor. Quisque cursus volutpat quam a varius. In hac habitasse platea dictumst. Ut tincidunt aliquet elit, vitae volutpat felis varius sit amet. Fusce porttitor molestie mi in euismod.</p>
+                        <p class="videoP">Fusce porttitor molestie mi in euismod. Fusce volutpat mi id turpis dignissim, eget commodo nisi porttitor. Donec scelerisque iaculis elit ut molestie. Nullam tellus ante, pharetra ut nunc ac, lobortis fermentum justo. Pellentesque a vulputate mi. Nulla tempor urna id metus scelerisque imperdiet. </p>
+                    </div>
+                    <div class="col-md-6 virtualVid">
+                    <img style="width: 100%" src="resources/css/img/virtual/vid.jpg">
+<!--
+                        <div id="workVidDiv" style="width:100%;display: inline-block;margin-top: 10px;margin-bottom: 10px;">
+                            <video id="workVid" style="width:100%;background-color: white;"  poster=""><source src="resources/css/img/sep19/workout3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <a class="virtualBTN">Start Workout <i class="fas fa-caret-right"></i></a>
+                        </div>
+-->
+                    </div>
+                </div>
+            </div>
+<!--
+            <div class="loginBox">
+                <span class="loginTitle">Member Login</span>
+                <input type="text">
+                <span class="loginLabel">Username</span>
+                <input type="password">
+                <span class="loginLabel">Password</span>
+                <div style="text-align: center;">
+                    <a class="locSubmit">ENTER</a>
+                </div>
+            </div>
+-->
+            <div class="botSpace"></div>
+        </div>
+        
+        
     <div class="lrbFooter" style="z-index: 100;">
         <div class="container">
             <div class="row">
@@ -224,9 +257,9 @@
                     <span>Share how you are</span>
                     <a style="color: white;" href="https://strongateverylevel.com"><span>#strongatevery<span style="color:rgb(254,0,0);">level</span></span></a>
                     <div class="icons">
-                    <a href="https://www.instagram.com/levelredboxing/"><i class="fab fa-instagram" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
-                <a href="https://www.facebook.com/LevelRedBoxing/"><i class="fab fa-facebook-square" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
-                <a href="https://www.youtube.com/channel/UCEOWxaM5Fc_bKdCEVfdUMhg"><i class="fab fa-youtube" style="font-size: 30px!important;margin-top:10px;"></i></a>
+                        <a href="https://www.instagram.com/levelredboxing/"><i class="fab fa-instagram" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                        <a href="https://www.facebook.com/LevelRedBoxing/"><i class="fab fa-facebook-square" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
+                        <a href="https://www.youtube.com/channel/UCEOWxaM5Fc_bKdCEVfdUMhg"><i class="fab fa-youtube" style="font-size: 30px!important;margin-top:10px;"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 stores">
@@ -247,9 +280,47 @@
     </div>
         <script>
 
-  fbq('track', 'Lead');
+
 
 </script>
     </body> 
-    <div style="height: 50px;"></div><script src="resources/js/script.js?v=3"></script>
+    <script type="text/javascript">
+        (function(){
+
+  var parallax = document.querySelectorAll(".parallax1"),
+      speed = .4;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
+      
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
+
+})();
+                (function(){
+
+  var parallax = document.querySelectorAll(".parallax2"),
+      speed = .4;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
+      
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
+
+})();
+        
+    </script>
+   <script src="resources/js/script.js?v=3"></script>
+    <script src="resources/js/seven.js"></script>
 </html>
