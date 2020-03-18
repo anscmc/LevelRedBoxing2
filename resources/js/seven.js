@@ -8,50 +8,66 @@ async function validate(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 if ( username == "LRB" && password == "member"){
-       hideLogin();
+        spinner();
         await sleep(750);
+        hideLogin();
+        await sleep(1000);
         showWorkout();
         return false;
 }
 else if ( username == "lrb" && password == "member"){
-        hideLogin();
+        spinner();
         await sleep(750);
+        hideLogin();
+        await sleep(1000);
         showWorkout();
         return false;
 }
 else if ( username == "Lrb" && password == "member"){
-       hideLogin();
+    spinner();
         await sleep(750);
+       hideLogin();
+        await sleep(1000);
         showWorkout();
         return false;
 }
     else if ( username == "lRb" && password == "member"){
-       hideLogin();
+        spinner();
         await sleep(750);
+       hideLogin();
+        await sleep(1000);
         showWorkout();
         return false;
 }
     else if ( username == "lrB" && password == "member"){
-       hideLogin();
+        spinner();
         await sleep(750);
+       hideLogin();
+        await sleep(1000);
         showWorkout();
         return false;
 }
         else if ( username == "LRb" && password == "member"){
-       hideLogin();
+            spinner();
         await sleep(750);
+       hideLogin();
+        await sleep(1000);
         showWorkout();
         return false;
 }
         else if ( username == "LrB" && password == "member"){
-       hideLogin();
+            spinner();
         await sleep(750);
+       hideLogin();
+        await sleep(1000);
         showWorkout();
         return false;
 }
         else if ( username == "lRB" && password == "member"){
-       hideLogin();
+            spinner();
         await sleep(750);
+       hideLogin();
+        await sleep(1000);
         showWorkout();
         return false;
 }
@@ -70,9 +86,23 @@ else{
 }
 
 function hideLogin(){
-    $("div.parallax1").fadeToggle(750);
+    $("div.parallax1").fadeToggle(1000);
 }
 function showWorkout(){
-    $("div.parallax2").fadeToggle(1000);
+    window.scrollTo(0, 0);
+    $("div.parallax2").fadeToggle(1500);
+    
+}
+function spinner(){
+    $("#spinner").fadeToggle(50);
+    var angle = 0;
+setInterval(function() {
+    console.log(angle);
+    $("#spinner")
+        .css('-webkit-transform', 'rotate('+angle+'deg)')
+        .css('-moz-transform', 'rotate('+angle+'deg)')
+        .css('-ms-transform', 'rotate('+angle+'deg)');
+    angle++; angle++; angle++;
+}, 25);
 }
 
