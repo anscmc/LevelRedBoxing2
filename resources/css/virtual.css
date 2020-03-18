@@ -147,9 +147,10 @@ div.parallax2:last-child {
     color: white;
     text-shadow: 0 0 1vw black;
     font-size: 1.2vw;
-    line-height: 100%;
+    line-height: 125%;
     text-align: left;
     padding-right: 1vw;
+    margin-bottom: 1vw;
 }
 .botSpace{
     height: 10vw;
@@ -187,6 +188,9 @@ div.parallax2:last-child {
     box-shadow: 0 0 10px rgba(25,25,25,.75);
 }
 #spinner{
+    display: none;
+}
+#checker{
     display: none;
 }
 @media(max-width:767px){
@@ -257,6 +261,7 @@ div.parallax2:last-child {
     }
     .videoP{
         font-size: 4vw;
+        margin-bottom: 4vw;
         text-shadow: 0 0 .5vw black;
     }
     .virtualVid{
