@@ -363,7 +363,7 @@ body{
 #aboutDesk{
     display: none;
     position: fixed;
-    right:280px;
+    right:240px;
     top:82px;
     z-index: 1001;
     background-color: rgba(0,0,0,.85)!important;
