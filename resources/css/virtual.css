@@ -19,6 +19,8 @@ div.parallax1 {
     background-image: url(img/virtual/login.jpg);
     padding-top:150px;
     min-height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 div.parallax1:last-child {
   margin-bottom: 0;
@@ -106,6 +108,8 @@ div.parallax2 {
     min-height: 85vh;
     display: none;
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 div.parallax2:last-child {
   margin-bottom: 0;
@@ -199,6 +203,8 @@ div.parallax2:last-child {
         background-image: url(img/virtual/login4.jpg);
         padding-top:150px;
         min-height: 85vh;
+        background-size: cover;
+    background-repeat: no-repeat;
     }
     div.parallax1:last-child {
       margin-bottom: 0;
@@ -208,6 +214,8 @@ div.parallax2:last-child {
         background-image: url(img/virtual/workout2.jpg);
         padding-top:150px;
         min-height: 85vh;
+        background-size: cover;
+    background-repeat: no-repeat;
     }
     div.parallax2:last-child {
       margin-bottom: 0;
