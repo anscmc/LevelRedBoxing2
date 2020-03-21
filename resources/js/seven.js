@@ -13,6 +13,7 @@ if ( username == "LRB" && password == "member"){
         hideLogin();
         await sleep(1000);
         showWorkout();
+    spinner2();
         return false;
 }
 else if ( username == "lrb" && password == "member"){
@@ -21,6 +22,7 @@ else if ( username == "lrb" && password == "member"){
         hideLogin();
         await sleep(1000);
         showWorkout();
+    spinner2();
         return false;
 }
 else if ( username == "Lrb" && password == "member"){
@@ -29,6 +31,7 @@ else if ( username == "Lrb" && password == "member"){
        hideLogin();
         await sleep(1000);
         showWorkout();
+    spinner2();
         return false;
 }
     else if ( username == "lRb" && password == "member"){
@@ -37,6 +40,7 @@ else if ( username == "Lrb" && password == "member"){
        hideLogin();
         await sleep(1000);
         showWorkout();
+        spinner2();
         return false;
 }
     else if ( username == "lrB" && password == "member"){
@@ -45,6 +49,7 @@ else if ( username == "Lrb" && password == "member"){
        hideLogin();
         await sleep(1000);
         showWorkout();
+        spinner2();
         return false;
 }
         else if ( username == "LRb" && password == "member"){
@@ -53,6 +58,7 @@ else if ( username == "Lrb" && password == "member"){
        hideLogin();
         await sleep(1000);
         showWorkout();
+            spinner2();
         return false;
 }
         else if ( username == "LrB" && password == "member"){
@@ -61,6 +67,7 @@ else if ( username == "Lrb" && password == "member"){
        hideLogin();
         await sleep(1000);
         showWorkout();
+            spinner2();
         return false;
 }
         else if ( username == "lRB" && password == "member"){
@@ -69,6 +76,7 @@ else if ( username == "Lrb" && password == "member"){
        hideLogin();
         await sleep(1000);
         showWorkout();
+            spinner2();
         return false;
 }
 else{
@@ -92,6 +100,9 @@ function showWorkout(){
     window.scrollTo(0, 0);
     $("div.parallax2").fadeToggle(1500);
     
+}
+function spinner2(){
+    $("#spinner").fadeToggle(50);
 }
 function spinner(){
     $("#spinner").fadeToggle(50);

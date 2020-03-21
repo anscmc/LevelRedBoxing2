@@ -26,12 +26,19 @@
     max-height: 70vh!important;
     margin-top: 1vh;
     height: 70vh!important;
+    border-radius: 10px!important;
 }
 .shareExpand{
     left:0px;
     z-index: 10000;
     -webkit-transition: ease all .3s;
     transition: ease all .3s;
+}
+#shareEx{
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+#closeShare{
+    box-shadow: 0 0 10px rgba(50,50,50,.5);
 }
 .fadeInLeft {
     -webkit-animation-name: fadeInLeft;
