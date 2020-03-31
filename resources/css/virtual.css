@@ -2,6 +2,20 @@
             font-family: aero;
             src:url('img/mem/aero.ttf')
         }
+@font-face {
+            font-family: knockout;
+            src:url('font/knockout_fullfamily/Knockout-HTF49-Liteweight.otf')
+        }
+@font-face {
+            font-family: suisse;
+            src:url('font/suisse/SuisseBPIntl-Regular.otf')
+        }
+@font-face {
+            font-family: suissebold;
+            src:url('font/suisse/SuisseBPIntl-Bold.otf')
+        }
+
+
 /*SHARE POPUP*/
 .shareBox{
     display: inline-block;
@@ -236,6 +250,60 @@ div.parallax2:last-child {
     display: none;
 }
 
+.TRXbox{
+    background-color: rgba(0,0,0,.5);
+    padding:10px;
+    width: 450px;
+    max-width: 100%;
+}
+.TRXtitle{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: knockout;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.TRXlogo{
+    display: block;
+    margin:0 auto;
+    width:100px;
+}
+.TRXsub{
+    font-family: ;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: suisse;
+}
+.TRXsub2{
+    font-family: ;
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: suisse;
+}
+.TRXbtn{
+    color: white;
+    background-color: black;
+    transition: ease all .3s;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    width:300px;
+    cursor: pointer;
+    text-decoration: none!important;
+    border:1px solid black;
+    font-family: suissebold;
+}
+.TRXbtn:hover{
+    color: black;
+    background-color: white;
+}
 
 
 
@@ -323,5 +391,17 @@ div.parallax2:last-child {
     }
     .shareBox{
         left:left:-1000px;
+    }
+    .TRXtitle{
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 9.5vw;
+        font-family: knockout;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .TRXbtn{
+        max-width: 100%;
     }
 }
