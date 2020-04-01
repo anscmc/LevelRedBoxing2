@@ -160,8 +160,8 @@ div.parallax2 {
     min-height: 85vh;
     display: none;
     text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 125%!important;
+    background-repeat: repeat!important;
 }
 div.parallax2:last-child {
   margin-bottom: 0;
@@ -325,7 +325,7 @@ div.parallax2:last-child {
         padding-top:150px;
         min-height: 85vh;
         background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     }
     div.parallax2:last-child {
       margin-bottom: 0;
