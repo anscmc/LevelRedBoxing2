@@ -19,7 +19,7 @@
 .freeClassWrap{
     padding-top: 100px;
     min-height: 100vh;
-        background-image: url(img/mem/images/BG1.jpg);
+    background-image: url(img/mem/images/BG1.jpg);
     background-size: cover;
     background-position:right;
     -webkit-box-shadow: inset 0px -25px 40px -30px rgba(255,255,255,1);
