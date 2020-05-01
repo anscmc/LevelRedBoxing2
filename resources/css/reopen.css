@@ -69,6 +69,8 @@
 }
 .checks{
     padding-left: 25px;
+    margin-top: 5vw;
+    padding-top: 10px;
 }
 .checks span{
     display: block;
@@ -81,9 +83,7 @@
     color: red;
 }
 @media (max-width:767px){
-    .checks{
-        margin-top: 10vw;
-    }
+
     .retile{
         width:100%;
     }
@@ -91,7 +91,7 @@
         font-size: 8.5vw;
     }
     .size2{
-        font-size: 29vw;
+        font-size: 27vw;
     }
     .size3{
         margin-top: 2vw;
