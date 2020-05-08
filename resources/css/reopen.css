@@ -41,6 +41,17 @@
     margin-top: 15px;
     
 }
+.size4{
+    font-size: 30px;
+    line-height: 100%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .redbtn{
     background-color: black;
     color:white;
@@ -89,6 +100,9 @@
     }
     .size1{
         font-size: 8.5vw;
+    }
+    .size4{
+        font-size: 6vw;
     }
     .size2{
         font-size: 27vw;
