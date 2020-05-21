@@ -193,8 +193,10 @@ div.parallax2:last-child {
     line-height: 100%;
     text-align: left;
     text-shadow: 0 0 5px black; /* IE 9 */
+/*
     -webkit-transform: skewY(-10deg);
     transform: skewY(-10deg);
+*/
 }
 .botmark{
     margin-bottom: 4vw;
