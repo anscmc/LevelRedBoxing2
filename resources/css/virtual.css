@@ -160,8 +160,8 @@ div.parallax2 {
     min-height: 85vh;
     display: none;
     text-align: center;
-    background-size: cover!important;
-    background-repeat: no-repeat!important;
+    background-size: 125%!important;
+/*    background-repeat: no-repeat!important;*/
 }
 div.parallax2:last-child {
   margin-bottom: 0;
@@ -308,7 +308,7 @@ div.parallax2:last-child {
 }
 
 @media(min-width:768px){
-    .previousVids .vidvid{
+    .vidsRow .vidvid{
         width:49%;
         display: inline-block;
     }

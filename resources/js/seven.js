@@ -8,75 +8,75 @@ async function validate(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 if ( username == "LRB" && password == "member"){
-        spinner();
-        await sleep(750);
+        // spinner();
+        await sleep(250);
         hideLogin();
-        await sleep(1000);
+        await sleep(500);
         showWorkout();
-    spinner2();
+    // spinner2();
         return false;
 }
 else if ( username == "lrb" && password == "member"){
-        spinner();
-        await sleep(750);
+        // spinner();
+        await sleep(250);
         hideLogin();
-        await sleep(1000);
+        await sleep(500);
         showWorkout();
-    spinner2();
+    // spinner2();
         return false;
 }
 else if ( username == "Lrb" && password == "member"){
-    spinner();
-        await sleep(750);
+    // spinner();
+        await sleep(250);
        hideLogin();
-        await sleep(1000);
+        await sleep(500);
         showWorkout();
-    spinner2();
+    // spinner2();
         return false;
 }
     else if ( username == "lRb" && password == "member"){
-        spinner();
-        await sleep(750);
+        // spinner();
+        await sleep(250);
        hideLogin();
-        await sleep(1000);
+        await sleep(500);
         showWorkout();
-        spinner2();
+        // spinner2();
         return false;
 }
     else if ( username == "lrB" && password == "member"){
-        spinner();
-        await sleep(750);
+        // spinner();
+        await sleep(250);
        hideLogin();
-        await sleep(1000);
+        await sleep(500);
         showWorkout();
-        spinner2();
+        // spinner2();
         return false;
 }
         else if ( username == "LRb" && password == "member"){
-            spinner();
-        await sleep(750);
+            // spinner();
+        await sleep(250);
        hideLogin();
-        await sleep(1000);
+        await sleep(500);
         showWorkout();
-            spinner2();
+            // spinner2();
         return false;
 }
         else if ( username == "LrB" && password == "member"){
-            spinner();
-        await sleep(750);
+            // spinner();
+        await sleep(250);
        hideLogin();
-        await sleep(1000);
+        await sleep(500);
         showWorkout();
-            spinner2();
+            // spinner2();
         return false;
 }
         else if ( username == "lRB" && password == "member"){
-            spinner();
-        await sleep(750);
+            // spinner();
+        await sleep(250);
        hideLogin();
-        await sleep(1000);
+        await sleep(500);
         showWorkout();
-            spinner2();
+            // spinner2();
         return false;
 }
 else{
@@ -101,19 +101,20 @@ function showWorkout(){
     $("div.parallax2").fadeToggle(1500);
     
 }
-function spinner2(){
-    $("#spinner").fadeToggle(50);
-}
-function spinner(){
-    $("#spinner").fadeToggle(50);
-    var angle = 0;
-setInterval(function() {
-    console.log(angle);
-    $("#spinner")
-        .css('-webkit-transform', 'rotate('+angle+'deg)')
-        .css('-moz-transform', 'rotate('+angle+'deg)')
-        .css('-ms-transform', 'rotate('+angle+'deg)');
-    angle++; angle++; angle++;
-}, 25);
-}
+//var myVar = setInterval(spinner, 25);
+//function spinner2(){
+//    clearInterval(myVar);
+//}
+//function spinner(){
+//    $("#spinner").fadeToggle(50);
+//    var angle = 0;
+//setInterval(function() {
+//    console.log(angle);
+//    $("#spinner")
+//        .css('-webkit-transform', 'rotate('+angle+'deg)')
+//        .css('-moz-transform', 'rotate('+angle+'deg)')
+//        .css('-ms-transform', 'rotate('+angle+'deg)');
+//    angle++; angle++; angle++;
+//}, 25);
+//}
 
