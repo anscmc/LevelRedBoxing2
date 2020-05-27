@@ -160,7 +160,7 @@ div.parallax2 {
     min-height: 85vh;
     display: none;
     text-align: center;
-    background-size: 125%!important;
+    background-size: 125%;
 /*    background-repeat: no-repeat!important;*/
 }
 div.parallax2:last-child {
@@ -203,7 +203,7 @@ div.parallax2:last-child {
 }
 .videoP{
     color: white;
-    text-shadow: 0 0 1vw black;
+    text-shadow: 0 0 1.2vw black;
     font-size: 1.2vw;
     line-height: 125%;
     text-align: left;
@@ -331,8 +331,8 @@ div.parallax2:last-child {
         background-image: url(img/virtual/workout2.jpg);
         padding-top:150px;
         min-height: 85vh;
-        background-size: cover;
-    background-repeat: no-repeat;
+        background-size: 150%!important;
+/*    background-repeat: no-repeat;*/
     }
     div.parallax2:last-child {
       margin-bottom: 0;
@@ -387,7 +387,7 @@ div.parallax2:last-child {
     .videoP{
         font-size: 4vw;
         margin-bottom: 4vw;
-        text-shadow: 0 0 .5vw black;
+        text-shadow: 0 0 .75vw black;
     }
     .virtualVid{
         padding:0;
