@@ -99,6 +99,7 @@ function hideLogin(){
 function showWorkout(){
     window.scrollTo(0, 0);
     $("div.parallax2").fadeToggle(1500);
+//    $('#testers').load("v.html");
     
 }
 //var myVar = setInterval(spinner, 25);
