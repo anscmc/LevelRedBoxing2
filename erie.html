@@ -204,6 +204,97 @@
     </head>
 
 <body style="background-color: white;">
+    <style type="text/css">
+                    #cover{
+                        background-color: rgba(0,0,0,.75);
+                        position: fixed;
+                        z-index: 10000;
+                        left:0;
+                        top:0;
+                        height:100%;
+                        width:100%;
+                        display: none;
+                    }
+                    .inin{
+                        position: absolute;
+                        top:10vh;
+                        left:calc(50% - 250px);
+                        width:500px;
+                        height: auto;
+                        background-color: white;
+                        text-align: center;
+                        border-radius: 10px;
+                    }
+                    #exitGuy{
+                        position: absolute;
+                        top:0;
+                        right:10px;
+                        font-weight: 700;font-size: 30px;
+                        cursor: pointer;
+                        color: black;
+                    }
+                    .inin span{
+                        display: block;
+                        color: black;
+                        font-weight: 900;
+                        font-size: 18px;
+                        text-decoration: underline;
+                    }
+                    .inin p{
+                        display: block;
+                        color: black;
+                        font-weight: 400;
+                        font-size: 14px;
+                        max-width: 320px;
+                        margin:0 auto;
+                        margin-bottom: 20px;
+                    }
+                    .whats{
+                        vertical-align: top;
+                    }
+                    .whats p{
+                        margin-bottom: 0;
+                        font-size: 12px;
+                    }
+                    .parent {
+                      text-align: center;
+                    }
+                    .parent > ul {
+                      display: inline-block;
+                    }
+                    @media (max-width:767px){
+                        .inin{
+                            width:100%;
+                            left:0;
+                        }  
+                    }
+                </style>
+                <script type="text/javascript">
+                    setTimeout(function(){
+                        $('#cover').fadeToggle(500);
+                        }, 2000);
+                    function toggleCover(){
+                        $('#cover').fadeToggle(500);
+                    }
+                </script>
+                <div id="cover" class="popCover">
+                    <div class="inin">
+                        <a onclick="toggleCover()" id="exitGuy">Close X</a>
+                        <div style="height: 45px;"></div>
+                        <span>Re-opening Monday, June 29th</span>
+                        <div class="parpar">
+                            <ul style="width:100%;text-align: left;margin:0 auto;">
+                                <li style="max-width:90%;text-align: left;margin:0 auto;">Classes must be booked through APP</li>
+                                <li style="max-width:90%;text-align: left;margin:0 auto;">Locker rooms and showers open</li>
+                                <li style="max-width:90%;text-align: left;margin:0 auto;">Child care open</li>
+                                <li style="max-width:90%;text-align: left;margin:0 auto;">Loaner wraps or towels will no longer be available </li>
+                                <li style="max-width:90%;text-align: left;margin:0 auto;">Members are encouraged to wear masks while entering and exiting club</li>
+                                <li style="max-width:90%;text-align: left;margin:0 auto;">Masks not required during workout</li>
+                            </ul>
+                        </div>
+                        <br>
+                    </div>
+                </div>
     
               <div class="newBar fadefade"  id="navvy" href="free-class-locations.html" style="opacity: 0;height: 50px!important;"><a href="free-class/erie.html" style="cursor: pointer;height: 100%;width:100%;" onclick="showMoreFree()"><img src="resources/css/img/new19/free.png"></a>
 <!--              <p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 15px;margin-top: 10px;font-size: 14px;padding:5px;">To welcome you to Level Red Boxing, we're giving you a free class. Enter your postal code below:</p><input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345"><a id="zipSearch" onclick="findLocation()" style="">Search</a>-->
@@ -1286,7 +1377,7 @@
             }
         }
         </style>
-        <a href="covid/erie.html" class="covidBTN">COVID-19 UPDATE</a>
+<!--        <a href="covid/erie.html" class="covidBTN">COVID-19 UPDATE</a>-->
 
     </body> 
 

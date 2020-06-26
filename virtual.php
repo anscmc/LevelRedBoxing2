@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+<!--
       <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
       <meta http-equiv="cache-control" content="max-age=0" />
       <meta http-equiv="expires" content="0" />
       <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
       <meta http-equiv="pragma" content="no-cache" />
+-->
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123760229-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -22,7 +25,12 @@
 <meta property="og:title" content="Virtual Workout Center | Level Red Boxing" />
 <meta property="og:description" content="Virtual Workout Center | Level Red Boxing" />
 <meta property="og:image" content="https://drive.google.com/uc?id=1zv8sVf0ikm2vKLXfzxa_jJ7F4GZEbEuP" />
+-->
+        
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
         <style>
             .col-md-3{font-size: 16px !important;}
         </style>
@@ -50,7 +58,8 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 <!--<script src="resources/js/lazy.js"></script>-->
-        
+        <script type="text/javascript" src="resources/js/iframeResizer.min.js"></script>
+        <script type="text/javascript" src="resources/js/fitmetrix.js"></script>
         <script type="text/javascript">
 
 
@@ -59,7 +68,7 @@
             }
             
                 
-
+            function virtual() {alert("welcome virtual member!");}
             function playVid(){
                 $("#playbtn").toggleClass("hide");
                 $('#homevid').trigger('play');   
@@ -91,6 +100,7 @@
             
         </script>
 <!-- Facebook Pixel Code -->
+<!--
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -106,6 +116,7 @@
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=420620322161915&ev=PageView&noscript=1"
 /></noscript>
+-->
 <!-- End Facebook Pixel Code -->
     </head>
 
@@ -136,7 +147,7 @@
             <li><!--<a href="https://www.fitnesserie.com/events-and-competitions.html">Events</a>--></li>
             <li><a href="locations.html">Contact</a></li>
         </ul>
-        <a href="http://www.levelredboxing.com/franchise.html" id="franBTN">Own a Franchise</a>
+        
         <a onclick="toggleNav()" class="hamburger"><i class="fas fa-bars"></i></a>
           <a class="phone" href="locations.html"><i class="fas fa-phone"></i></a>
       </div>
@@ -192,33 +203,375 @@
                         </div>
 -->
         
-        
-        <div class="parallax parallax1 animated fadeIn">
+        <style type="text/css">
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              opacity: .5; /* Firefox */
+            }
+        </style>
+        <div class="parallax parallax1">
             <h1 class="virtualTitle">Virtual Workout Center</h1>
-            <div class="loginBox">
-                <p id="checker" style="color: green;text-align: center;margin: 0;">Please check your email for login instructions</p>
-                <span class="loginTitle">Member Login <i id="spinner" class="fas fa-spinner" style="display: none;"></i></span>
-                <input type="text" name="username" id="username" />
-                <span class="loginLabel">Username</span>
-                <input type="password" name="password" id="password" />
-                <span class="loginLabel">Password</span>
-                <div style="text-align: center;">
-                <a id="smbt" class="locSubmit" onclick="validate()">ENTER</a>
-                <p class="errormsg">Incorrect username and/or password. Please try again.</p>
-                <p style="margin-top: 10px;margin-bottom: 0;">Don't have an account?</p>
-                    <p style="margin: 0px;margin-top: -5px;"><a style="text-decoration: underline;" href="virtual-sign-up.html">Create an account.</a></p>
-                    <script type="text/javascript">
-                            var input = document.getElementById('password');
-                            input.addEventListener("keyup", function(event) {
-                              if (event.keyCode === 13) {
-                               event.preventDefault();
-//                               document.getElementById('smbt').click();
-                                  validate();
-                              }
-                            });
-                    </script>
+            
+                <div class="loginBox" style="margin-bottom:25px;">
+                    <!--<p id="checker" style="color: green;text-align: center;margin: 0;">Please check your email for login instructions</p>-->
+                    <span class="loginTitle" style="margin-bottom:0!important;line-height:1!important;">Member Login <i id="spinner" class="fas fa-spinner" style="display:none!important;"></i></span>
+                    <p style="text-align:center;width:100%;text-align:center;display:block;margin:0 auto;margin-top:1px;margin-bottom:5px;font-size:10px;">Virtual and Unlimited members, please login below.</p>
+                    <form name="form" action="" method="post">
+                        <input type="email" name="email" id="email" placeholder="example@example.com" />
+                        <span class="loginLabel">Email</span>
+                        <input type="password" name="password" id="password" placeholder="password" />
+                        <span class="loginLabel">Password</span>
+    <!--                    <div style="text-align: center;">-->
+                        <input type="submit" name="submit" value="Login" class="locSubmit" style="line-height:100%;">
+                    </form>
+<script type="text/javascript">
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function work(){
+        // spinner();
+        await sleep(1500);
+        hideLogin();
+        await sleep(100);
+        showWorkout();
+        // spinner2();
+        // return false;
+}
+async function nonVirtualMem(){
+        // spinner();
+        await sleep(500);
+        hideLogin();
+        await sleep(100);
+        showPurchase();
+        // spinner2();
+        // return false;
+}
+async function signUpErie(){
+        // spinner();
+        await sleep(10);
+        hideLogin();
+        await sleep(10);
+        showSignUpErie();
+        // spinner2();
+        // return false;
+}
+function wrongCreds(){
+    $("p.errormsg").addClass("shstore");
+}
+
+function hideLogin(){
+    $("div.parallax1").fadeToggle(1000);
+    // $("div.parallax1").css('position', 'fixed');
+    // $("div.parallax1").css('z-index', -3000);
+}
+function showWorkout(){
+    window.scrollTo(0, 0);
+    $("div.parallax2").fadeToggle(1000);
+}
+function showPurchase(){
+    window.scrollTo(0, 0);
+    $("div.purchaseVirtual").fadeToggle(1500);
+}
+function showSignUpErie(){
+    window.scrollTo(0, 0);
+    $("div.signUpErie").fadeToggle(1500);
+    // $("div.lrbFooter").fadeToggle(500);
+}
+// var myVar = setInterval(spinner, 25);
+// function spinner2(){
+//     clearInterval(myVar);
+// }
+// function spinner(){
+//     $("#spinner").fadeToggle(50);
+//     var angle = 0;
+// setInterval(function() {
+//     console.log(angle);
+//     $("#spinner")
+//         .css('-webkit-transform', 'rotate('+angle+'deg)')
+//         .css('-moz-transform', 'rotate('+angle+'deg)')
+//         .css('-ms-transform', 'rotate('+angle+'deg)');
+//     angle++; angle++; angle++;
+// }, 25);
+// }
+</script>
+<div id="phpDIV">
+    <?php
+//        $ch = curl_init();
+//        curl_setopt($ch, CURLOPT_URL, 'https://api.mindbodyonline.com/public/v6/usertoken/issue');
+//        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//        curl_setopt($ch, CURLOPT_POST, 1);
+//        curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n    \"Username\": \"apribonic19@verizon.net\",\n    \"Password\": \"Sloan1919\"\n}");
+//        $headers = array();
+//        $headers[] = 'Content-Type: application/json';
+//        $headers[] = 'Api-Key: 2d0c3bf72d2a4730a0ffa1442e7ed293';
+//        $headers[] = 'Siteid: 481565';
+//            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+//        
+//        $result = curl_exec($ch);
+//        if (curl_errno($ch)) {
+//            echo 'Error:' . curl_error($ch);
+//        }
+//         echo "<br>";
+//         print_r($result);
+//        curl_close($ch);
+                    
+// phpinfo();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+///////////////////////////////////////////////////////////////////////////////
+// Login Start                                                              //
+/////////////////////////////////////////////////////////////////////////////
+
+// Pass User Credentials to validate
+if(isset($_POST["submit"])) {
+function virtualLoginAttempt() {
+    $ch = curl_init();
+    $username1 = $_POST['email'];
+    $password1 = $_POST['password'];
+    // $fran = $_GET['franBTN'];
+    curl_setopt($ch, CURLOPT_URL, 'https://api.mindbodyonline.com/public/v6/usertoken/issue');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    // curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n    \"Username\": \"matt@irockfitnesserie.com\",\n    \"Password\": \"Fitness1919\"\n}");
+    curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n    \"Username\": \"$username1\",\n    \"Password\": \"$password1\"\n}");
+    
+    $headers = array();
+    $headers[] = 'Content-Type: application/json';
+    $headers[] = 'Api-Key: 2d0c3bf72d2a4730a0ffa1442e7ed293';
+    $headers[] = 'Siteid: 481565';
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    
+    $result = curl_exec($ch);
+//    output api error
+    // if (curl_errno($ch)) {
+    //     echo 'Error:' . curl_error($ch);
+    // }
+    
+    // $virtualmem = "Virtual"
+    // if( strpos( $result, $virtualmem ) !== false) {
+    //     echo "you are a member";
+    // }
+    // else{
+    //     echo "you are note a member";
+    // }
+    
+    $staff = "User must be at least staff";
+    if( strpos( $result, $staff ) !== false) {
+        // Valid user credentials provided
+        curl_setopt($ch, CURLOPT_URL, 'https://api.mindbodyonline.com/public/v6/usertoken/issue');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n    \"Username\": \"apribonic19@verizon.net\",\n    \"Password\": \"Sloan1919\"\n}");
+        $headers = array();
+        $headers[] = 'Content-Type: application/json';
+        $headers[] = 'Api-Key: 2d0c3bf72d2a4730a0ffa1442e7ed293';
+        $headers[] = 'Siteid: 481565';
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        
+        $result = curl_exec($ch);
+        if (curl_errno($ch)) {
+            echo 'Error:' . curl_error($ch);
+        }
+        // echo "<br>";
+        // echo "<br>";
+        // print_r($result);
+        
+        // Get authorization token from response
+        $output2 = "Authorization: ";
+        $auth = substr($result, 37, 64);
+        $output2 .= $auth;
+        // echo "<br>";
+        // echo "<br>";
+        // print_r($output2);
+        
+        $getmem = "https://api.mindbodyonline.com/public/v6/client/clients?searchText=";
+        $getmem .= $username1;
+        
+        curl_setopt($ch, CURLOPT_URL, $getmem);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+        
+        // $headers = array();
+        // $headers[] = 'Api-Key: 2d0c3bf72d2a4730a0ffa1442e7ed293';
+        // $headers[] = 'Siteid: 481565';
+        $headers[] = $output2;
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        
+        $result2 = curl_exec($ch);
+        if (curl_errno($ch)) {
+            echo 'Error:' . curl_error($ch);
+        }
+        // echo "<br>";
+        // print_r($result2);
+        
+        function getBetween($content,$start,$end){
+            $r = explode($start, $content);
+            if (isset($r[1])){
+                $r = explode($end, $r[1]);
+                return $r[0];
+            }
+            return '';
+        }
+        
+        $content = $result2;
+        $start = ",\"Id\":\"";
+        $end = "\",";
+        $output = getBetween($content,$start,$end);
+        // print_r($output);
+        
+        $start2 = ",\"FirstName\":\"";
+        $end2 = "\",";
+        $welcome = "Hit it hard today, ";
+        $exc = "!";
+        $output3 = getBetween($content,$start2,$end2);
+        $welcome .= $output3;
+        $welcome .= $exc;
+        // echo "<br>";
+        // print_r($content);
+        // print_r($welcome);
+        echo "<div class=\"welMSG\" id=\"welMSG\" style=\"text-align:center;display:block;width:100%;\">$welcome</div>";
+        echo "<div class=\"namename\" id=\"namename\" style=\"height:1px;width:1px;position:fixed;top:0;left:0;z-index:-1000;color:transparent;background-color:transparent;\">$output3</div>";
+        
+        $myid = "https://api.mindbodyonline.com/public/v6/client/activeclientmemberships?clientId=";
+        $myid .= $output;
+        // echo "<br>";
+        // echo "<br>";
+        // print_r($myid);
+        
+        curl_close($ch);
+        
+        $ch = curl_init();
+        
+        curl_setopt($ch, CURLOPT_URL, $myid);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+
+        $headers = array();
+        $headers[] = 'Api-Key: 2d0c3bf72d2a4730a0ffa1442e7ed293';
+        $headers[] = $output2;
+        $headers[] = 'Content-Type: application/json';
+        $headers[] = 'Siteid: 481565';
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        
+        $result3 = curl_exec($ch);
+        if (curl_errno($ch)) {
+            echo 'Error:' . curl_error($ch);
+        }
+        // print_r($result3);
+        $virtualmem = "Virtual";
+        $unlimitedmem = "Unlimited";
+        // $staffer = "Staff";
+        if( strpos( $result3, $virtualmem ) !== false) {
+            // echo "<br>";
+            // echo "Welcome, Virtual member!";
+            
+            echo '<script type="text/javascript">work();</script>';
+            
+        }
+        else if( strpos( $result3, $unlimitedmem ) !== false) {
+            echo '<script type="text/javascript">work();</script>';
+        }
+        // else if( strpos( $result3, $staffer ) !== false) {
+        //     echo '<script type="text/javascript">work();</script>';
+        // }
+        else{
+            // echo "<br>";
+            // echo "<span style=\"color:red!important;width:100%;display:block;text-align:center;\">Sorry, you must be a Virtual or Unlimited member to access virtual workouts.</span>";
+            echo '<script type="text/javascript">nonVirtualMem();</script>';
+        }
+    }
+    else{
+        // Invalid user credentials
+        // echo '<script type="text/javascript">wrongCreds();</script>';
+        echo "<span style=\"color:red!important;width:100%;text-align:center;display:block;\">Invalid credentials. Please try again.</span>";
+    }
+    // echo "<br>";
+    // echo "<br>";
+    // print_r($result);
+    curl_close($ch);
+}
+virtualLoginAttempt();
+}
+
+
+?>
+</div>
+    <!--                <a id="smbt" class="locSubmit" onclick="validate()">ENTER</a>-->
+                    <p class="errormsg">Incorrect username and/or password. Please try again.</p>
+                    <p style="text-align:center;width:100%;max-width:290px;display:block;margin:0 auto;margin-top:10px;margin-bottom:0px;font-size:12px;">Don't have an account, or need to purchase a Virtual or Unlimited membership?</p>
+                    <p style="margin-top: 0;margin-bottom: 0;text-align:center;"><a style="text-decoration: underline;cursor:pointer;font-weight:bold;" onclick="nonVirtualMem()">Purchase a Membership</a></p>
+                        <!--<p style="margin: 0px;margin-top: -5px;"><a style="text-decoration: underline;" href="virtual-sign-up.html">Create an account.</a></p>-->
+                        <!--<script src="https://widgets.mindbodyonline.com/javascripts/healcode.js" type="text/javascript"></script><healcode-widget data-version="0.2" data-link-class="loginRegister" data-site-id="29399" data-mb-site-id="481565" data-type="account-link" data-inner-html="Login | Register"  />-->
+<!--
+                        <script type="text/javascript">
+                                var input = document.getElementById('password');
+                                input.addEventListener("keyup", function(event) {
+                                  if (event.keyCode === 13) {
+                                   event.preventDefault();
+                                   document.getElementById('smbt').click();
+                                  }
+                                });
+                        </script>
+-->
+<!--                    </div>-->
                 </div>
+            
+        
+            
+        </div>
+        <!--END LOGIN-->
+        
+        <div class="purchaseVirtual" style="background-color:white;display:none;padding-top:150px;text-align:center;padding-bottom:50px;">
+            <div style="width:550px;max-width:92.5%;margin:0 auto;margin-top:10vh;height:auto;padding:10px;border-radius:10px;background-color:white;box-shadow:0 0 15px black;">
+            <span class="loginTitle" style="margin-bottom:15!important;line-height:1!important;font-size:24px!important;display:block;margin-top:10px;">Purchase a Membership</span>
+            <hr style="width:66%;margin:0 auto;opacity:.75;margin-top:10px;margin-bottom:10px;display:block;">
+            <p id="welcomepurchase" style="text-align:center;margin-bottom:0;">Welcome <span id="nonvirtual"></span>! </p>
+            <div style="width:100%;max-width:490px;margin:0 auto;text-align:center;">
+                Thank you for your interest in Level Red Boxing Virtual Workouts! To get in the best shape of your life, please purchase a Level Red Boxing <span style="font-weight:bold;">Virtual</span> or <span style="font-weight:bold;">Unlimited</span> Membership.
             </div>
+            
+            <br>
+            <div></div>
+            <script src="https://widgets.mindbodyonline.com/javascripts/healcode.js" type="text/javascript"></script>
+            <style type="text/css">
+            .memmem p{
+                font-size:12px;
+                
+            }
+                @media(max-width:767px){
+                    .memmem{
+                        width:100%!important;
+                        margin-bottom:15px!important;
+                        margin-left:0!important;
+                        margin-right:0!important;
+                    }
+                }
+            </style>
+            <div class="memmem" style="width:45%;border:1px solid black;padding:10px;display:inline-block;vertical-align:top;margin:5px;margin-bottom;15px;">
+                <h4>Virtual Workout Membership</h4>
+             
+                <p style="font-weight:bold;font-size:14px;margin-top:10px;">$6.99/month</p>
+                <p style="margin-bottom:0;">Unlimited Virtual Workout Access</p>
+                <p style="visibility:hidden;">.</p>
+                <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link locSubmit" data-site-id="29399" data-mb-site-id="481565" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="11677" />
+            </div>
+            <div class="memmem" style="width:45%;border:1px solid black;padding:10px;display:inline-block;vertical-align:top;margin:5px;margin-bottom:15px;">
+                <h4 style="max-width:75%;margin:0 auto;margin-bottom:10px;margin-top:10px;">Unlimited Membership</h4>
+               
+                <p style="font-weight:bold;font-size:14px;margin-top:10px;">$74.99/month</p>
+                <p style="margin-bottom:0;">Unlimited Access to all LRB Clubs</p>
+                <p>Unlimited Virtual Workout Access</p>
+                <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link locSubmit" data-site-id="29399" data-mb-site-id="481565" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="203" />
+            </div>
+            <p style="width:100%;text-align:center;display:block;margin-top:15px;"><a href="https://www.strongateverylevel.com/virtual/virtual-workout-center.php"><i class="fas fa-arrow-left"></i> Back to login screen</a></p>
+            </div>
+            
+             
+        </div>
+        <div class="signUpErie" style="height:70vh;background-color:white;display:none;padding-top:150px;text-align:center;">
+
+            <iframe id="sf-frame" src="https://www.fitmetrix.io/memberportal/register/f5236ca2-041c-e811-a971-c0456042e755?locationID=4041" scrolling="no" frameborder="0" width="100%"></iframe>
         </div>
         <div class="parallax parallax2">
             <h1 class="videoTitle">Virtual Workout Center</h1>
@@ -241,11 +594,18 @@
                     </div>
                     <div class="col-md-6 virtualVid">
 <!--<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/6unm9NZBKRI' frameborder='0' allowfullscreen></iframe></div>-->
-                        
-                    
-
-                        
-                        
+        <span id="hithere" style="color:white;text-align:center;display:block;font-size:20px;font-weight:600;margin:10px;text-shadow:0 0 10px black;margin-bottom:5px;line-height:105%;"></span>
+        <a href="virtual-workout-center.php" id="franBTN" style="z-index:1500;color:white!important;cursor:pointer;"></a>
+        <script type="text/javascript">
+            function addName() {
+                    var fran = $('#welMSG').text();
+                    var namename = $('#namename').text();
+                    $("#franBTN").text(fran + " (Logout)");
+                    $("#hithere").text(fran);
+                    $("#nonvirtual").text(namename);
+                }
+                addName()
+        </script>
                         <div class="vidvid appear" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Wed May 20 2020 15:05:17 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Welcome To Level Red Virtual"/><meta itemprop="description" content="WELCOME TO LEVEL RED VIRTUAL"/><meta itemprop="duration" content="PT1M26.85S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/eisVhVuW-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/eisVhVuW-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/eisVhVuW-UqawP2kH.js"></script></div>
 
                         <a id="shareEx" onclick="toggleSharing()" class="locSubmit" style="margin-top: 20px;width: auto;padding-left:15px;padding-right: 15px;">Share Your Workout Experience</a>
@@ -298,11 +658,9 @@
               });
         </script>
         <style type="text/css"> 
-/*
             .whatExpand, .whatExpand2{
                 display: none!important;
             }
-*/
             .flippers{
                 cursor: pointer;
                 font-size: 24px;
@@ -350,7 +708,6 @@
                     font-size: 4vw;
                 }
             }
-            
         </style>
             <br>
                 <hr style="max-width: 75%;margin:0 auto;margin-top:20px;margin-bottom: 20px;opacity: .5;">
@@ -362,15 +719,10 @@
 
                             <div class="col-sm-5 previousVids">
                                 <div class="flippers" style="text-align: center;width:100%;font-weight: 600;text-transform: uppercase;font-size: 30px;cursor:inherit;">30 MIN VIRTUAL WORKOUTS</div>
-                                
-                                <div class="vidvid appear" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Mon Jun 15 2020 16:59:19 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Level Red Boxing Virtual Workout 54"/><meta itemprop="description" content="LRB - 30 min. 300 REMIX v.8"/><meta itemprop="duration" content="PT34M6.4S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/whzs8xcV-480.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/whzs8xcV-180SeyOd.mp4"/><script src="https://cdn.jwplayer.com/players/whzs8xcV-UqawP2kH.js"></script></div>
-
+                                    <div class="vidvid appear" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Tue May 19 2020 18:35:01 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Virtual Workout 50"/><meta itemprop="duration" content="PT33M28.77S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/3MbYnlIR-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/3MbYnlIR-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/3MbYnlIR-UqawP2kH.js"></script></div>
                                 <div class="flippers" id="flip1" style="text-align: center;width:100%;font-weight: 600;text-transform: uppercase;">Load More +</div>
+<!--
                                 <div class="whatExpand" id="panel1">
-                                    <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Wed Jun 10 2020 09:26:51 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Level Red Boxing Virtual Workout 53"/><meta itemprop="description" content="LRB - 30 min. ALL OUT CARDIO BOX"/><meta itemprop="duration" content="PT35M13.26S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/brti2cPF-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/brti2cPF-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/brti2cPF-UqawP2kH.js"></script></div>
-                                    <div class="vidvid appear" style="margin-top:15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Sun May 31 2020 13:13:38 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Level Red Boxing Virtual Workout 52"/><meta itemprop="description" content="LRB - 30 min. SHIRTLESS SHREDDER"/><meta itemprop="duration" content="PT34M48.18S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/KxCNoQ3f-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/KxCNoQ3f-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/KxCNoQ3f-UqawP2kH.js"></script></div>
-                                    <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Wed May 27 2020 21:53:41 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Level Red Boxing Virtual Workout 51"/><meta itemprop="description" content="LRB - 30 min. BOXING 2X HIIT 300 CHALLENGE v.7"/><meta itemprop="duration" content="PT34M56S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/PIS0e3Gc-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/PIS0e3Gc-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/PIS0e3Gc-UqawP2kH.js"></script></div>
-                                    <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Tue May 19 2020 18:35:01 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Virtual Workout 50"/><meta itemprop="duration" content="PT33M28.77S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/3MbYnlIR-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/3MbYnlIR-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/3MbYnlIR-UqawP2kH.js"></script></div>
                                     <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Mon May 18 2020 19:35:32 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Virtual Workout 49"/><meta itemprop="duration" content="PT34M44.74S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/IzC3ivS1-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/IzC3ivS1-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/IzC3ivS1-UqawP2kH.js"></script></div>
                                     <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Fri May 15 2020 23:28:58 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Level Red Boxing Virtual Workout 48"/><meta itemprop="description" content="LRB - 30 min. CRAZY REP MADNESS"/><meta itemprop="duration" content="PT33M24.42S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/5ZKEMOtM-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/5ZKEMOtM-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/5ZKEMOtM-UqawP2kH.js"></script></div>
                                     <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Wed May 13 2020 21:33:01 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Level Red Boxing Virtual Workout 47"/><meta itemprop="description" content="LRB - 30 min. BOXING-HIIT 300 CHALLENGE V.6"/><meta itemprop="duration" content="PT34M22.96S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/HPrWxFsB-640.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/HPrWxFsB-NOqvjF0Q.mp4"/><script src="https://cdn.jwplayer.com/players/HPrWxFsB-UqawP2kH.js"></script></div>
@@ -434,14 +786,14 @@
                   
                                     <div class="vidvid appear" style="margin-top:15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Wed Mar 18 2020 15:49:28 GMT-0400 (EDT)"/><meta itemprop="name" content="Level Red Boxing Virtual 1.  PLYO HIIT MONSTER"/><meta itemprop="description" content="30 min. PLYO HIIT MONSTER"/><meta itemprop="duration" content="PT32M43.759S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/RqQmEzYR-960.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/RqQmEzYR-fcevob6c.mp4"/><script src="https://cdn.jwplayer.com/players/RqQmEzYR-UqawP2kH.js"></script></div> 
                                 </div>         
+-->
                             </div>
                             <div class="col-sm-5" >
                                 <div class="flippers" style="text-align: center;width:100%;font-weight: 600;text-transform: uppercase;font-size: 30px;cursor: inherit;">Bonus Workouts</div>
-                                <div class="vidvid appear" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Mon Jun 08 2020 12:51:03 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Level Red Boxing Virtual Workout Kb Bonus 6"/><meta itemprop="description" content="LRB - 20 min. KB BONUS 6"/><meta itemprop="duration" content="PT24M1.5S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/tPzUZt4W-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/tPzUZt4W-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/tPzUZt4W-UqawP2kH.js"></script></div>
-                                    
+                                    <div class="vidvid appear" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Thu May 21 2020 20:01:35 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Virtual Workout Kb Bonus 5"/><meta itemprop="description" content="LRB - 20 min. KETTLE BELL BONUS WITH CORE"/><meta itemprop="duration" content="PT26M7.62S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/cPeBb4IZ-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/cPeBb4IZ-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/cPeBb4IZ-UqawP2kH.js"></script></div>
                                 <div class="flippers" id="flip2" style="text-align: center;width:100%;font-weight: 600;text-transform: uppercase;">Load More +</div>
+<!--
                                 <div class="whatExpand2" id="panel2">
-                                    <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Thu May 21 2020 20:01:35 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Virtual Workout Kb Bonus 5"/><meta itemprop="description" content="LRB - 20 min. KETTLE BELL BONUS WITH CORE"/><meta itemprop="duration" content="PT26M7.62S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/cPeBb4IZ-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/cPeBb4IZ-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/cPeBb4IZ-UqawP2kH.js"></script></div>
                                     <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Thu May 14 2020 17:54:15 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Level Red Boxing Virtual Workout - Trx Bonus 4"/><meta itemprop="description" content="LRB - 20 min TRX BONUS V.4"/><meta itemprop="duration" content="PT24M18S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/H5jFb9eJ-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/H5jFb9eJ-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/H5jFb9eJ-UqawP2kH.js"></script></div>
                                     <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Tue May 12 2020 20:49:13 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Virtual Workout - Kb Bonus 4"/><meta itemprop="duration" content="PT22M54.94S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/ipE9QARi-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/ipE9QARi-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/ipE9QARi-UqawP2kH.js"></script></div>
                                     <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Thu May 07 2020 19:16:30 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Level Red Virtual Workout Med-ball Bonus"/><meta itemprop="description" content="LRB - 20 min. MED-BALL BONUS"/><meta itemprop="duration" content="PT24M50S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/eNXLrf7W-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/eNXLrf7W-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/eNXLrf7W-UqawP2kH.js"></script></div>
@@ -450,6 +802,7 @@
                                     <div class="vidvid appear" style="margin-top:15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Tue Apr 07 2020 09:28:08 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Virtual Workout TRX Bonus"/><meta itemprop="description" content="LRB - 15 min. TRX BONUS"/><meta itemprop="duration" content="PT18M13.89S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/MQRJf6YC-1280.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/MQRJf6YC-jHTZ3bBc.mp4"/><script src="https://cdn.jwplayer.com/players/MQRJf6YC-UqawP2kH.js"></script></div>
                                     <div class="vidvid appear" style="margin-top: 15px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Tue Mar 31 2020 11:28:04 GMT-0400 (Eastern Daylight Time)"/><meta itemprop="name" content="Virtual Workout - Kettlebell"/><meta itemprop="description" content="LRB - 14 min. Kettle Bell Bonus"/><meta itemprop="duration" content="PT17M33.94S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/wA4Tm8iZ-1920.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/wA4Tm8iZ-1eqCOafE.mp4"/><script src="https://cdn.jwplayer.com/players/wA4Tm8iZ-UqawP2kH.js"></script></div>
                                 </div>
+-->
                             </div>
                         </div>
                         
@@ -529,6 +882,10 @@
 //            $("div.shareBox").fadeToggle(750);
         }
     </script>
-   <script src="resources/js/script.js?v=3"></script><!--<script type="text/javascript" id="botcopy-embedder-d7lcfheammjct" class="botcopy-embedder-d7lcfheammjct" data-botId="5e7a36fe099273f57448b3c7" src="resources/js/chat.js"></script>-->
-    <script src="resources/js/seven.js?v=4"></script>
+    <!--<div style="z-index:3000">-->
+        
+    <!--     <script src="resources/js/script.js?v=3"></script><script type="text/javascript" id="botcopy-embedder-d7lcfheammjct" class="botcopy-embedder-d7lcfheammjct" data-botId="5e7a36fe099273f57448b3c7" src="resources/js/chat.js"></script>-->
+    <!--</div>-->
+  
+
 </html>
