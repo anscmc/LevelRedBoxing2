@@ -22,7 +22,7 @@
             font-family: metropolis!important;
         }
 .botbot{
-     margin-bottom: 7vw!important;
+     margin-bottom: 3vw!important;
 }
 .safety{
     position: relative;
@@ -155,6 +155,15 @@
 }
 .showee{
     display: none;
+}
+.topper{
+    padding-top: 25px;
+}
+@media(min-width:768px){
+    .topper{
+        max-width: 45vw!important;
+        margin: 0 auto;
+    }
 }
 @media(max-width:767px){
     .showee{
