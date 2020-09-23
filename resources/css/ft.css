@@ -179,7 +179,7 @@ height: 100%;
     }
     .firstT h2{
         font-size: 5.5vw;
-        padding-left: 2vw;
+        padding-left: 0!important;
         padding-right: 2vw;
     }
     .firstT h2>span{
