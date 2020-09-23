@@ -29,8 +29,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 -->
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/stylenov182.css?v=12">
-        <link rel="stylesheet" type="text/css" href="resources/css/loc.min.css?v=12">
+        <link rel="stylesheet" type="text/css" href="resources/css/stylenov182.css?v=16">
+        <link rel="stylesheet" type="text/css" href="resources/css/loc.min.css?v=16">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.min.css?v=1.2">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         
@@ -282,7 +282,7 @@ src="https://www.facebook.com/tr?id=266909820741776&ev=PageView
                     </style>
                     <h1 id="longclub" style="margin-left: 10px;">PITTSBURGH, PA</h1>
                     <br>
-                    <a href="pittsburgh/first-timers.html" style="margin-top: 0px!important;" class="locSubmitc">First Timer</a>
+                    <a href="pittsburgh/first-timers.html" style="margin-top: 0px!important;" class="locSubmitc">First Timers</a>
                     <a href="fitmetrix/pittsburgh/pricing-pittsburgh.html" class="locSubmitc2" style="margin-left: 10px;">Memberships</a>
                     <a href="#scroller" class="locSubmitc2" style="margin-left: 10px;">View Schedule</a>
                     <a href="pittsburgh/request-information.html" class="locSubmitc2" style="margin-left: 10px;">Request More Info</a>
@@ -291,7 +291,7 @@ src="https://www.facebook.com/tr?id=266909820741776&ev=PageView
         </div>
     </div>
     <div id="clubMap" class="clubMap clubWire" style="">
-        <div style="height: 100px;"></div>
+        <div class="pittspace" style="height: 100px;"></div>
         <div class="container">
             <div class="row">
 
@@ -305,6 +305,7 @@ src="https://www.facebook.com/tr?id=266909820741776&ev=PageView
                         <span><i style="visibility: hidden!important;" class="fas fa-clock"></i> Tues/Thurs: 6:30am-7:30pm</span>
                         <span ><i style="visibility: hidden!important;" class="fas fa-clock"></i> Fri: 5am-6:15pm</span>
                         <span><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sat/Sun: 8:30am-12pm</span>
+                        <br>
                     </div>
                 </div>
                 <div class="col-sm-7" style="overflow: hidden;">
@@ -442,6 +443,9 @@ src="https://www.facebook.com/tr?id=266909820741776&ev=PageView
             margin-top: 50px;
         }
         @media (max-width:767px){
+            .pittspace{
+                height: 50px!important;
+            }
             .clubFollow span{
                 display: block;
                 margin-right: 0;
@@ -458,6 +462,10 @@ src="https://www.facebook.com/tr?id=266909820741776&ev=PageView
             .mapback {
                 background-position: 50%;
             }
+            .clubDetails span{
+            font-size: 4vw!important;
+        }
+        }
     </style>
     <br>
     <div id="scroller" style="margin-top: -80px;"></div>
@@ -729,6 +737,16 @@ src="https://www.facebook.com/tr?id=266909820741776&ev=PageView
                         }
                     }
                     @media(max-width:767px){
+                        .schedText span{
+                            font-size: 6vw!important;
+                            width:75%!important;
+                        }
+                        .locSubmitc, .locSubmitc2{
+                            width:100%;
+                            margin:0!important;
+                            display: block;
+                            margin-bottom: 5px!important;
+                        }
                         .memFluid{
                             max-width: 95vw!important;
                         }
