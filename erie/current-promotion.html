@@ -26,17 +26,17 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 -->
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/stylenov182.css?v=16">
-        <link rel="stylesheet" type="text/css" href="resources/css/loc.min.css?v=16">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.min.css?v=1.2">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/stylenov182.css?v=16">
+        <link rel="stylesheet" type="text/css" href="../resources/css/loc.min.css?v=16">
+        <link rel="stylesheet" type="text/css" href="../resources/css/queries.min.css?v=1.2">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+        <link rel="manifest" href="../manifest.json">
+        <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
 
         <script type="text/javascript">
@@ -182,8 +182,8 @@
             });
         </script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-<script type="text/javascript" src="fitmetrix/js/iframeResizer.min.js"></script>
-<script type="text/javascript" src="fitmetrix/js/fitmetrix.js"></script>
+<script type="text/javascript" src="../fitmetrix/js/iframeResizer.min.js"></script>
+<script type="text/javascript" src="../fitmetrix/js/fitmetrix.js"></script>
 <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -269,6 +269,7 @@
                         }  
                     }
                 </style>
+<!--
                 <script type="text/javascript">
                     setTimeout(function(){
                         $('#cover').fadeToggle(500);
@@ -277,7 +278,8 @@
                         $('#cover').fadeToggle(500);
                     }
                 </script>
-                <div id="cover" class="popCover">
+-->
+                <div id="cover" class="popCover" style="display: none!important;">
                     <div class="inin">
                         <a onclick="toggleCover()" id="exitGuy">Close X</a>
                         <div style="height: 45px;"></div>
@@ -296,14 +298,14 @@
                     </div>
                 </div>
     
-              <div class="newBar fadefade"  id="navvy" href="free-class-locations.html" style="opacity: 0;height: 50px!important;"><a href="free-class/erie.html" style="cursor: pointer;height: 100%;width:100%;" onclick="showMoreFree()"><img src="resources/css/img/new19/free.png"></a>
+              <div class="newBar fadefade"  id="navvy" href="../free-class.html" style="opacity: 0;height: 50px!important;"><a href="../free-class/erie.html" style="cursor: pointer;height: 100%;width:100%;" onclick="showMoreFree()"><img src="../resources/css/img/new19/free.png"></a>
 <!--              <p id="zipP" style="color:white;width:100%;max-width: 400px;text-align: center;margin:0 auto;margin-bottom: 15px;margin-top: 10px;font-size: 14px;padding:5px;">To welcome you to Level Red Boxing, we're giving you a free class. Enter your postal code below:</p><input id="zipInput" type="text" min="5" max="5" placeholder="Ex. 12345"><a id="zipSearch" onclick="findLocation()" style="">Search</a>-->
     </div>
     
-<nav id="clubNav" class="navbar navbar-inverse deskNav"  style="padding-bottom: 15px;">
+<nav id="clubNav" class="navbar navbar-inverse deskNav navbarFill"  style="padding-bottom: 15px;">
       <div class="container">
         <div class="navbar-header" >
-          <a class="navbar-brand" href="index.html"><img src="resources/css/img/brand2.png"></a>
+          <a class="navbar-brand" href="../erie.html"><img src="../resources/css/img/brand2.png"></a>
 <!--            <a class="mobFran">Own a Franchise</a>-->
         </div>
     <!--
@@ -314,9 +316,9 @@
         </ul>
     -->
         <ul class="nav navbar-nav navbar-left" style="margin-left:20px!important;margin-top: 35px;">
-            <li><a href="#scroller2"><span>&#91;</span>Memberships<span>&#93;</span></a></li>
-            <li><a href="#scroller"><span>&#91;</span>Schedule<span>&#93;</span></a></li>
-            <li><a href="blog.html"><span>&#91;</span>Community<span>&#93;</span></a></li>
+            <li><a href="../fitmetrix/erie/pricing-erie.html"><span>&#91;</span>Memberships<span>&#93;</span></a></li>
+            <li><a href="../fitmetrix/erie/schedule-erie.html"><span>&#91;</span>Schedule<span>&#93;</span></a></li>
+            <li><a href="../blog.html"><span>&#91;</span>Community<span>&#93;</span></a></li>
             <li><a style="cursor: pointer;" onclick="toggleAbout()"><span>&#91;</span>About<span>&#93;</span></a></li>
 <!--
             <li><a href="fitmetrix/erie/schedule-erie.html">Schedule</a></li>
@@ -325,7 +327,7 @@
 -->
         </ul>
           <ul class="nav navbar-nav navbar-right" style="margin-top: 25px;">
-              <a href="free-class/erie.html" class="locSubmitc" style="margin:0!important;">Try A Free Class</a>
+              <a href="../free-class.html" class="locSubmitc" style="margin:0!important;">Try A Free Class</a>
 <!--
               <li><a href="fitmetrix/erie/schedule-erie.html" style="padding-left:0px;">Schedule</a></li>
             <li><a href="fitmetrix/erie/pricing-erie.html">Memberships</a></li>
@@ -337,25 +339,26 @@
       </div>
 </nav>
     <div id="aboutDesk" style="left:350px;right:auto;">
-        <a href="blog.html" class="aboutLink">Community</a><a href="theworkout.html" class="aboutLink">The Workout</a>
-        <a href="themoves.html" class="aboutLink">Learn the Moves</a>
+        <a href="../blog.html" class="aboutLink">Community</a><a href="../theworkout.html" class="aboutLink">The Workout</a>
+        <a href="../themoves.html" class="aboutLink">Learn the Moves</a>
         <a href="http://www.strongateverylevel.com" class="aboutLink">Success Stories</a>
     </div>
     <div id="mobileNav" class="mobileNav">
-<!--        <a><img src="resources/css/img/brand2.png"></a>-->
+<!--        <a><img src="../resources/css/img/brand2.png"></a>-->
         <a onclick="toggleNav()" class="hamburgerX">X</a>
         <a class="phone" href="tel:1-814-315-2994"><i class="fas fa-phone"></i></a>
         <div class="mobileWrap">
             <br>
-            <a href="fitmetrix/erie/pricing-erie.html">Memberships</a>
-            <a href="fitmetrix/erie/schedule-erie.html">Schedule</a>
+            <a href="../fitmetrix/erie/pricing-erie.html">Memberships</a>
+            <a href="../fitmetrix/erie/schedule-erie.html">Schedule</a>
             
-            <a href="thelevels.html">The Levels</a><a href="theworkout.html">The Workout</a>
-            <a href="blog.html">Community</a>
+            <a href="../thelevels.html">The Levels</a><a href="../theworkout.html">The Workout</a>
+            <a href="../blog.html">Community</a>
             <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
         </div>
     </div>
     
+<!--
     <div class="mapback animated fadeIn">
         
         <div class="container">
@@ -363,16 +366,17 @@
                 <div id="clubTop" class="clubTop">
                     <h1 style="margin-left: 10px;">ERIE, PA</h1>
                     <br>
-                    <a href="#scroller2" style="margin-top: 0px!important;" class="locSubmitc">Memberships</a>
-                    <a href="#scroller" class="locSubmitc2" style="margin-left: 10px;">View Schedule</a>
+                    <a href="../fitmetrix/erie/pricing-erie.html" style="margin-top: 0px!important;" class="locSubmitc">Memberships</a>
+                    <a href="../fitmetrix/erie/schedule-erie.html" class="locSubmitc2" style="margin-left: 10px;">View Schedule</a>
                 </div>
             </div>
         </div>
     </div>
+-->
 <!--
     <div class="clubFollow" style="width:100%;background-color: rgb(254,0,0);text-align: center;padding:30px;margin-bottom: 0px;margin-top: 0px;border: 3px solid black;">
             <div style="display: inline-block;vertical-align: middle;">
-                <a href="fitmetrix/erie/black-friday.html" style="color: black!important;text-transform: uppercase;text-decoration: none;"><span style="color: black!important;margin-bottom: 0;line-height: 100%;">Black F<img style="height:35px;line-height: inherit;margin-bottom: 5px;margin-left: 2px;margin-right: 1px;" src="resources/css/img/rBlack.png">iday Special!</span></a>
+                <a href="fitmetrix/erie/black-friday.html" style="color: black!important;text-transform: uppercase;text-decoration: none;"><span style="color: black!important;margin-bottom: 0;line-height: 100%;">Black F<img style="height:35px;line-height: inherit;margin-bottom: 5px;margin-left: 2px;margin-right: 1px;" src="../resources/css/img/rBlack.png">iday Special!</span></a>
                 <div></div>
                 <a href="fitmetrix/erie/black-friday.html" style="color: black!important;text-transform: uppercase;text-decoration: none;"><span style="color: black!important;margin: 0;padding-top: 0;line-height: 100%">Buy 10 Classes Get 10 Free</span></a>
             </div>
@@ -380,30 +384,7 @@
         <a href="fitmetrix/erie/black-friday.html" class="locSubmitc" style="box-shadow: 0 0 10px rgba(50,50,50,.5);padding:0;height: 50px;line-height: 50px;margin: 0;vertical-align: middle;margin-left:40px;margin-right: 40px;margin-top: 10px;margin-bottom: 10px;border: 2px solid black;">Buy Now</a>
     </div>
 -->
-    <div id="clubMap" class="clubMap clubWire" style="">
-        <div style="height: 100px;"></div>
-        <div class="container">
-            <div class="row">
 
-                <div class="col-sm-4">
-                    <div class="clubDetails">
-                        <span><i class="fas fa-map-marker-alt"></i> 2147 W 12th St</span>
-                        <span style="margin-bottom: 20px;"><i style="visibility: hidden!important;" class="fas fa-map-marker-alt"></i> Erie, PA 16505</span>
-                        <span style="margin-bottom: 20px;"><i class="fas fa-phone"></i> (814) 315-2994</span>
-                        <a href="mailto:alyssa.p@levelredboxing.com" style="text-decoration: none!important;"><span style="margin-bottom: 20px;"><i class="fas fa-envelope"></i> alyssa.p@levelredboxing.com</span></a>
-                        <span><i class="fas fa-clock"></i> Mon-Thu: 5am-7pm</span>
-                        <span><i style="visibility: hidden!important;" class="fas fa-clock"></i> Fri: 5am-6pm</span>
-                        <span ><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sat: 8am-1pm</span>
-                        <span style="margin-bottom: 20px;"><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sun: 8am-12pm</span>
-                    </div>
-                </div>
-                <div class="col-sm-7" style="overflow: hidden;">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1MfVROw9BGf5K-FTtBQDm2jEV2Hdt-BTw" style="width:100%;height:400px;margin-top: -50px;border: none;"></iframe>
-                </div>
-            </div>
-        </div>
-        <div style="height: 100px;"></div>
-    </div>
 
     <style type="text/css">
         .clubFollow{
@@ -494,7 +475,7 @@
             margin-bottom: 11vw;
         }
         .mapback{
-            background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(resources/css/img/bag_room.jpg);
+            background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../resources/css/img/bag_room.jpg);
             background-position: top;
         }
 /*
@@ -549,20 +530,8 @@
                 background-position: 50%;
             }
     </style>
-    <br>
-    <div id="scroller" style="margin-top: -80px;"></div>
-    <br>
-    <div class="schedTop">
-<!--        <img src="resources/css/img/rDark.png">-->
-        <div class="schedText" style="width:100%;">
-            <br>
-            <span style="color:black!important;text-align: center!important;width: 100%!important;display: block!important;font-style: normal;font-size: 50px;margin-bottom: 15px;line-height: 100%;">Erie Schedule</span>
-        </div>
-<!--        <p>Select your class and create your club profile.</p>-->
-    </div>
-    <div style="margin-top:0px;z-index: 200;position: relative;">
-    <iframe id="sf-frame" src="https://www.fitmetrix.io/webportal/schedule/f5236ca2-041c-e811-a971-c0456042e755?locationID=4041&hidelocations=1&hideFilters=1" scrolling="no" frameborder="0" width="100%"></iframe>
-        </div>
+
+
                     <style>
             .locSubmit{
                 color:white;
@@ -613,10 +582,10 @@
                     .redBold{
                         color:rgb(254,0,0);
                         font-family: metropolis;
-                        font-size: 2vw;
+                        font-size: 1.5vw;
                         margin-bottom: 25px;
                         padding-bottom: 0;
-                        display: block;
+                        display: block;text-align: center;
                     }
                     .redBold>span{
                         color:black;
@@ -626,17 +595,17 @@
                         filter: drop-shadow(0 0 .5vw rgba(50,50,50,.5));
                     }
                     .wire{
-                        background-image: url(resources/css/img/mem/images/BG1.jpg);
+                        background-image: url(../resources/css/img/mem/images/BG1.jpg);
                         background-size: cover;
                         background-position: right;
                     }
                     .clubWire{
-                        background-image: url(resources/css/img/mem/images/BG1.jpg);
+                        background-image: url(../resources/css/img/mem/images/BG1.jpg);
                         background-size: cover;
                         background-position: right;
                     }
                     .memHeader{
-                        background-image: url(resources/css/img/mem/top.png);
+                        background-image: url(../resources/css/img/mem/top.png);
                         background-size: cover;
                         background-position: bottom;
                         height: 22vw;
@@ -740,9 +709,15 @@
                         max-width:65%;
                     }
                     @media(min-width:768px){
+                        .promowrapper{
+                            margin-right: 3vw;
+                            margin-left: 10vw;
+                        }
+/*
                         .redBold2, .benefitsRow{
                             padding-left: 14vw;
                         }
+*/
 /*
                         #eriememMob{
                             display: none!important;
@@ -750,9 +725,11 @@
 */
                     }
                     @media(min-width:1281px){
+/*
                         .redBold2, .benefitsRow{
                             padding-left: 5vw;
                         }
+*/
                     }
                     
                     @media(max-width:1600px){
@@ -978,168 +955,32 @@
                     }
         </style>
     <!--        HERE-->
-    <div class="clubFollow" style="width:100%;background-color: rgb(254,0,0);text-align: center;padding:30px;">
-        <span>FOLLOW ERIE, PA</span>
-        <a href="https://www.facebook.com/LevelRedBoxingErie/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/levelredboxing_erie/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-instagram"></i></a>
-    </div>
-    <div id="scroller2" style="height: 75px;"></div>
-        <div id="eriemem" style="position:relative;">
-                <div class="schedTop">
-<!--        <img src="resources/css/img/rDark.png">-->
-                    <br>
-                    <br>
-        <div class="schedText" style="width:100%;">
-            <span style="color:black!important;text-align: center!important;width: 100%!important;display: block!important;font-style: normal;font-size: 50px;margin-bottom: 15px;line-height: 90%;">Glove Up</span>
-        </div>
-<!--        <p>Select your class and create your club profile.</p>-->
-        <div style="text-align: center;margin-top: 10px;margin-bottom: 25px;">
-            <a id="leftTog" onclick="switchMem()" style="margin:0;margin-right: -3px;" class="locSubmitc">Memberships</a>
-            <a id="rightTog" onclick="switchMem()" class="locSubmitc3" style="margin:0;margin-left: -3px;">Packages</a>            
-        </div>
-                  
-    </div>
-            <div id="memGreyBar" style="background-color: rgb(54,54,54);height:10vw;position: absolute;top:20vw;left:0;width:100%;display:inline-block;"></div>
-        <div class="container-fluid" style="padding:0;">
 
-        <div class="row memTiles" style="position: relative;margin-top:0;text-align: center;padding:0;">
-            <style type="text/css">
-                .tilez{
-                    display: inline-block;
-                    max-width:100%;
-                    width: 23vw;
-                    position: relative;
-                }
-                .tileyShow{
-                    display: inline-block!important;
-                }
-                .tiley{
-                    display: none;
-                    max-width:100%;
-                    width: 23vw;
-                    position: relative;
-                    left:calc(50% - 11.5vw);
-                }
-                
-/*
-                .tiley{
-                    display: none;
-                }
-*/
-                @media(max-width:1800px){
-                    .tilez, .tiley{
-                        width:27vw;
-                    }
-                    .tiley{
-                        left:calc(50% - 13.5vw);
-                    }
-                    #memGreyBar{
-                        top:24vw!important;
-                    }
-                }
-                @media(max-width:1300px){
-                    .tilez, .tiley{
-                        width:30vw;
-                    }
-                    .tiley{
-                        left:calc(50% - 15vw);
-                    }
-                    #memGreyBar{
-                        top:29vw!important;
-                    }
-                }
-                @media(max-width:767px){
-                    .tilez, .tiley{
-                        width:100%;
-                    }
-                    .tiley{
-                        left:0;
-                    }
-                }
-            </style>
-            <div id="tile4" class="animated fadeInUp tiley" style="position: relative;">
-                <img src="resources/css/img/mem/Redtile2.png">
-                <span class="memLRB1" style="top:15%;">Level Red</span>
-                <span class="memLRB2" style="top:25%;">Blow-for-Blow</span>
-                <span class="memLRB2" style="top:30%;">Class Packs</span>
-                <span class="memLRB4" style="top:39%;">10 Classes</span>
-                <span class="memLRB3" style="top:46%;">20 Classes</span>
-                <span class="memLRB3" style="top:53%;">30 Classes</span>
-                <span class="memLRB5" style="top:65%; font-size: 200%;">Free Gloves</span>
-                <a href="fitmetrix/erie/pricing-erie.html#blow" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;">Buy Now</a>
-            </div>  
-            <div id="tile1" class="animated tilez">
-                <img src="resources/css/img/mem/Redtile1.png">
-                <span class="memLRB1">Level Red</span>
-                <span class="memLRB2">Champion</span>
-                <span class="memLRB3">Unlimited</span>
-                <span class="memLRB4">12 Month</span>
-                <span class="memLRB5">Free Gloves</span>
-<!--
-                <span class="memLRB6">Additional Sessions</span>
-                <span class="memLRB7">Added at Discounted Rate*</span>
--->
-                <a href="fitmetrix/erie/pricing-erie.html#champ" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;margin:0;">Buy Now</a>
-            </div>
-            <div id="tile2" class="animated tilez">
-                <img src="resources/css/img/mem/Redtile2.png">
-                <span class="memLRB1">Level Red</span>
-                <span class="memLRB2">The Contender</span>
-                <span class="memLRB3">Unlimited</span>
-                <span class="memLRB4">Monthly</span>
-                <span class="memLRB5">Free Gloves</span>
-<!--
-                <span class="memLRB6">Additional Sessions</span>
-                <span class="memLRB7">Added at Discounted Rate*</span>
--->
-                <a href="fitmetrix/erie/pricing-erie.html#contender" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;margin:0;">Buy Now</a>
-            </div>
-            <div id="tile3" class="animated tilez">
-                <img src="resources/css/img/mem/Redtile2.png">
-                <span class="memLRB1">Level Red</span>
-                <span class="memLRB2">The Undercard</span>
-                <span class="memLRB3">Unlimited</span>
-                <span class="memLRB4">6 Month</span>
-                <span class="memLRB5">Free Gloves</span>
-<!--
-                <span class="memLRB6">Additional Sessions</span>
-                <span class="memLRB7">Added at Discounted Rate*</span>
--->
-                <a href="fitmetrix/erie/pricing-erie.html#undercard" class="locSubmitc" style="position: absolute;bottom:12.5%;left:25%;width:50%!important;box-shadow: 0 0 3px black;margin:0;">Buy Now</a>
-            </div> 
-        </div>
-<!--
-        <div id="bouts" style="text-align: left;position: relative;">
-            <div style="background-color: rgb(54,54,54);height:15vw;position: absolute;top:35%;left:-10vw;width:150vw;display: inline-block;"></div>
-            <img style="width:30%;display: inline-block;" src="resources/css/img/memberships/contender-card.png">
-            <img style="width:30%;display: inline-block;" src="resources/css/img/memberships/8bout-card.png">
-            <img style="width:30%;display: inline-block;" src="resources/css/img/memberships/4bout-card.png">
-        </div>
--->
 
-    </div>
-        </div>
 <!--
     <div id="eriememMob">
         <iframe id="sf-frame" src="https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?locationID=4041&hidelocations=1" scrolling="no" frameborder="0" width="100%"></iframe>
     </div>
 -->
-    <div class="container">
-                <br>
-        <br>
-        <br>
-        <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Your membership benefits include</span></span>
-        <style ></style>
+    <div class="container-fluid" style="margin-top: 100px;">
+
+<!--        <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Your membership benefits include</span></span>-->
+     
         <style type="text/css">
             @font-face {
             font-family: aero;
-            src:url('resources/css/img/mem/aero.ttf')
+            src:url('../resources/css/img/mem/aero.ttf')
         }
+/*
             .benefitsRow{
                 margin-top:3vw;
                 max-width: 92vw;
             }
-            .benefitsRow .col-sm-6>div>span{
+*/
+            .benefitsRow .col-sm-3{
+                margin-top: 15px;
+            }
+            .benefitsRow .col-sm-3>div>span{
                 margin:0;
                 margin-left: .75vw;
                 line-height: 100%;
@@ -1155,12 +996,20 @@
                 text-transform: uppercase;
                 line-height: 100%;
             }
+            .benefitsRow{
+                margin-top: 50px;
+            }
             @media(max-width:767px){
+/*
                 .benefitsRow{
                     margin:0!important;
                     max-width: 100%!important;
                 }
-                .benefitsRow .col-sm-6>div>span{
+*/
+                .benefitsRow{
+                    margin-top: 0px;
+                }
+                .benefitsRow .col-sm-3>div>span{
                     font-size: 3.5vw;
                 }
                 .benefitsRow .lineText{
@@ -1169,129 +1018,138 @@
                 .benefitsRow>div{
                     margin-bottom: 5vw;
                 }
+                .promowrapper{
+                    max-height: 50vh!important;
+                }
+            }
+/*
+            .promowrapper::-webkit-scrollbar {
+              display: none;
+            }
+            .promowrapper {
+              -ms-overflow-style: none; 
+              scrollbar-width: none; 
+            }
+*/
+            /* width */
+            .promowrapper::-webkit-scrollbar {
+              width: 10px;
+            }
+
+            /* Track */
+            .promowrapper::-webkit-scrollbar-track {
+              box-shadow: inset 0 0 5px rgba(0,0,0,.25); 
+              border-radius: 10px;
+            }
+
+            /* Handle */
+            .promowrapper::-webkit-scrollbar-thumb {
+              background: rgb(254,0,0); 
+              border-radius: 10px;
+            }
+
+            /* Handle on hover */
+            .promowrapper::-webkit-scrollbar-thumb:hover {
+              background: rgb(254,0,0); 
             }
         </style>
         <div class="row benefitsRow">
-            <div id="memcol1" class="col-sm-6">
+            <div class="col-sm-4 promowrapper" style="max-height: 500px;overflow: scroll;overflow-x: hidden;">
+                <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Buy 10 Classes Get 10 Free!</span></span>
+                <iframe id="sf-frame" src="https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=11112&locationid=4180&hidelocations=1&hybrid=1" scrolling="no" frameborder="0" width="100%"></iframe>
+            </div>
+            <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Your Membership Benefits Include:</span></span>
+            <div id="memcol1" class="col-sm-3">
                 <div style="width:12%;display: inline-block;vertical-align: top;">
-                    <img style="width: 100%;margin-top:0;" src="resources/css/img/mem/icons/contract.png">
+                    <img style="width: 100%;margin-top:0;" src="../resources/css/img/mem/icons/contract.png">
                 </div>
                 <div style="width:79%;display: inline-block;vertical-align: top;">
                     <span class="lineText">MONTH - TO - MONTH</span>
                     <span class="regText">No annual commitment required</span>
                 </div>
+                <div style="width:12%;display: inline-block;vertical-align: top;margin-top: 1.5vw;">
+                    <img style="width: 100%" src="../resources/css/img/mem/icons/thumbsup.png">
+                </div>
+                <div style="width:79%;display: inline-block;margin-top:2vw;vertical-align: top;">
+                    <span class="lineText">No long term contract</span>
+                    <span class="regText">30 Day cancellation</span>
+                </div>
+                <div style="width:12%;display: inline-block;vertical-align: top;margin-top: 1.5vw;">
+                    <img style="width: 100%" src="../resources/css/img/mem/icons/freeze.png">
+                </div>
+                <div style="width:79%;display: inline-block;vertical-align: top;margin-top: 2vw;">
+                    <span class="lineText">Freeze privileges</span>
+                </div>
             </div>
-            <div id="memcol2" class="col-sm-6">
+            <div id="memcol2" class="col-sm-3">
                 <div style="width:12%;display: inline-block;vertical-align: top;">
-                    <img style="width: 100%;margin-top:-.75vw;" src="resources/css/img/mem/icons/redr.png">
+                    <img style="width: 100%;margin-top:-.75vw;" src="../resources/css/img/mem/icons/redr.png">
                 </div>
                 <div style="width:79%;display: inline-block;vertical-align: top;">
                     <span class="lineText">Access to all our studios</span>
                     <span class="regText">Nationwide reciprocation</span>
                 </div>
-            </div>
-        </div>
-
-        <div class="row benefitsRow">
-            <div id="memcol3" class="col-sm-6">
-                <div style="width:12%;display: inline-block;vertical-align: top;">
-                    <img style="width: 100%" src="resources/css/img/mem/icons/thumbsup.png">
+                <div style="width:12%;display: inline-block;vertical-align: top;margin-top: 1.5vw;">
+                    <img style="width: 70%;margin-left: .5vw;" src="../resources/css/img/mem/icons/flag.png">
                 </div>
-                <div style="width:79%;display: inline-block;margin-top:.5vw;vertical-align: top;">
-                    <span class="lineText">No long term contract</span>
-                    <span class="regText">30 Day cancellation</span>
-                </div>
-            </div>
-            <div id="memcol4" class="col-sm-6">
-                <div style="width:12%;display: inline-block;vertical-align: top;">
-                    <img style="width: 70%;margin-left: 1vw;" src="resources/css/img/mem/icons/flag.png">
-                </div>
-                <div style="width:79%;display: inline-block;margin-top:1vw;vertical-align: top;">
+                <div style="width:79%;display: inline-block;margin-top:2vw;vertical-align: top;">
                     <span class="lineText">Online and mobile booking</span>
                 </div>
-            </div>
-        </div>
-
-        <div class="row benefitsRow">
-            <div id="memcol5" class="col-sm-6">
-                <div style="width:12%;display: inline-block;vertical-align: top;">
-                    <img style="width: 100%" src="resources/css/img/mem/icons/freeze.png">
+                <div style="width:12%;display: inline-block;vertical-align: top;margin-top: 1vw;">
+                    <img style="width: 100%;margin-top: 5px;" src="../resources/css/img/mem/icons/calendar.png">
                 </div>
-                <div style="width:79%;display: inline-block;margin-top:.5vw;vertical-align: top;">
-                    <span class="lineText">Freeze privileges</span>
-                </div>
-            </div>
-            <div id="memcol6" class="col-sm-6">
-                <div style="width:12%;display: inline-block;vertical-align: top;">
-                    <img style="width: 100%;margin-top: 5px;" src="resources/css/img/mem/icons/calendar.png">
-                </div>
-                <div style="width:79%;display: inline-block;margin-top:.5vw;vertical-align: top;">
+                <div style="width:79%;display: inline-block;margin-top:1.5vw;vertical-align: top;">
                     <span class="lineText">Consistent class times</span>
                     <span class="regText">Open 7 days per week</span>
                 </div>
             </div>
         </div>
+
+
     </div>
         <br>
 <div style="padding:0;margin:0;text-align: center;margin-bottom: 3px;margin-top: 50px;">
-    <img style="width:32%;display: inline-block;" src="resources/css/img/mem/images/1.png">
-    <img style="width:32%;display: inline-block;" src="resources/css/img/mem/images/2.png">
-    <img style="width:32%;display: inline-block;" src="resources/css/img/mem/images/3.png">
+    <img style="width:32%;display: inline-block;" src="../resources/css/img/mem/images/1.png">
+    <img style="width:32%;display: inline-block;" src="../resources/css/img/mem/images/2.png">
+    <img style="width:32%;display: inline-block;" src="../resources/css/img/mem/images/3.png">
 </div>
-<!--
-    <div class="faqdiv">
-                <div class="container-fluid">
-            <h1>Frequently Asked Questions</h1>
-            <div class="faq">
-                <a class="faqQ" onclick="show1()">How early should I arrive before my first class?<a onclick="show1()" id="plus1" class="faqplus">+</a><a onclick="show1()" id="minus1" class="faqminus">-</a></a>
-                <p class="faq1 collapsible collapsed">First-timers are encouraged to arrive 30-15 minutes prior to class time.</p>
-            </div>
-            <div class="faq">
-                <a class="faqQ" onclick="show2()">What if I don't have boxing gloves?<a onclick="show2()" id="plus2" class="faqplus">+</a><a onclick="show2()" id="minus2" class="faqminus">-</a></a>
-                <p class="faq2 collapsible collapsed">Don't worry. We'll have gloves ready for you at your first visit.</p>
-            </div>
-            <div class="faq">
-                <a class="faqQ" onclick="show3()">I haven't worked out in a while. Are classes going to be ok for me?<a onclick="show3()" id="plus3" class="faqplus">+</a><a onclick="show3()" id="minus3" class="faqminus">-</a></a>
-                <p class="faq3 collapsible collapsed">Level Red is for everyBODY! Each class is set up for you to go at your own pace.</p>
-            </div>
-            <div class="faq">
-                <a class="faqQ" onclick="show4()">Will there be a trainer to help me out?<a onclick="show4()" id="plus4" class="faqplus">+</a><a onclick="show4()" id="minus4" class="faqminus">-</a></a>
-                <p class="faq4 collapsible collapsed">Absolutely! Your MOTIVATORS will be with you every step of the way.</p>
-            </div>
-            <div class="faq">
-                <a class="faqQ" onclick="show11()">Do I have to box people?<a onclick="show11()" id="plus11" class="faqplus">+</a><a onclick="show11()" id="minus11" class="faqminus">-</a></a>
-                
-                <p class="faq11 collapsible collapsed">Absolutely not! Level Red Boxing is all about you vs. your bag.</p>
-            </div>
-            <div class="faq">
-                <a class="faqQ" onclick="show5()">Should I bring anything?<a onclick="show5()" id="plus5" class="faqplus">+</a><a onclick="show5()" id="minus5" class="faqminus">-</a></a>
-                <p class="faq5 collapsible collapsed">A workout towel and water are recommended.</p>
-            </div>
-            <div class="faq">
-                <a class="faqQ" onclick="show6()">What should I wear?<a onclick="show6()" id="plus6" class="faqplus">+</a><a onclick="show6()" id="minus6" class="faqminus">-</a></a>
-                <p class="faq6 collapsible collapsed">Wear athletic gear that helps you feel comfortable and confident.</p>
-            </div>
-            <div class="faq">
-                <a class="faqQ" onclick="show7()">Can I bring a friend?<a onclick="show7()" id="plus7" class="faqplus">+</a><a onclick="show7()" id="minus7" class="faqminus">-</a></a>
-                <p class="faq7 collapsible collapsed">Totally encouraged! Working out with a friend is a great way to enjoy your first class!</p>
-            </div>
-            <div class="faq">
-                <a class="faqQ" onclick="show8()">Are there showers?<a onclick="show8()" id="plus8" class="faqplus">+</a><a onclick="show8()" id="minus8" class="faqminus">-</a></a>
-                <p class="faq8 collapsible collapsed">Yes, our club has private showers with towels, soap, lotion and body spray.</p>
-            </div>
-            <div class="faq">
-                <a class="faqQ" onclick="show9()">Is there childcare?<a onclick="show9()" id="plus9" class="faqplus">+</a><a onclick="show9()" id="minus9" class="faqminus">-</a></a>
-                <p class="faq9 collapsible collapsed">Free babysitting is included Monday through Saturday. There are no babysitting services Sundays.</p>
+        <div id="clubMap" class="clubMap clubWire" style="">
+        <div style="height: 100px;"></div>
+        <div class="container">
+            <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Level Red Boxing | Erie, PA</span></span>
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="clubDetails">
+                        <span><i class="fas fa-map-marker-alt"></i> 2147 W 12th St</span>
+                        <span style="margin-bottom: 20px;"><i style="visibility: hidden!important;" class="fas fa-map-marker-alt"></i> Erie, PA 16505</span>
+                        <span style="margin-bottom: 20px;"><i class="fas fa-phone"></i> (814) 315-2994</span>
+                        <a href="mailto:alyssa.p@levelredboxing.com" style="text-decoration: none!important;"><span style="margin-bottom: 20px;"><i class="fas fa-envelope"></i> alyssa.p@levelredboxing.com</span></a>
+                        <span><i class="fas fa-clock"></i> Mon-Thu: 5am-7pm</span>
+                        <span><i style="visibility: hidden!important;" class="fas fa-clock"></i> Fri: 5am-6pm</span>
+                        <span ><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sat: 8am-1pm</span>
+                        <span style="margin-bottom: 20px;"><i style="visibility: hidden!important;" class="fas fa-clock"></i> Sun: 8am-12pm</span>
+                    </div>
+                </div>
+                <div class="col-sm-7" style="overflow: hidden;">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1MfVROw9BGf5K-FTtBQDm2jEV2Hdt-BTw" style="width:100%;height:400px;margin-top: -50px;border: none;"></iframe>
+                </div>
             </div>
         </div>
+        <div style="height: 100px;"></div>
+                <div class="clubFollow" style="width:100%;background-color: rgb(254,0,0);text-align: center;padding:30px;">
+                <span>FOLLOW ERIE, PA</span>
+                <a href="https://www.facebook.com/LevelRedBoxingErie/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/levelredboxing_erie/"><i style="font-size: 40px!important;line-height: 40px;" class="fab fa-instagram"></i></a>
+            </div>
     </div>
--->
+
 <!--&hidelocations=1-->
     <div class="lrbFooter">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="resources/css/img/brand2.png" style="width: 100%;padding-bottom: 10px;max-width: 400px;">
+                    <img src="../resources/css/img/brand2.png" style="width: 100%;padding-bottom: 10px;max-width: 400px;">
                 </div>
                 <div class="col-md-4 share">
                     <span>Share how you are</span>
@@ -1303,15 +1161,15 @@
                     </div>
                 </div>
                 <div class="col-md-4 stores">
-                    <a href="https://itunes.apple.com/us/app/level-red-boxing/id1359276124?mt=8" style="margin-bottom: 10px;"><img src="resources/css/img/app/apple.svg"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.fitmetrix.levelredboxing"><img src="resources/css/img/app/google.png"></a>
+                    <a href="https://itunes.apple.com/us/app/level-red-boxing/id1359276124?mt=8" style="margin-bottom: 10px;"><img src="../resources/css/img/app/apple.svg"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.fitmetrix.levelredboxing"><img src="../resources/css/img/app/google.png"></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="index.html" class="bottomlink botHome">Home</a>
+                    <a href="../index.html" class="bottomlink botHome">Home</a>
                     <a href="http://www.levelredboxing.com/franchise.html" class="bottomlink">Franchising</a>
-                    <a href="press.html" class="bottomlink">Press</a>
+                    <a href="../press.html" class="bottomlink">Press</a>
                 </div>
                  <span class="copy" >&copy; 2020 Level Red Boxing | <a href="http://levelredboxing.com/terms.html">Terms of Service</a></span>
             </div>
@@ -1323,7 +1181,7 @@
 <!--
         <div class="newFoot">
             <br>
-            <img class="newFootLogo" src="resources/img/new/LevelRedBoxing_Horiz_WHITE.svg" style="max-width: 300px;margin:0 auto;">
+            <img class="newFootLogo" src="../resources/img/new/LevelRedBoxing_Horiz_WHITE.svg" style="max-width: 300px;margin:0 auto;">
             <br>
             <br>
             <a href="locations.html" class="newFootLink">Locations</a>
@@ -1333,8 +1191,8 @@
             <a href="terms.html" class="newFootLink">Privacy Policy</a>
             <a class="newFootLink"></a>
             <div style="text-align: center;">
-                <a href="https://itunes.apple.com/us/app/level-red-boxing/id1359276124?mt=8"><img src="resources/css/img/app/apple.svg" class="appBTN2"></a>
-                <a href="https://play.google.com/store/apps/details?id=com.fitmetrix.levelredboxing"><img src="resources/css/img/app/google.png" class="appBTN2"></a>
+                <a href="https://itunes.apple.com/us/app/level-red-boxing/id1359276124?mt=8"><img src="../resources/css/img/app/apple.svg" class="appBTN2"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.fitmetrix.levelredboxing"><img src="../resources/css/img/app/google.png" class="appBTN2"></a>
                 <br>
                 <a href="https://www.instagram.com/levelredboxing/"><i class="fab fa-instagram" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
                 <a href="https://www.facebook.com/LevelRedBoxing/"><i class="fab fa-facebook-square" style="font-size: 30px!important;margin-top:10px;margin-right: 15px;"></i></a>
@@ -1382,6 +1240,6 @@
     </body> 
 
     <div style="height: 50px;"></div>
-    <script src="resources/js/script.js?v=3"></script><!--<script type="text/javascript" id="botcopy-embedder-d7lcfheammjct" class="botcopy-embedder-d7lcfheammjct" data-botId="5e7a36fe099273f57448b3c7" src="resources/js/chat.js"></script>-->
+    <script src="../resources/js/script.js?v=3"></script><!--<script type="text/javascript" id="botcopy-embedder-d7lcfheammjct" class="botcopy-embedder-d7lcfheammjct" data-botId="5e7a36fe099273f57448b3c7" src="../resources/js/chat.js"></script>-->
     
 </html>
