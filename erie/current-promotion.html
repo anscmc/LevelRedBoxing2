@@ -529,6 +529,13 @@
             .mapback {
                 background-position: 50%;
             }
+            .clubDetails span{
+            color: #505050;
+            display: block;
+            font-weight: 400;
+            font-size: 5vw; 
+        }
+        }
     </style>
 
 
@@ -830,7 +837,7 @@
                             line-height: 100%;
                         }
                         .redBold2{
-                            font-size: 4vw!important;
+                            font-size: 5vw!important;
                         }
                         .wire p{
                             font-size: 4.5vw!important;
@@ -999,6 +1006,11 @@
             .benefitsRow{
                 margin-top: 50px;
             }
+            @media(min-width:768px){
+                .promowrapper{
+                    max-height: 550px;overflow: scroll;overflow-x: hidden;
+                }
+            }
             @media(max-width:767px){
 /*
                 .benefitsRow{
@@ -1018,9 +1030,11 @@
                 .benefitsRow>div{
                     margin-bottom: 5vw;
                 }
+/*
                 .promowrapper{
                     max-height: 60vh!important;
                 }
+*/
             }
 /*
             .promowrapper::-webkit-scrollbar {
@@ -1054,8 +1068,8 @@
             }
         </style>
         <div class="row benefitsRow">
-            <div class="col-sm-4 promowrapper" style="max-height: 500px;overflow: scroll;overflow-x: hidden;">
-                <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Buy 10 Classes Get 10 Free!</span></span>
+            <div class="col-sm-4 promowrapper">
+                <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Buy 10 Get 10 Free</span></span>
                 <iframe id="sf-frame" src="https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=11112&locationid=4041&hidelocations=1&hybrid=1" scrolling="no" frameborder="0" width="100%"></iframe>
             </div>
             <span class="redBold redBold2" style="text-transform: uppercase;"><span id="benSpan">Your Membership Benefits Include:</span></span>
