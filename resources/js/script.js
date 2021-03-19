@@ -47,6 +47,7 @@ function switchMem(){
     $('div.tilez').fadeToggle(300);
 //    $('div.tiley').toggleClass('tileyShow');
     $('div.tiley').fadeToggle(300);
+    $('div.tiley').toggleClass("tiley2");
 }
 //$(document).ready(function() {
 //    
