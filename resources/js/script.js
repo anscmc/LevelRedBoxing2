@@ -45,9 +45,12 @@ function switchMem(){
     $('#leftTog').toggleClass('locSubmitc3');
     $('#rightTog').toggleClass('locSubmitc3');
     $('#rightTog').toggleClass('locSubmitc');
+    
     $("div.tilez").delay(100).fadeToggle(100);
+    $("div.tiley").delay(225).fadeToggle(100);
+    
 //    $('div.tiley').toggleClass('tileyShow');
-    $("div.tiley").delay(210).fadeToggle(100);
+    
 }
 //$(document).ready(function() {
 //    
