@@ -4,6 +4,7 @@ function toggleAbout(){
             }
 $(document).ready(function(){
     $("#liRegistrationLink").css("color", "black!important");
+    $('div.tiley').fadeToggle(1);
 });
             $(document).ready(function(){
                 
@@ -44,10 +45,9 @@ function switchMem(){
     $('#leftTog').toggleClass('locSubmitc3');
     $('#rightTog').toggleClass('locSubmitc3');
     $('#rightTog').toggleClass('locSubmitc');
-    $('div.tilez').fadeToggle(300);
+    $("div.tilez").delay(100).fadeToggle(100);
 //    $('div.tiley').toggleClass('tileyShow');
-    $('div.tiley').fadeToggle(300);
-    $('div.tiley').toggleClass("tiley2");
+    $("div.tiley").delay(210).fadeToggle(100);
 }
 //$(document).ready(function() {
 //    
