@@ -13,7 +13,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>The Workout | Strong at Every Level</title>
+        <title>Cary Promotion | Strong at Every Level</title>
         <meta name="description" content="Boxing-inspired group fitness classes. Stop going to the gym, start having an experience. Claim your free class now | Level Red Boxing">
         <meta name="keywords" content="level red boxing, level red, boxing, gym, fitness, memberships, group fitness">
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -186,7 +186,50 @@ document.addEventListener('gesturestart', function (e) {
                 box-shadow: none;
                 border:none;
             }
+            .promoFormPop{
+                position: fixed;
+                z-index: 2000;
+                bottom:-850px;
+                left:calc(50% - 375px);
+                width:750px;
+                height: 700px;
+                max-height: 90vh;
+                overflow: scroll;
+                background-color: white;
+                box-shadow: 0 0 1vw rgba(0,0,0,.5);
+                border-radius: 10px;
+                background-image: url(../resources/css/img/mem/images/BG1.jpg);
+                background-size: cover;
+                background-position: right;
+                transition: ease all .3s;
+            }
+            .closePromo{
+                font-weight: 800;
+                position: absolute;
+                left:20px;
+                top:10px;
+                font-size: 24px;
+                cursor: pointer;
+                text-decoration: none!important;
+            }
             @media(max-width:767px){
+                .promoFormPop{
+                    position: fixed;
+                    z-index: 2000;
+                    bottom:-95vh;
+                    left:0;
+                    width:100vw;
+                    height: calc(100vh - 52px);
+                    max-height: calc(100vh - 52px);
+                    overflow: scroll;
+                    background-color: white;
+                    box-shadow: 0 0 1vw rgba(0,0,0,.5);
+                    border-radius: 10px;
+                    background-image: url(../resources/css/img/mem/images/BG1.jpg);
+                    background-size: cover;
+                    background-position: right;
+                    transition: ease all .3s;
+                }
                 .promos{
                     padding-left:5vw;padding-right: 5vw;text-align: center;
                     padding-top: 10vw;
@@ -247,20 +290,33 @@ document.addEventListener('gesturestart', function (e) {
                     transition: ease all .3s;
                 }
             }
+            .promoToggle{
+                bottom: -10px;
+            }
         </style>
+        <script type="text/javascript">
+            function togglePromo(){
+                $("div.promoFormPop").toggleClass("promoToggle");
+            }
             
+        </script>
+        <div class="promoFormPop">
+            <a onclick="togglePromo()" class="closePromo">Close X</a>
+<!--            <h1 style="text-align: center;margin:0;margin-top: 30px;">To claim your promotion, please fill out the form below:</h1>-->
+            <script type="text/javascript" src="https://form.jotform.com/jsform/211096354025146"></script>
+        </div>
             
         <div class="promos">
             <h1>Get Started Today</h1>
             <div class="promoinner">
                 <span>3 Classes</span>
                 <p>for $19.99</p>
-                <a>Get Started</a>
+                <a onclick="togglePromo()">Get Started</a>
             </div>    
             <div class="promoinner">
                 <span>21 Days Unlimited</span>
                 <p>for $29.99</p>
-                <a>Get Started</a>
+                <a onclick="togglePromo()">Get Started</a>
             </div>  
         </div>
 
@@ -407,15 +463,13 @@ document.addEventListener('gesturestart', function (e) {
             <div class="promoinner">
                 <span>3 Classes</span>
                 <p>for $19.99</p>
-                <a>Get Started</a>
+                <a onclick="togglePromo()">Get Started</a>
             </div>    
             <div class="promoinner">
                 <span>21 Days Unlimited</span>
                 <p>for $29.99</p>
-                <a>Get Started</a>
+                <a onclick="togglePromo()">Get Started</a>
             </div>  
-            <br>
-            <br>
         </div>
             <div class="lrbFooter">
         <div class="container">
