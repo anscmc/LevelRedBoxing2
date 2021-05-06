@@ -85,7 +85,8 @@
             <a href="http://www.levelredboxing.com/franchise.html" class="mobileFran">Own a Franchise</a>
         </div>
     </div>
-    <div style="height: 100px"></div>
+    <div style="height:100px"></div>
+    <h1 style="text-align: center;margin-top:10px;">Pricing - Buffalo, NY</h1>
         <script type="text/javascript">
             $(document).ready(function(){
                 var myVal = document.URL.split('#').pop();
@@ -103,6 +104,10 @@
                 }
                 if (myVal == "blow"){
                     $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=11112&locationid=4166&hidelocations=1");
+                    $("#showbtn").toggleClass("hideshow");
+                }
+                if (myVal == "bogo"){
+                    $("#sf-frame").attr("src", "https://www.fitmetrix.io/webportal/packages/f5236ca2-041c-e811-a971-c0456042e755?passedInpackageID=103072&locationid=4166&hidelocations=1");
                     $("#showbtn").toggleClass("hideshow");
                 }
                 else{
