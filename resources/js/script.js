@@ -45,7 +45,7 @@ function switchMem(){
     $('#leftTog').toggleClass('locSubmitc3');
     $('#rightTog').toggleClass('locSubmitc3');
     $('#rightTog').toggleClass('locSubmitc');
-     $("div.tilez").fadeToggle(100);
+    $("div.tilez").fadeToggle(100);
 $("div.tiley").fadeToggle(100).toggleClass('tileyShow');
    
     
