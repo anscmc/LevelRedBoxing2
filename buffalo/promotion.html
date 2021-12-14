@@ -220,10 +220,20 @@ src="https://www.facebook.com/tr?id=333630277174247&ev=PageView&noscript=1"
                 background-position: right;
                 transition: ease all .3s;
             }
+                            /* Hide scrollbar for Chrome, Safari and Opera */
+.promoFormPop::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.promoFormPop {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
             .closePromo{
                 font-weight: 800;
                 position: absolute;
-                left:20px;
+                right:20px;
                 top:10px;
                 font-size: 24px;
                 cursor: pointer;
@@ -332,8 +342,8 @@ src="https://www.facebook.com/tr?id=333630277174247&ev=PageView&noscript=1"
             </div>    
 -->
             <div class="promoinner">
-                <span>Buy 5 Classes Get 5 Free </span>
-                <p>$99.95 - Gloves included for first time members.</p>
+                <span>Buy 10 Classes Get 10 Free </span>
+                <p style="margin-top: 2px">$200 - Gloves included for first time members.</p>
                 <a onclick="togglePromo()">Get Started</a>
             </div>  
         </div>
