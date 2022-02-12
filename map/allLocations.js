@@ -11,17 +11,6 @@ var allLocations = [
     weblink: "buffalo"
   },
   {
-    name: "Cary",
-    lat: 35.7382488,
-    lng: -78.7806899,
-    address: "302 Colonades Way",
-    city: "Cary",
-    state: "NC",
-    zip: "21224",
-    phone: "(919) 896-6332",
-    weblink: "cary"
-  },
-  {
     name: "Erie",
     lat: 42.104992,
     lng: -80.1305712,
